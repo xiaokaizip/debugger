@@ -1,0 +1,336 @@
+C51 COMPILER V9.54   GUI                                                                   09/23/2018 00:10:22 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE GUI
+OBJECT MODULE PLACED IN .\GUI.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE ..\GUI\GUI.C LARGE OPTIMIZE(8,SPEED) BROWSE NOINTVECTOR INCDIR(..\delay;
+                    -..\tft;..\GUI;..\HARDWARE\xpt2046;..\HARDWARE\spi;C:\Keil_v5\C51\INC\STC) DEBUG OBJECTEXTEND PRINT(.\GUI.lst) TABS(2) OB
+                    -JECT(.\GUI.obj)
+
+line level    source
+
+   1          
+   2          
+   3          #include "stc15f2k60s2.h"
+   4          #include  "gui.h"
+   5          #include  "tft.h"
+   6          #include  "delay.h" 
+   7          #include  "zifu8x16.h"      
+   8          #include  "hz16x16.h"     //ºº×Ö16X16
+   9          
+  10          
+  11          
+  12          //ÇåÆÁ
+  13          //colorÊÇ±³¾°ÑÕÉ«¡£
+  14          //ËµÃ÷£ºÊ¹ÓÃ±³¾°ÑÕÉ«Çå³ýTFTÄ£¿éÆÁÄ»µÄÈ«²¿ÏÔÊ¾ÄÚÈÝ¡£
+  15          void GUI_Clear(u16 color)
+  16          {
+  17   1        u16 i;
+  18   1        u16 j;
+  19   1        IO_init();           //Õë¶Ô IAP15W4K61S4  IO¿Ú³õÊ¼»¯
+*** WARNING C206 IN LINE 19 OF ..\GUI\GUI.C: 'IO_init': missing function-prototype
+  20   1        Address_set(0,0,129,160);
+  21   1          for(i=0;i<161;i++)
+  22   1         {
+  23   2            for (j=0;j<130;j++)
+  24   2            {
+  25   3                 Lcd_Write_Data(color);
+  26   3            }
+  27   2      
+  28   2          }
+  29   1      }
+  30          
+  31          
+  32          
+  33          //»­µã
+  34          //(x£¬y)ÊÇµãµÄ×ø±ê
+  35          //color ÊÇµãµÄÑÕÉ«¡£
+  36          //ËµÃ÷£ºÓÃÖ¸¶¨µÄÑÕÉ«ÔÚÖ¸¶¨µÄ×ø±êÎ»ÖÃÉÏ»­³öÒ»¸öµã¡£
+  37          void GUI_Point(u8 x, u16 y, u16 color)
+  38          {  
+  39   1        Address_set(x,y,x,y);
+  40   1        Lcd_Write_Data(color);
+  41   1      }
+  42          
+  43           
+  44          
+  45          
+  46          
+  47          //»­8µã(BresenhamËã·¨)      
+  48          //(rx,ry,a,b):²ÎÊý
+  49          //color:ÑÕÉ«
+  50          void gui_circle8(u16 rx,u16 ry,int a,int b,u16 color)
+  51          {
+  52   1        GUI_Point(rx+a,ry-b,color);              
+C51 COMPILER V9.54   GUI                                                                   09/23/2018 00:10:22 PAGE 2   
+
+  53   1        GUI_Point(rx+b,ry-a,color);                       
+  54   1        GUI_Point(rx+b,ry+a,color);                           
+  55   1        GUI_Point(rx+a,ry+b,color);             
+  56   1        GUI_Point(rx-a,ry+b,color);                  
+  57   1        GUI_Point(rx-b,ry+a,color);               
+  58   1        GUI_Point(rx-b,ry-a,color);                      
+  59   1        GUI_Point(rx-a,ry-b,color);                  
+  60   1      }
+  61          //ÔÚÖ¸¶¨Î»ÖÃ»­Ò»¸öÖ¸¶¨´óÐ¡µÄÔ²
+  62          //(rx,ry):Ô²ÐÄ
+  63          //r    :°ë¾¶
+  64          //color:ÑÕÉ«
+  65          //mode :0,²»Ìî³ä;1,Ìî³ä
+  66          void GUI_arc(u16 rx,u16 ry,u16 r,u16 color,u8 mode)
+  67          {
+  68   1        int a,b,c;
+  69   1        int di;   
+  70   1        a=0;b=r;    
+  71   1        di=3-(r<<1);  //ÅÐ¶ÏÏÂ¸öµãÎ»ÖÃµÄ±êÖ¾
+  72   1        while(a<=b)
+  73   1        {
+  74   2          if(mode)
+  75   2          for(c=a;c<=b;c++)
+  76   2          gui_circle8(rx,ry,a,c,color);//»­ÊµÐÄÔ²
+  77   2          else gui_circle8(rx,ry,a,b,color);      //»­¿ÕÐÄÔ²
+  78   2          a++;
+  79   2          //Ê¹ÓÃBresenhamËã·¨»­Ô²     
+  80   2          if(di<0)di +=4*a+6;   
+  81   2          else
+  82   2          {
+  83   3            di+=10+4*(a-b);   
+  84   3            b--;
+  85   3          }                 
+  86   2        }
+  87   1      }
+  88          
+  89          //»­ÊµÐÄ¾ØÐÎ
+  90          //(sx,sy)×óÉÏ½Ç¶¥µã×ø±ê, 
+  91          //(ex,ey)ÓÒÏÂ½Ç¶¥µã×ø±ê, colorÑÕÉ«
+  92          //·µ»Ø: ÎÞ
+  93          //ËµÃ÷£ºÔÚÖ¸¶¨Î»ÖÃÉÏ»­³öÊµÐÄ¾ØÐÎ¡£
+  94          void GUI_box(u8 sx,u16 sy,u8 ex,u16 ey,u16 color)
+  95          { 
+  96   1        u16 temp,temp1,m,n;   
+  97   1        Address_set(sx,sy,ex,ey); 
+  98   1          n=ex-sx+1;
+  99   1        m=ey-sy+1;
+ 100   1      
+ 101   1        for(temp=0;temp<m;temp++)
+ 102   1        {   
+ 103   2          for(temp1=0;temp1<n;temp1++)
+ 104   2          { 
+ 105   3            Lcd_Write_Data(color);
+ 106   3          }
+ 107   2        }
+ 108   1      }
+ 109          
+ 110          
+ 111          ////»­ÑÕÉ«µÝ±ä¾ÞÐÍ  ¿ÉÒÔÊÇºáÌõ ÊúÌõµÈ
+ 112          ////(sx,sy)×óÉÏ½Ç¶¥µã×ø±ê, 
+ 113          ////(ex,ey)ÓÒÏÂ½Ç¶¥µã×ø±ê, colorÑÕÉ«
+ 114          //// mode Ä£Ê½  mode=1  ×ÝÏòÑÕÉ«±ä»¯ mode=2 ºáÏòÑÕÉ«±ä»¯
+C51 COMPILER V9.54   GUI                                                                   09/23/2018 00:10:22 PAGE 3   
+
+ 115          //void GUI_boxchange(u8 sx,u16 sy,u8 ex,u16 ey,u16 color,u8 mode)
+ 116          //{ 
+ 117          //  u16 temp,temp1,m,n,color2;   
+ 118          //  Address_set(sx,sy,ex,ey); 
+ 119          //    n=ex-sx+1;
+ 120          //  m=ey-sy+1;
+ 121          //  if(mode==2)color2=color;
+ 122          //  for(temp=0;temp<m;temp++)
+ 123          //  {   
+ 124          //    for(temp1=0;temp1<n;temp1++)
+ 125          //    { 
+ 126          //      Lcd_Write_Data(color);
+ 127          //      if(mode==2)color+=15;
+ 128          //    }
+ 129          //    if(mode==1)color+=15;
+ 130          //    if(mode==2)color=color2;
+ 131          //  }
+ 132          //}
+ 133          
+ 134          
+ 135          
+ 136          //Ìî³ä¾ØÐÎ
+ 137          //x0,y0:¾ØÐÎµÄ×óÉÏ½Ç×ø±ê
+ 138          //width,height:¾ØÐÎµÄ³ß´ç
+ 139          //color:ÑÕÉ«
+ 140          void GUI_fill_box(u16 x0,u16 y0,u16 width,u16 height,u16 color)
+ 141          {                    
+ 142   1        if(width==0||height==0)return;//·Ç·¨.  
+ 143   1        GUI_box(x0,y0,x0+width-1,y0+height-1,color);         
+ 144   1      }
+ 145          
+ 146          
+ 147          //»­Ô²½Ç¾ØÐÎ/Ìî³äÔ²½Ç¾ØÐÎ
+ 148          //x,y,width,height:Ô²½Ç¾ØÐÎµÄÎ»ÖÃºÍ³ß´ç
+ 149          //r:Ô²½ÇµÄ°ë¾¶.
+ 150          //upcolor:ÉÏ°ë²¿·ÖÑÕÉ«
+ 151          //downcolor:ÏÂ°ë²¿·ÖÑÕÉ«
+ 152          void GUI_arcrectangle(u16 x,u16 y,u16 width,u16 height,u8 r,u16 upcolor,u16 downcolor)
+ 153          {
+ 154   1        u16 btnxh=0;
+ 155   1        if(height%2)btnxh=height+1;//»ùÅ¼Êý´¦Àí
+ 156   1        else btnxh=height;
+ 157   1      
+ 158   1          GUI_fill_box(x+r,y,width-2*r,btnxh/2,upcolor);          //ÖÐÉÏ
+ 159   1            GUI_fill_box(x+r,y+btnxh/2,width-2*r,btnxh/2,downcolor);  //ÖÐÏÂ
+ 160   1          GUI_fill_box(x,y+r,r,btnxh/2-r,upcolor);          //×óÉÏ
+ 161   1          GUI_fill_box(x,y+btnxh/2,r,btnxh/2-r,downcolor);      //×óÏÂ
+ 162   1          GUI_fill_box(x+width-r,y+r,r,btnxh/2-r,upcolor);      //ÓÒÉÏ
+ 163   1          GUI_fill_box(x+width-r,y+btnxh/2,r,btnxh/2-r,downcolor);  //ÓÒÏÂ
+ 164   1      
+ 165   1        GUI_arc(x+r,y+r,r,upcolor,1);//×óÉÏ 
+ 166   1        GUI_arc(x+r,y+btnxh-r-1,r,downcolor,1);//×óÏÂ 
+ 167   1        GUI_arc(x+width-r-1,y+r,r,upcolor,1);  //ÓÒÉÏ
+ 168   1        GUI_arc(x+width-r-1,y+btnxh-r-1,r,downcolor,1);//ÓÒÏÂ
+ 169   1      }
+ 170          
+ 171          
+ 172          
+ 173          
+ 174          
+ 175          
+ 176          
+C51 COMPILER V9.54   GUI                                                                   09/23/2018 00:10:22 PAGE 4   
+
+ 177          //ÏÔÊ¾Ó¢ÎÄ»òÊý×Ö×Ö·û
+ 178          //º¯ÊýÖ§³Ö ×Ö·ûµÄ×ÝÏòºÍºáÏòÏÔÊ¾ £¨ÒªÅäºÏÉ¨Ãè·½Ê½£©
+ 179          //x  y  ÒªÏÔÊ¾×Ö·ûµÄ³õÊ¼×ø±ê
+ 180          //value ÏÔÊ¾×Ö·ûÊý¾Ý
+ 181          //dcolor ÏÔÊ¾µÄ×Ö·ûÑÕÉ«  bgcolorÏÔÊ¾×Ö·ûµÄ±³¾°ÑÕÉ«
+ 182          //mode   0 ×Ö·û×ÝÏòÏÔÊ¾  1 ×Ö·ûºáÏòÏÔÊ¾
+ 183          void GUI_sprintf_char(u8 x,u16 y,u8 value,u16 dcolor,u16 bgcolor,u8 mode) 
+ 184          {  
+ 185   1        u8 i,j;
+ 186   1        u8 *temp=zifu816;    //tempÊÇ*tempµÄµØÖ·  ÕâÀïtemp¾ÍÊÇzifuµÄÊ×µØÖ· 
+ 187   1                            
+ 188   1        temp+=(value-32)*16;   //È·¶¨ÒªÏÔÊ¾µÄÖµ
+ 189   1                         //ÓÃascii±í  Ç°32¸öasciiÃ»ÓÐ´æÈëzifu¿âÀï ËùÒÔÒª¼õ32
+ 190   1                               //Ã¿¸ö×Ö·ûÓÃ16¸ö×Ö½ÚÏÔÊ¾ ËùÒÔÔÚ³ËÒÔ16  ¾ÍÊÇ¶ÔÓ¦µÄÏÔÊ¾Î»µÄÊ×µØÖ·
+ 191   1      
+ 192   1          if(mode==0)Address_set(x,y,x+7,y+15);    //ÉèÖÃÇøÓò      
+ 193   1          if(mode==1)Address_set(x,y,x+7,y+15); //ÉèÖÃÇøÓò          
+ 194   1          for(j=0;j<16;j++)
+ 195   1          {
+ 196   2            for(i=0;i<8;i++)        //ÏÈºáÉ¨
+ 197   2            {          
+ 198   3              if((*temp&(1<<(7-i)))!=0)      //½«1 ×óÒÆ È»ºó¶ÔÓ¦Î»½øÐÐÏàÓë        
+ 199   3                Lcd_Write_Data(dcolor);      //ÏÔÊ¾×Ö·ûÑÕÉ«
+ 200   3               
+ 201   3              else        
+ 202   3                Lcd_Write_Data(bgcolor);       //ÏÔÊ¾±³¾°ÑÕÉ«   
+ 203   3            }
+ 204   2            temp++;                  //ÏÂÒ»×Ö½Ú
+ 205   2           }
+ 206   1      
+ 207   1      
+ 208   1      }
+ 209          
+ 210          
+ 211          
+ 212          
+ 213          //³ÌÐòºº×ÖÏÔÊ¾
+ 214          //Ö§³ÖºáÏò×ÝÏòÏÔÊ¾Ñ¡Ôñ¹¦ÄÜ mode    0 ºº×Ö×ÝÏòÏÔÊ¾  1 ºº×ÖºáÏòÏÔÊ¾
+ 215          //ËµÃ÷£ººº×ÖÊÇÓÃÈ¡Ä£Èí¼þÖÆ×÷ºÃµÄ Ö¸¶¨µÄºº×Ö ºº×Ö´óÐ¡ÊÇ16x16  ¼´32¸ö×Ö½Ú´æ´¢Ò»¸öºº×Ö
+ 216          //    Õâ²¿·Öºº×ÖÊÇ´æÔÚ³ÌÐò¿Õ¼ä ËùÒÔºº×ÖµÄ¶àÉÙÖ±½ÓÓ°Ïì³ÌÐò¿Õ¼äµÄÊ£ÓàÁ¿
+ 217          //      Ö÷Òª·½±ãÓÚ¾ÍÏÔÊ¾¼¸¸öÖ¸¶¨µÄºº×ÖÀ´Ëµ¾Í²»ÓÃµ÷ÓÃ×Ö¿âÁË 
+ 218          //x  y  ÒªÏÔÊ¾ºº×ÖµÄ×ø±ê
+ 219          //c[2]  ºº×ÖµÄÊý¾Ý Ò»¸öºº×ÖÁ½¸ö×Ö½Ú±íÊ¾
+ 220          //dcolor ºº×ÖµÄÑÕÉ«   bgcolor ±³¾°ÑÕÉ«
+ 221          void GUI_sprintf_hz1616(u8 x, u16  y, u8 c[2], u16 dcolor,u16 bgcolor,u8 mode)
+ 222          {
+ 223   1        u8 i,j,k,m;                 //¶¨ÒåÁÙÊ±±äÁ¿
+ 224   1                              
+ 225   1      
+ 226   1        if(mode==0)Address_set(x,y,  x+16-1, y+16-1);  // ÉèÖÃÎª×ÝÏòÏÔÊ¾
+ 227   1        if(mode==1)Address_set(x,y,  x+16-1, y+16-1);// ÉèÖÃÎª×ÝÏòÏÔÊ¾
+ 228   1      
+ 229   1        for (k=0;k<64;k++)      //64±íÊ¾×Ô½¨ºº×Ö¿âÖÐµÄ¸öÊý£¬Ñ­»·²éÑ¯ÄÚÂë  Õâ¸öÊý²¢²»È·¶¨ È¡¾öÓÚ´æÈçµÄºº×Ö¸öÊý   
+ 230   1        {                        
+ 231   2          if ((codeHZ_16[k].Index[0]==c[0])&&(codeHZ_16[k].Index[1]==c[1]))     //Ñ°ÕÒ¶ÔÓ¦ºº×Ö   Ò»¸öºº×ÖÐèÒªÁ½¸ö×
+             -Ö½Ú
+ 232   2          { 
+ 233   3            for(i=0;i<32;i++) {                   //32¸ö×Ö½Ú Ã¿¸ö×Ö½Ú¶¼ÒªÒ»¸öµãÒ»¸öµã´¦Àí ËùÒÔÊÇ´¦ÀíÁË32X8´Î
+ 234   4             m=codeHZ_16[k].Msk[i];             //¶ÁÈ¡¶ÔÓ¦×Ö½ÚÊý¾Ý
+ 235   4            for(j=0;j<8;j++)                  //ÏÔÊ¾Ò»¸ö×Ö½Ú  Ò»¸ö×Ö½Ú8Î» Ò²¾ÍÊÇ8¸öµã
+ 236   4             {
+ 237   5             if((m&0x80)==0x80)               //ÅÐ¶ÏÊÇ·ñÊÇÒªÐ´Èëµã   Èç¹ûÊÇ ¸ø×ÖÌåÑÕÉ«
+C51 COMPILER V9.54   GUI                                                                   09/23/2018 00:10:22 PAGE 5   
+
+ 238   5               Lcd_Write_Data(dcolor);        
+ 239   5             else                       //Èç¹û²»ÊÇ Îª±³¾°É«  ¸øÑÕÉ«
+ 240   5               Lcd_Write_Data(bgcolor);
+ 241   5              
+ 242   5             m<<=1;                       //×óÒÆÒ»Î»  ÅÐ¶ÏÏÂÒ»µã
+ 243   5             } 
+ 244   4            }
+ 245   3          }  
+ 246   2          } 
+ 247   1        }
+ 248          
+ 249          
+ 250          
+ 251          
+ 252          //ÏÔÊ¾ºº×Ö×Ö·û´® ×ÝÏòÏÔÊ¾
+ 253          //x1 y1 ÏÔÊ¾µÄ³õÊ¼Î»ÖÃ
+ 254          //*str ÒªÏÔÊ¾µÄÊý¾Ý
+ 255          //dcolor ÏÔÊ¾×Ö·ûµÄÑÕÉ«
+ 256          //bgcolor ÏÔÊ¾×Ö·ûµÄ±³¾°ÑÕÉ«  
+ 257          void GUI_sprintf_hzstr16x(u8 x1,u16 y1,u8 *str,u16 dcolor,u16 bgcolor)    
+ 258          {  
+ 259   1         u8 l=0;
+ 260   1        while(*str)
+ 261   1        { 
+ 262   2          if(*str<0x80)     //Ð¡ÓÚ128   ascii ¶¼ÔÚÊý×éÄÚ
+ 263   2          {   
+ 264   3          GUI_sprintf_char(x1+l*8,y1,*str,dcolor,bgcolor,0);
+ 265   3          l+=1;
+ 266   3          str++;
+ 267   3          }
+ 268   2          else
+ 269   2          {   
+ 270   3           GUI_sprintf_hz1616(x1+l*8,y1,(u8*)str,dcolor, bgcolor,0);
+ 271   3            str+=2;l+=2;
+ 272   3          }
+ 273   2        } 
+ 274   1      }
+ 275          
+ 276          
+ 277          //ÏÔÊ¾ºº×Ö¼°×Ö·û  ºáÏòÏÔÊ¾
+ 278          //x1 y1 ÏÔÊ¾µÄ³õÊ¼Î»ÖÃ
+ 279          //*str ÒªÏÔÊ¾µÄÊý¾Ý
+ 280          //dcolor ÏÔÊ¾ºº×Ö ×Ö·ûµÄÑÕÉ«
+ 281          //bgcolor ÏÔÊ¾ºº×Ö ×Ö·ûµÄ±³¾°ÑÕÉ«  ²»Ö§³Ö±³¾°ÆÁÄ»×ÔÓÐÉ«
+ 282          void GUI_sprintf_hzstr16h(u8 x1,u16 y1,u8 *str,u16 dcolor,u16 bgcolor)    
+ 283          {  
+ 284   1         u8 l=0;
+ 285   1        while(*str)
+ 286   1        { 
+ 287   2          if(*str<0x80)     //Ð¡ÓÚ128   ascii ¶¼ÔÚÊý×éÄÚ
+ 288   2          {   
+ 289   3          GUI_sprintf_char(x1,y1+l*8,*str,dcolor,bgcolor,1);
+ 290   3          l+=1;
+ 291   3          str++;
+ 292   3          }
+ 293   2          else
+ 294   2          {   
+ 295   3           GUI_sprintf_hz1616(x1,y1+l*8,(u8*)str,dcolor, bgcolor,1);
+ 296   3            str+=2;l+=2;
+ 297   3          }
+ 298   2        } 
+ 299   1      } 
+C51 COMPILER V9.54   GUI                                                                   09/23/2018 00:10:22 PAGE 6   
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =   3109    ----
+   CONSTANT SIZE    =   2080    ----
+   XDATA SIZE       =   ----     129
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

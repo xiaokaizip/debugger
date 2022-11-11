@@ -1,0 +1,3 @@
+D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir
+D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir

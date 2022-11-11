@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Documents and Settings\Administrator\桌面\IAP黑灵程序V7.5 9341\程序代码\实验21 硬体SPI控制xpt2046画板\程序\MAIN\main.uvproj
+Project File Date:  04/21/2014
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+main.c(90): error C208: '_Address_set': too many actual parameters
+compiling delay.c...
+compiling tft.C...
+compiling GUI.C...
+..\GUI\GUI.C(19): error C208: '_Address_set': too many actual parameters
+..\GUI\GUI.C(38): error C208: '_Address_set': too many actual parameters
+..\GUI\GUI.C(96): error C208: '_Address_set': too many actual parameters
+..\GUI\GUI.C(191): error C208: '_Address_set': too many actual parameters
+..\GUI\GUI.C(192): error C208: '_Address_set': too many actual parameters
+..\GUI\GUI.C(225): error C208: '_Address_set': too many actual parameters
+..\GUI\GUI.C(226): error C208: '_Address_set': too many actual parameters
+compiling xpt2046.c...
+compiling spi.c...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+main.c(90): error C208: '_Address_set': too many actual parameters
+compiling GUI.C...
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAYLOW?DELAY
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_WRITEREG?TFT
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_READPOINT?TFT
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_LCD_SCAN?TFT
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_GUI_ARCRECTANGLE?GUI
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_GUI_SPRINTF_HZSTR16H?GUI
+Program Size: data=9.0 xdata=143 code=8525
+creating hex file from "HL"...
+"HL" - 0 Error(s), 6 Warning(s).
