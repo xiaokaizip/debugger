@@ -17,8 +17,8 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+
 #include "main.h"
-#include "adc.h"
 #include "can.h"
 #include "dma.h"
 #include "spi.h"
@@ -28,10 +28,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "lcd.h"
-#include "ui.h"
+#include "lcd_init.h"
 #include "key.h"
 #include "motor.h"
+#include "retarget.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,7 +45,12 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
+unsigned short x = 0;
+unsigned short y = 0;
+uint8_t key_Select_flag = 0;
+uint8_t key_Verify_flag = 0;
+uint8_t key_Enter_flag = 0;
+Forms_struct_t forms;
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -54,22 +59,39 @@
 uint16_t times = 0;
 uint16_t twinkles = 0;
 extern uint16_t can_id[6];
+extern unsigned char lcd_buffer[128 * 160 * 2];
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+    twinkles++;
+    if (twinkles > 1000) {
+        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+        twinkles = 0;
+
+
+    }
+}
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 
+
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void lcdShow();
 
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+void lcdShow() {
 
-    twinkles++;
-    times++;
+    while (1) {
+        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_14);
+        HAL_Delay(500);
+    }
 
+    //gui_clear_screan(C_BLUE);
 }
 /* USER CODE END 0 */
 
@@ -105,22 +127,30 @@ int main(void) {
     MX_SPI1_Init();
     MX_UART4_Init();
     MX_USART1_UART_Init();
-    MX_TIM2_Init();
-    MX_TIM8_Init();
-    MX_ADC1_Init();
     MX_SPI2_Init();
     MX_SPI3_Init();
     MX_TIM6_Init();
+    MX_TIM4_Init();
+    MX_TIM1_Init();
     /* USER CODE BEGIN 2 */
-    HAL_TIM_Base_Start_IT(&htim6);
+    RetargetInit(&huart1);
+    HAL_TIM_Base_Start_IT(&htim1);
+
+    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
 
     can_init();
+    gui_config();
 
-    Lcd_Init();
-    LCD_Clear(WHITE);
-    HAL_UART_Transmit(&huart1, "start\n\r", 7, HAL_MAX_DELAY);
+
+    forms.id = 0;
+    main_Form_Init();
+    //xpt2046_calibrate();
     uint8_t i = 0;
-    char ch[12] = "hello world\n";
+    gui_image(1, 1, 1, 1, 1);
+
+    HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
+
+
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -129,21 +159,38 @@ int main(void) {
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
+        /*获得触摸屏的数据*/
 
-        // LCD_UI();
-        if (times > 1000) {
-            for (i = 0; i < 6; i++) {
-                can_id[i] = 0;
+        while (1) {
+            key_Enter_flag = Enter_Key();
+            if (xpt2046_readxy(&x, &y) != 0xFF) {
+
+                x = (unsigned short) ((float) x * (0.0363f) - 8.2952f);
+                y = (unsigned short) ((float) y * (0.0492f) - 8.5976f);
+                printf("%d,%d\n", x, y);
+                break;
             }
-            times = 0;
-            // LCD_UI();
+            if (key_Enter_flag == 2) {
+                key_Verify_flag = 1;
+                break;
+            }
+            if (key_Enter_flag == 1) {
+                key_Select_flag = (key_Select_flag + 1) % 5;
+                break;
+            }
+
         }
-        set_moto_current(333, 1);
+        printf("key=%d\n", key_Enter_flag);
+        if (forms.id == Main_Form) {
+            main_Form_Load();
+        } else if (forms.id == SusCapDebuger) {
+            Suscap_Debuger_Show_Load();
+        }
+
         HAL_Delay(10);
-
-        //HAL_Delay(10);
+        HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
+        HAL_Delay(10);
     }
-
     /* USER CODE END 3 */
 }
 
@@ -154,17 +201,17 @@ int main(void) {
 void SystemClock_Config(void) {
     RCC_OscInitTypeDef RCC_OscInitStruct = {0};
     RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-    RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
     /** Initializes the RCC Oscillators according to the specified parameters
     * in the RCC_OscInitTypeDef structure.
     */
-    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+    RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+    RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
     RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-    RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
     RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI_DIV2;
-    RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL16;
+    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+    RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL6;
     if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
         Error_Handler();
     }
@@ -179,11 +226,6 @@ void SystemClock_Config(void) {
     RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
     if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
-        Error_Handler();
-    }
-    PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
-    PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV8;
-    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK) {
         Error_Handler();
     }
 }

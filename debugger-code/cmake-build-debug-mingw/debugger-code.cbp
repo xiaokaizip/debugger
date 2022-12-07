@@ -27,6 +27,9 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xE"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/forms"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/devices"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/GUI"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Core/Inc"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
@@ -56,6 +59,9 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xE"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/forms"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/devices"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/GUI"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Core/Inc"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
@@ -96,9 +102,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Inc/adc.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Inc/can.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -106,9 +109,6 @@
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Inc/dma.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Inc/font.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Inc/gpio.h">
@@ -120,9 +120,6 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Inc/key.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Inc/lcd.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Inc/main.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -130,6 +127,9 @@
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Inc/pid.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Inc/retarget.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Inc/spi.h">
@@ -150,9 +150,6 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Inc/usart.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Src/adc.c">
-			<Option target="debugger-code.elf"/>
-		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Src/can.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -171,9 +168,6 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Src/key.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Src/lcd.c">
-			<Option target="debugger-code.elf"/>
-		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Src/main.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -181,6 +175,9 @@
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Src/pid.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Src/retarget.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Core/Src/spi.c">
@@ -297,12 +294,6 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -354,9 +345,6 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -394,12 +382,6 @@
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c">
@@ -447,7 +429,58 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/GUI/DynamicX.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/GUI/color.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/GUI/font.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/GUI/gui_base.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/GUI/gui_base.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/GUI/gui_button.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/GUI/gui_button.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/GUI/gui_label.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/GUI/gui_label.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/STM32F103RCTX_FLASH.ld">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/devices/lcd_init.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/devices/lcd_init.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/devices/xpt2046.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/devices/xpt2046.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/main_forms.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/main_forms.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/suscap_debuger_forms.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/suscap_debuger_forms.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/CMakeLists.txt">

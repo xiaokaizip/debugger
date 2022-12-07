@@ -57,7 +57,6 @@ int16_t get_moto_measure(moto_measure_t *ptr) {
     ptr->total_angle = ptr->round_cnt * 8192 + ptr->angle - ptr->offset_angle;
 
     return ptr->speed_rpm;
-
 }
 
 void CAN_Id_Sort() {

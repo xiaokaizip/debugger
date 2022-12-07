@@ -3,43 +3,6 @@
 
 CMakeFiles/debugger-code.elf.dir/Core/Startup/startup_stm32f103rctx.s.obj: \
  ../Core/Startup/startup_stm32f103rctx.s
-CMakeFiles/debugger-code.elf.dir/Core/Src/adc.c.obj: \
- ../Core/Inc/adc.h \
- ../Core/Inc/main.h \
- ../Core/Inc/stm32f1xx_hal_conf.h \
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
- ../Drivers/CMSIS/Include/cmsis_armcc.h \
- ../Drivers/CMSIS/Include/cmsis_armclang.h \
- ../Drivers/CMSIS/Include/cmsis_compiler.h \
- ../Drivers/CMSIS/Include/cmsis_gcc.h \
- ../Drivers/CMSIS/Include/cmsis_iccarm.h \
- ../Drivers/CMSIS/Include/cmsis_version.h \
- ../Drivers/CMSIS/Include/core_cm3.h \
- ../Drivers/CMSIS/Include/mpu_armv7.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- ../Core/Src/adc.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/can.c.obj: \
  ../Core/Inc/can.h \
  ../Core/Inc/main.h \
@@ -57,8 +20,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/can.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -76,6 +37,14 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/can.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/can.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/delay.c.obj: \
  ../Core/Inc/main.h \
@@ -93,8 +62,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/delay.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -112,6 +79,14 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/delay.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/delay.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/dma.c.obj: \
  ../Core/Inc/dma.h \
@@ -130,8 +105,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/dma.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -149,6 +122,14 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/dma.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/dma.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/gpio.c.obj: \
  ../Core/Inc/gpio.h \
@@ -167,8 +148,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/gpio.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -186,6 +165,14 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/gpio.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/gpio.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/image.c.obj: \
  ../Core/Inc/image.h \
@@ -193,6 +180,7 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/image.c.obj: \
 CMakeFiles/debugger-code.elf.dir/Core/Src/key.c.obj: \
  ../Core/Inc/key.h \
  ../Core/Inc/main.h \
+ ../Core/Inc/retarget.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
@@ -207,8 +195,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/key.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -226,60 +212,26 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/key.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/key.c
-CMakeFiles/debugger-code.elf.dir/Core/Src/lcd.c.obj: \
- ../Core/Inc/font.h \
- ../Core/Inc/gpio.h \
- ../Core/Inc/lcd.h \
- ../Core/Inc/main.h \
- ../Core/Inc/spi.h \
- ../Core/Inc/stm32f1xx_hal_conf.h \
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
- ../Drivers/CMSIS/Include/cmsis_armcc.h \
- ../Drivers/CMSIS/Include/cmsis_armclang.h \
- ../Drivers/CMSIS/Include/cmsis_compiler.h \
- ../Drivers/CMSIS/Include/cmsis_gcc.h \
- ../Drivers/CMSIS/Include/cmsis_iccarm.h \
- ../Drivers/CMSIS/Include/cmsis_version.h \
- ../Drivers/CMSIS/Include/core_cm3.h \
- ../Drivers/CMSIS/Include/mpu_armv7.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- ../Core/Src/lcd.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/main.c.obj: \
- ../Core/Inc/adc.h \
  ../Core/Inc/can.h \
  ../Core/Inc/dma.h \
  ../Core/Inc/gpio.h \
  ../Core/Inc/key.h \
- ../Core/Inc/lcd.h \
  ../Core/Inc/main.h \
  ../Core/Inc/motor.h \
+ ../Core/Inc/retarget.h \
  ../Core/Inc/spi.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Core/Inc/tim.h \
- ../Core/Inc/ui.h \
  ../Core/Inc/usart.h \
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
@@ -294,8 +246,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/main.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -313,6 +263,14 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/main.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/main.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/motor.c.obj: \
  ../Core/Inc/main.h \
@@ -332,8 +290,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/motor.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -351,6 +307,14 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/motor.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/motor.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/pid.c.obj: \
  ../Core/Inc/main.h \
@@ -369,8 +333,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/pid.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -388,7 +350,49 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/pid.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/pid.c
+CMakeFiles/debugger-code.elf.dir/Core/Src/retarget.c.obj: \
+ ../Core/Inc/retarget.h \
+ ../Core/Inc/stm32f1xx_hal_conf.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+ ../Drivers/CMSIS/Include/cmsis_armcc.h \
+ ../Drivers/CMSIS/Include/cmsis_armclang.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/core_cm3.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../Core/Src/retarget.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/spi.c.obj: \
  ../Core/Inc/main.h \
  ../Core/Inc/spi.h \
@@ -406,8 +410,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/spi.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -425,6 +427,14 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/spi.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/spi.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: \
  ../Core/Inc/main.h \
@@ -442,8 +452,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -461,6 +469,14 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_it.c.obj: \
  ../Core/Inc/main.h \
@@ -479,8 +495,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_it.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -498,6 +512,14 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_it.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/stm32f1xx_it.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/syscalls.c.obj: \
  ../Core/Src/syscalls.c
@@ -518,8 +540,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/system_stm32f1xx.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -555,8 +575,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/tim.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -574,10 +592,16 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/tim.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/tim.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/ui.c.obj: \
- ../Core/Inc/gpio.h \
- ../Core/Inc/lcd.h \
  ../Core/Inc/main.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Core/Inc/ui.h \
@@ -594,8 +618,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/ui.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -613,6 +635,14 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/ui.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/ui.c
 CMakeFiles/debugger-code.elf.dir/Core/Src/usart.c.obj: \
  ../Core/Inc/main.h \
@@ -631,8 +661,6 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/usart.c.obj: \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -650,6 +678,14 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/usart.c.obj: \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
  ../Core/Src/usart.c
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: \
  ../Core/Inc/stm32f1xx_hal_conf.h \
@@ -666,8 +702,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -686,76 +720,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
-CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: \
- ../Core/Inc/stm32f1xx_hal_conf.h \
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
- ../Drivers/CMSIS/Include/cmsis_armcc.h \
- ../Drivers/CMSIS/Include/cmsis_armclang.h \
- ../Drivers/CMSIS/Include/cmsis_compiler.h \
- ../Drivers/CMSIS/Include/cmsis_gcc.h \
- ../Drivers/CMSIS/Include/cmsis_iccarm.h \
- ../Drivers/CMSIS/Include/cmsis_version.h \
- ../Drivers/CMSIS/Include/core_cm3.h \
- ../Drivers/CMSIS/Include/mpu_armv7.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c
-CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: \
- ../Core/Inc/stm32f1xx_hal_conf.h \
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
- ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
- ../Drivers/CMSIS/Include/cmsis_armcc.h \
- ../Drivers/CMSIS/Include/cmsis_armclang.h \
- ../Drivers/CMSIS/Include/cmsis_compiler.h \
- ../Drivers/CMSIS/Include/cmsis_gcc.h \
- ../Drivers/CMSIS/Include/cmsis_iccarm.h \
- ../Drivers/CMSIS/Include/cmsis_version.h \
- ../Drivers/CMSIS/Include/core_cm3.h \
- ../Drivers/CMSIS/Include/mpu_armv7.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj: \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
@@ -771,8 +735,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -806,8 +768,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -841,8 +801,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -876,8 +834,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -911,8 +867,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -946,8 +900,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -981,8 +933,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -1016,8 +966,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -1051,8 +999,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -1086,8 +1032,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -1121,8 +1065,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -1156,8 +1098,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -1191,8 +1131,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -1226,8 +1164,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -1261,8 +1197,6 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -1281,3 +1215,266 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj: \
+ ../Core/Inc/dma.h \
+ ../Core/Inc/main.h \
+ ../Core/Inc/retarget.h \
+ ../Core/Inc/spi.h \
+ ../Core/Inc/stm32f1xx_hal_conf.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+ ../Drivers/CMSIS/Include/cmsis_armcc.h \
+ ../Drivers/CMSIS/Include/cmsis_armclang.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/core_cm3.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
+ ../GUI/DynamicX.h \
+ ../GUI/color.h \
+ ../GUI/font.h \
+ ../GUI/gui_base.c \
+ ../GUI/gui_base.h
+CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj: \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.c \
+ ../GUI/gui_button.h
+CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj: \
+ ../Core/Inc/retarget.h \
+ ../Core/Inc/stm32f1xx_hal_conf.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+ ../Drivers/CMSIS/Include/cmsis_armcc.h \
+ ../Drivers/CMSIS/Include/cmsis_armclang.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/core_cm3.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_label.c \
+ ../GUI/gui_label.h
+CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj: \
+ ../Core/Inc/delay.h \
+ ../Core/Inc/gpio.h \
+ ../Core/Inc/main.h \
+ ../Core/Inc/spi.h \
+ ../Core/Inc/stm32f1xx_hal_conf.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+ ../Drivers/CMSIS/Include/cmsis_armcc.h \
+ ../Drivers/CMSIS/Include/cmsis_armclang.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/core_cm3.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
+ ../devices/lcd_init.c \
+ ../devices/lcd_init.h
+CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj: \
+ ../Core/Inc/delay.h \
+ ../Core/Inc/main.h \
+ ../Core/Inc/spi.h \
+ ../Core/Inc/stm32f1xx_hal_conf.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+ ../Drivers/CMSIS/Include/cmsis_armcc.h \
+ ../Drivers/CMSIS/Include/cmsis_armclang.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/core_cm3.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.h \
+ ../devices/xpt2046.c \
+ ../devices/xpt2046.h
+CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj: \
+ ../Core/Inc/main.h \
+ ../Core/Inc/retarget.h \
+ ../Core/Inc/stm32f1xx_hal_conf.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+ ../Drivers/CMSIS/Include/cmsis_armcc.h \
+ ../Drivers/CMSIS/Include/cmsis_armclang.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/core_cm3.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/suscap_debuger_forms.h \
+ ../forms/main_forms.c \
+ ../forms/main_forms.h
+CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj: \
+ ../Core/Inc/main.h \
+ ../Core/Inc/stm32f1xx_hal_conf.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h \
+ ../Drivers/CMSIS/Include/cmsis_armcc.h \
+ ../Drivers/CMSIS/Include/cmsis_armclang.h \
+ ../Drivers/CMSIS/Include/cmsis_compiler.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h \
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h \
+ ../Drivers/CMSIS/Include/cmsis_version.h \
+ ../Drivers/CMSIS/Include/core_cm3.h \
+ ../Drivers/CMSIS/Include/mpu_armv7.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../GUI/color.h \
+ ../GUI/gui_base.h \
+ ../GUI/gui_button.h \
+ ../GUI/gui_label.h \
+ ../devices/lcd_init.h \
+ ../devices/xpt2046.h \
+ ../forms/main_forms.h \
+ ../forms/suscap_debuger_forms.c \
+ ../forms/suscap_debuger_forms.h

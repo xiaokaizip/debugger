@@ -128,30 +128,6 @@ debugger-code.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/build
 .PHONY : debugger-code.elf/fast
 
-Core/Src/adc.obj: Core/Src/adc.c.obj
-.PHONY : Core/Src/adc.obj
-
-# target to build an object file
-Core/Src/adc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/adc.c.obj
-.PHONY : Core/Src/adc.c.obj
-
-Core/Src/adc.i: Core/Src/adc.c.i
-.PHONY : Core/Src/adc.i
-
-# target to preprocess a source file
-Core/Src/adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/adc.c.i
-.PHONY : Core/Src/adc.c.i
-
-Core/Src/adc.s: Core/Src/adc.c.s
-.PHONY : Core/Src/adc.s
-
-# target to generate assembly for a file
-Core/Src/adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/adc.c.s
-.PHONY : Core/Src/adc.c.s
-
 Core/Src/can.obj: Core/Src/can.c.obj
 .PHONY : Core/Src/can.obj
 
@@ -296,30 +272,6 @@ Core/Src/key.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/key.c.s
 .PHONY : Core/Src/key.c.s
 
-Core/Src/lcd.obj: Core/Src/lcd.c.obj
-.PHONY : Core/Src/lcd.obj
-
-# target to build an object file
-Core/Src/lcd.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/lcd.c.obj
-.PHONY : Core/Src/lcd.c.obj
-
-Core/Src/lcd.i: Core/Src/lcd.c.i
-.PHONY : Core/Src/lcd.i
-
-# target to preprocess a source file
-Core/Src/lcd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/lcd.c.i
-.PHONY : Core/Src/lcd.c.i
-
-Core/Src/lcd.s: Core/Src/lcd.c.s
-.PHONY : Core/Src/lcd.s
-
-# target to generate assembly for a file
-Core/Src/lcd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/lcd.c.s
-.PHONY : Core/Src/lcd.c.s
-
 Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj
 
@@ -391,6 +343,30 @@ Core/Src/pid.s: Core/Src/pid.c.s
 Core/Src/pid.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/pid.c.s
 .PHONY : Core/Src/pid.c.s
+
+Core/Src/retarget.obj: Core/Src/retarget.c.obj
+.PHONY : Core/Src/retarget.obj
+
+# target to build an object file
+Core/Src/retarget.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/retarget.c.obj
+.PHONY : Core/Src/retarget.c.obj
+
+Core/Src/retarget.i: Core/Src/retarget.c.i
+.PHONY : Core/Src/retarget.i
+
+# target to preprocess a source file
+Core/Src/retarget.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/retarget.c.i
+.PHONY : Core/Src/retarget.c.i
+
+Core/Src/retarget.s: Core/Src/retarget.c.s
+.PHONY : Core/Src/retarget.s
+
+# target to generate assembly for a file
+Core/Src/retarget.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/retarget.c.s
+.PHONY : Core/Src/retarget.c.s
 
 Core/Src/spi.obj: Core/Src/spi.c.obj
 .PHONY : Core/Src/spi.obj
@@ -639,54 +615,6 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s: Drivers/STM32F1xx_HAL_Driver/S
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.obj
-
-# target to build an object file
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.i
-
-# target to preprocess a source file
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.s
-
-# target to generate assembly for a file
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.obj
-
-# target to build an object file
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.i
-
-# target to preprocess a source file
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i
-
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.s
-
-# target to generate assembly for a file
-Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
-.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.obj
@@ -1048,6 +976,174 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
 
+GUI/gui_base.obj: GUI/gui_base.c.obj
+.PHONY : GUI/gui_base.obj
+
+# target to build an object file
+GUI/gui_base.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj
+.PHONY : GUI/gui_base.c.obj
+
+GUI/gui_base.i: GUI/gui_base.c.i
+.PHONY : GUI/gui_base.i
+
+# target to preprocess a source file
+GUI/gui_base.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.i
+.PHONY : GUI/gui_base.c.i
+
+GUI/gui_base.s: GUI/gui_base.c.s
+.PHONY : GUI/gui_base.s
+
+# target to generate assembly for a file
+GUI/gui_base.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.s
+.PHONY : GUI/gui_base.c.s
+
+GUI/gui_button.obj: GUI/gui_button.c.obj
+.PHONY : GUI/gui_button.obj
+
+# target to build an object file
+GUI/gui_button.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj
+.PHONY : GUI/gui_button.c.obj
+
+GUI/gui_button.i: GUI/gui_button.c.i
+.PHONY : GUI/gui_button.i
+
+# target to preprocess a source file
+GUI/gui_button.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.i
+.PHONY : GUI/gui_button.c.i
+
+GUI/gui_button.s: GUI/gui_button.c.s
+.PHONY : GUI/gui_button.s
+
+# target to generate assembly for a file
+GUI/gui_button.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.s
+.PHONY : GUI/gui_button.c.s
+
+GUI/gui_label.obj: GUI/gui_label.c.obj
+.PHONY : GUI/gui_label.obj
+
+# target to build an object file
+GUI/gui_label.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj
+.PHONY : GUI/gui_label.c.obj
+
+GUI/gui_label.i: GUI/gui_label.c.i
+.PHONY : GUI/gui_label.i
+
+# target to preprocess a source file
+GUI/gui_label.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.i
+.PHONY : GUI/gui_label.c.i
+
+GUI/gui_label.s: GUI/gui_label.c.s
+.PHONY : GUI/gui_label.s
+
+# target to generate assembly for a file
+GUI/gui_label.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.s
+.PHONY : GUI/gui_label.c.s
+
+devices/lcd_init.obj: devices/lcd_init.c.obj
+.PHONY : devices/lcd_init.obj
+
+# target to build an object file
+devices/lcd_init.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj
+.PHONY : devices/lcd_init.c.obj
+
+devices/lcd_init.i: devices/lcd_init.c.i
+.PHONY : devices/lcd_init.i
+
+# target to preprocess a source file
+devices/lcd_init.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.i
+.PHONY : devices/lcd_init.c.i
+
+devices/lcd_init.s: devices/lcd_init.c.s
+.PHONY : devices/lcd_init.s
+
+# target to generate assembly for a file
+devices/lcd_init.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.s
+.PHONY : devices/lcd_init.c.s
+
+devices/xpt2046.obj: devices/xpt2046.c.obj
+.PHONY : devices/xpt2046.obj
+
+# target to build an object file
+devices/xpt2046.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj
+.PHONY : devices/xpt2046.c.obj
+
+devices/xpt2046.i: devices/xpt2046.c.i
+.PHONY : devices/xpt2046.i
+
+# target to preprocess a source file
+devices/xpt2046.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.i
+.PHONY : devices/xpt2046.c.i
+
+devices/xpt2046.s: devices/xpt2046.c.s
+.PHONY : devices/xpt2046.s
+
+# target to generate assembly for a file
+devices/xpt2046.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.s
+.PHONY : devices/xpt2046.c.s
+
+forms/main_forms.obj: forms/main_forms.c.obj
+.PHONY : forms/main_forms.obj
+
+# target to build an object file
+forms/main_forms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj
+.PHONY : forms/main_forms.c.obj
+
+forms/main_forms.i: forms/main_forms.c.i
+.PHONY : forms/main_forms.i
+
+# target to preprocess a source file
+forms/main_forms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.i
+.PHONY : forms/main_forms.c.i
+
+forms/main_forms.s: forms/main_forms.c.s
+.PHONY : forms/main_forms.s
+
+# target to generate assembly for a file
+forms/main_forms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.s
+.PHONY : forms/main_forms.c.s
+
+forms/suscap_debuger_forms.obj: forms/suscap_debuger_forms.c.obj
+.PHONY : forms/suscap_debuger_forms.obj
+
+# target to build an object file
+forms/suscap_debuger_forms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj
+.PHONY : forms/suscap_debuger_forms.c.obj
+
+forms/suscap_debuger_forms.i: forms/suscap_debuger_forms.c.i
+.PHONY : forms/suscap_debuger_forms.i
+
+# target to preprocess a source file
+forms/suscap_debuger_forms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.i
+.PHONY : forms/suscap_debuger_forms.c.i
+
+forms/suscap_debuger_forms.s: forms/suscap_debuger_forms.c.s
+.PHONY : forms/suscap_debuger_forms.s
+
+# target to generate assembly for a file
+forms/suscap_debuger_forms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.s
+.PHONY : forms/suscap_debuger_forms.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1057,9 +1153,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... debugger-code.elf
-	@echo ... Core/Src/adc.obj
-	@echo ... Core/Src/adc.i
-	@echo ... Core/Src/adc.s
 	@echo ... Core/Src/can.obj
 	@echo ... Core/Src/can.i
 	@echo ... Core/Src/can.s
@@ -1078,9 +1171,6 @@ help:
 	@echo ... Core/Src/key.obj
 	@echo ... Core/Src/key.i
 	@echo ... Core/Src/key.s
-	@echo ... Core/Src/lcd.obj
-	@echo ... Core/Src/lcd.i
-	@echo ... Core/Src/lcd.s
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
@@ -1090,6 +1180,9 @@ help:
 	@echo ... Core/Src/pid.obj
 	@echo ... Core/Src/pid.i
 	@echo ... Core/Src/pid.s
+	@echo ... Core/Src/retarget.obj
+	@echo ... Core/Src/retarget.i
+	@echo ... Core/Src/retarget.s
 	@echo ... Core/Src/spi.obj
 	@echo ... Core/Src/spi.i
 	@echo ... Core/Src/spi.s
@@ -1121,12 +1214,6 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s
-	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.obj
-	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.i
-	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.s
-	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.obj
-	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.i
-	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.s
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.s
@@ -1172,6 +1259,27 @@ help:
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s
+	@echo ... GUI/gui_base.obj
+	@echo ... GUI/gui_base.i
+	@echo ... GUI/gui_base.s
+	@echo ... GUI/gui_button.obj
+	@echo ... GUI/gui_button.i
+	@echo ... GUI/gui_button.s
+	@echo ... GUI/gui_label.obj
+	@echo ... GUI/gui_label.i
+	@echo ... GUI/gui_label.s
+	@echo ... devices/lcd_init.obj
+	@echo ... devices/lcd_init.i
+	@echo ... devices/lcd_init.s
+	@echo ... devices/xpt2046.obj
+	@echo ... devices/xpt2046.i
+	@echo ... devices/xpt2046.s
+	@echo ... forms/main_forms.obj
+	@echo ... forms/main_forms.i
+	@echo ... forms/main_forms.s
+	@echo ... forms/suscap_debuger_forms.obj
+	@echo ... forms/suscap_debuger_forms.i
+	@echo ... forms/suscap_debuger_forms.s
 .PHONY : help
 
 

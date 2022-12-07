@@ -3,6 +3,7 @@
 //
 
 #include "key.h"
+#include "retarget.h"
 
 uint8_t Enter_Key() {
     uint8_t flag = 0;
@@ -10,17 +11,16 @@ uint8_t Enter_Key() {
         HAL_Delay(10);
         while (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_2) == GPIO_PIN_RESET);
         HAL_Delay(10);
+
         flag = 1;
-    } else if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1) == GPIO_PIN_RESET) {
+    }
+    if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1) == GPIO_PIN_RESET) {
         HAL_Delay(10);
         while (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_1) == GPIO_PIN_RESET);
         HAL_Delay(10);
+
+
         flag = 2;
-    } else if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_0) == GPIO_PIN_RESET) {
-        HAL_Delay(10);
-        while (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_0) == GPIO_PIN_RESET);
-        HAL_Delay(10);
-        flag = 3;
     }
     return flag;
 }

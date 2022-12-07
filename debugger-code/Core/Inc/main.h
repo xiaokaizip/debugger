@@ -31,7 +31,17 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "lcd_init.h"
+#include "gui_base.h"
+#include "gui_button.h"
+#include "gui_label.h"
 
+
+#include "main_forms.h"
+#include "suscap_debuger_forms.h"
+
+
+#include "xpt2046.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -57,6 +67,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LCD_AO_Pin GPIO_PIN_4
+#define LCD_AO_GPIO_Port GPIOB
+#define LCD_RST_Pin GPIO_PIN_6
+#define LCD_RST_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

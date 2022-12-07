@@ -22,6 +22,9 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "../forms"
+  "../devices"
+  "../GUI"
   "../Core/Inc"
   "../Drivers/STM32F1xx_HAL_Driver/Inc"
   "../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
@@ -29,17 +32,16 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Drivers/CMSIS/Include"
   )
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/rmbuild/Debugger/debugger-code/Core/Src/adc.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/adc.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/can.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/can.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/delay.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/delay.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/dma.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/dma.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/gpio.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/gpio.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/image.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/image.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/key.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/key.c.obj"
-  "D:/rmbuild/Debugger/debugger-code/Core/Src/lcd.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/lcd.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/main.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/main.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/motor.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/motor.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/pid.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/pid.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/Core/Src/retarget.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/retarget.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/spi.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/spi.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/stm32f1xx_hal_msp.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/stm32f1xx_it.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_it.c.obj"
@@ -50,8 +52,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/rmbuild/Debugger/debugger-code/Core/Src/ui.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/ui.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Core/Src/usart.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Core/Src/usart.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
-  "D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
-  "D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
@@ -67,6 +67,13 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/GUI/gui_base.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/GUI/gui_button.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/GUI/gui_label.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/devices/lcd_init.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/devices/xpt2046.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/forms/main_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/forms/suscap_debuger_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -79,6 +86,9 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../forms"
+  "../devices"
+  "../GUI"
   "../Core/Inc"
   "../Drivers/STM32F1xx_HAL_Driver/Inc"
   "../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"

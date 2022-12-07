@@ -3,17 +3,16 @@
 //
 
 #include "ui.h"
-#include "lcd.h"
 
 extern uint16_t can_id[6];
 
 void LCD_UI() {
 
-    LCD_ShowString(8, 4, 8 * 12, 8, 12, (uint8_t *) "id");
-    LCD_DrawLine(0, 20, 8 * 16, 20);
+//    LCD_ShowString(8, 4, 8 * 12, 8, 12, (uint8_t *) "id");
+//    LCD_DrawLine(0, 20, 8 * 16, 20);
     for (int i = 0; i < 6; i++) {
         LCD_ShowHEX(8, 20 * (i + 1) + 4, can_id[i], 12);
-        LCD_DrawLine(0, 20 * (i + 1), 8 * 16, 20 * (i + 1));
+        // LCD_DrawLine(0, 20 * (i + 1), 8 * 16, 20 * (i + 1));
     }
 }
 
@@ -75,5 +74,5 @@ void LCD_ShowHEX(uint16_t x, uint16_t y, uint32_t num, uint8_t size) {
     hex[0] = '0';
     hex[1] = 'X';
     hex[5] = 0;
-    LCD_ShowString(x, y, 8 * 12, 8, size, (uint8_t *) hex);
+    //LCD_ShowString(x, y, 8 * 12, 8, size, (uint8_t *) hex);
 }
