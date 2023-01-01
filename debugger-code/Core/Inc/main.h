@@ -39,7 +39,9 @@ extern "C" {
 
 #include "main_forms.h"
 #include "suscap_debuger_forms.h"
-
+#include "logic_forms.h"
+#include "canid_forms.h"
+#include "dail_forms.h"
 
 #include "xpt2046.h"
 /* USER CODE END Includes */

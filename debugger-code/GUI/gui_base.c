@@ -74,20 +74,16 @@ void test(unsigned char *ch, unsigned char *str) {
     }
 }
 
-void gui_image(unsigned char x,
-               unsigned char line,
-               unsigned char value,
-               unsigned int dcolor,
-               unsigned int bgcolor) {
+void gui_image() {
     unsigned char i, j, k;
     unsigned char *temp = (unsigned char *) &gImage_DynamicX[0];
     unsigned char str = 0;
     for (int l = 0; l < 128; ++l) {
         for (int m = 0; m < 128; ++m) {
             test(temp + 1, &str);
-            lcd_buffer[(l * 128 + x + +m) * 2] = *temp;
+            lcd_buffer[(l * 128 + 1 + m + 128 * 15) * 2] = *temp;
             test(temp, &str);
-            lcd_buffer[(l * 128 + x + +m) * 2 + 1] = *(temp + 1);
+            lcd_buffer[(l * 128 + 1 + m + 128 * 15) * 2 + 1] = *(temp + 1);
             temp += 2;
         }
     }

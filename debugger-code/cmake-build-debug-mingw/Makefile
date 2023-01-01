@@ -1096,6 +1096,78 @@ devices/xpt2046.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.s
 .PHONY : devices/xpt2046.c.s
 
+forms/canid_forms.obj: forms/canid_forms.c.obj
+.PHONY : forms/canid_forms.obj
+
+# target to build an object file
+forms/canid_forms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj
+.PHONY : forms/canid_forms.c.obj
+
+forms/canid_forms.i: forms/canid_forms.c.i
+.PHONY : forms/canid_forms.i
+
+# target to preprocess a source file
+forms/canid_forms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.i
+.PHONY : forms/canid_forms.c.i
+
+forms/canid_forms.s: forms/canid_forms.c.s
+.PHONY : forms/canid_forms.s
+
+# target to generate assembly for a file
+forms/canid_forms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.s
+.PHONY : forms/canid_forms.c.s
+
+forms/dail_forms.obj: forms/dail_forms.c.obj
+.PHONY : forms/dail_forms.obj
+
+# target to build an object file
+forms/dail_forms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj
+.PHONY : forms/dail_forms.c.obj
+
+forms/dail_forms.i: forms/dail_forms.c.i
+.PHONY : forms/dail_forms.i
+
+# target to preprocess a source file
+forms/dail_forms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.i
+.PHONY : forms/dail_forms.c.i
+
+forms/dail_forms.s: forms/dail_forms.c.s
+.PHONY : forms/dail_forms.s
+
+# target to generate assembly for a file
+forms/dail_forms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.s
+.PHONY : forms/dail_forms.c.s
+
+forms/logic_forms.obj: forms/logic_forms.c.obj
+.PHONY : forms/logic_forms.obj
+
+# target to build an object file
+forms/logic_forms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj
+.PHONY : forms/logic_forms.c.obj
+
+forms/logic_forms.i: forms/logic_forms.c.i
+.PHONY : forms/logic_forms.i
+
+# target to preprocess a source file
+forms/logic_forms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.i
+.PHONY : forms/logic_forms.c.i
+
+forms/logic_forms.s: forms/logic_forms.c.s
+.PHONY : forms/logic_forms.s
+
+# target to generate assembly for a file
+forms/logic_forms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.s
+.PHONY : forms/logic_forms.c.s
+
 forms/main_forms.obj: forms/main_forms.c.obj
 .PHONY : forms/main_forms.obj
 
@@ -1274,6 +1346,15 @@ help:
 	@echo ... devices/xpt2046.obj
 	@echo ... devices/xpt2046.i
 	@echo ... devices/xpt2046.s
+	@echo ... forms/canid_forms.obj
+	@echo ... forms/canid_forms.i
+	@echo ... forms/canid_forms.s
+	@echo ... forms/dail_forms.obj
+	@echo ... forms/dail_forms.i
+	@echo ... forms/dail_forms.s
+	@echo ... forms/logic_forms.obj
+	@echo ... forms/logic_forms.i
+	@echo ... forms/logic_forms.s
 	@echo ... forms/main_forms.obj
 	@echo ... forms/main_forms.i
 	@echo ... forms/main_forms.s

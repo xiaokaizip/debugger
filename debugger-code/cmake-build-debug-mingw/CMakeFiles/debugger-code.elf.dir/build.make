@@ -598,9 +598,48 @@ CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger-code\devices\xpt2046.c -o CMakeFiles\debugger-code.elf.dir\devices\xpt2046.c.s
 
+CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
+CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj: ../forms/canid_forms.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\canid_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\canid_forms.c
+
+CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger-code\forms\canid_forms.c > CMakeFiles\debugger-code.elf.dir\forms\canid_forms.c.i
+
+CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger-code\forms\canid_forms.c -o CMakeFiles\debugger-code.elf.dir\forms\canid_forms.c.s
+
+CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
+CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj: ../forms/dail_forms.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\dail_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\dail_forms.c
+
+CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger-code\forms\dail_forms.c > CMakeFiles\debugger-code.elf.dir\forms\dail_forms.c.i
+
+CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger-code\forms\dail_forms.c -o CMakeFiles\debugger-code.elf.dir\forms\dail_forms.c.s
+
+CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
+CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj: ../forms/logic_forms.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\logic_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\logic_forms.c
+
+CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger-code\forms\logic_forms.c > CMakeFiles\debugger-code.elf.dir\forms\logic_forms.c.i
+
+CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger-code\forms\logic_forms.c -o CMakeFiles\debugger-code.elf.dir\forms\logic_forms.c.s
+
 CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj: ../forms/main_forms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\main_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\main_forms.c
 
 CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.i: cmake_force
@@ -613,7 +652,7 @@ CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj: ../forms/suscap_debuger_forms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\suscap_debuger_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\suscap_debuger_forms.c
 
 CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.i: cmake_force
@@ -667,6 +706,9 @@ debugger__code_elf_OBJECTS = \
 "CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj" \
+"CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj" \
+"CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj" \
+"CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj"
 
@@ -714,11 +756,14 @@ debugger-code.elf: CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj
+debugger-code.elf: CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj
+debugger-code.elf: CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj
+debugger-code.elf: CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/build.make
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking C executable debugger-code.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking C executable debugger-code.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\debugger-code.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/debugger-code.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/debugger-code.bin"

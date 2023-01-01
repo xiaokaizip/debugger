@@ -43,6 +43,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/can.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/can.c
@@ -85,6 +88,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/delay.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/delay.c
@@ -128,6 +134,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/dma.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/dma.c
@@ -171,6 +180,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/gpio.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/gpio.c
@@ -218,6 +230,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/key.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/key.c
@@ -269,6 +284,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/main.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/main.c
@@ -313,6 +331,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/motor.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/motor.c
@@ -356,6 +377,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/pid.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/pid.c
@@ -433,6 +457,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/spi.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/spi.c
@@ -475,6 +502,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/stm32f1xx_hal_msp.c
@@ -518,6 +548,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_it.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/stm32f1xx_it.c
@@ -598,6 +631,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/tim.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/tim.c
@@ -641,6 +677,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/ui.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/ui.c
@@ -684,6 +723,9 @@ CMakeFiles/debugger-code.elf.dir/Core/Src/usart.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/Core/Src/usart.c
@@ -1255,6 +1297,9 @@ CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/GUI/DynamicX.h
@@ -1345,6 +1390,9 @@ CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj
  ../GUI/gui_button.h
  ../GUI/gui_label.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/devices/lcd_init.c
@@ -1389,10 +1437,148 @@ CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj
  ../GUI/gui_button.h
  ../GUI/gui_label.h
  ../devices/lcd_init.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/devices/xpt2046.c
  D:/rmbuild/Debugger/debugger-code/devices/xpt2046.h
+CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj
+ ../Core/Inc/main.h
+ ../Core/Inc/stm32f1xx_hal_conf.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm3.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+ ../GUI/color.h
+ ../GUI/gui_base.h
+ ../GUI/gui_button.h
+ ../GUI/gui_label.h
+ ../devices/lcd_init.h
+ ../devices/xpt2046.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
+ ../forms/main_forms.h
+ ../forms/suscap_debuger_forms.h
+ D:/rmbuild/Debugger/debugger-code/forms/canid_forms.c
+ D:/rmbuild/Debugger/debugger-code/forms/canid_forms.h
+CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj
+ ../Core/Inc/main.h
+ ../Core/Inc/stm32f1xx_hal_conf.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm3.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+ ../GUI/color.h
+ ../GUI/gui_base.h
+ ../GUI/gui_button.h
+ ../GUI/gui_label.h
+ ../devices/lcd_init.h
+ ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
+ ../forms/main_forms.h
+ ../forms/suscap_debuger_forms.h
+ D:/rmbuild/Debugger/debugger-code/forms/dail_forms.c
+CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj
+ ../Core/Inc/main.h
+ ../Core/Inc/stm32f1xx_hal_conf.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+ ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+ ../Drivers/CMSIS/Include/cmsis_armcc.h
+ ../Drivers/CMSIS/Include/cmsis_armclang.h
+ ../Drivers/CMSIS/Include/cmsis_compiler.h
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
+ ../Drivers/CMSIS/Include/cmsis_iccarm.h
+ ../Drivers/CMSIS/Include/cmsis_version.h
+ ../Drivers/CMSIS/Include/core_cm3.h
+ ../Drivers/CMSIS/Include/mpu_armv7.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+ ../GUI/color.h
+ ../GUI/gui_base.h
+ ../GUI/gui_button.h
+ ../GUI/gui_label.h
+ ../devices/lcd_init.h
+ ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
+ ../forms/main_forms.h
+ ../forms/suscap_debuger_forms.h
+ D:/rmbuild/Debugger/debugger-code/forms/logic_forms.c
 CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj
  ../Core/Inc/main.h
  ../Core/Inc/retarget.h
@@ -1433,6 +1619,9 @@ CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/suscap_debuger_forms.h
  D:/rmbuild/Debugger/debugger-code/forms/main_forms.c
  D:/rmbuild/Debugger/debugger-code/forms/main_forms.h
@@ -1475,6 +1664,9 @@ CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj
  ../GUI/gui_label.h
  ../devices/lcd_init.h
  ../devices/xpt2046.h
+ ../forms/canid_forms.h
+ ../forms/dail_forms.h
+ ../forms/logic_forms.h
  ../forms/main_forms.h
  D:/rmbuild/Debugger/debugger-code/forms/suscap_debuger_forms.c
  D:/rmbuild/Debugger/debugger-code/forms/suscap_debuger_forms.h

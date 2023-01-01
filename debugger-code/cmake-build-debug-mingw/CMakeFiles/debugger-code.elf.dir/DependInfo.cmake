@@ -72,6 +72,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/rmbuild/Debugger/debugger-code/GUI/gui_label.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj"
   "D:/rmbuild/Debugger/debugger-code/devices/lcd_init.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj"
   "D:/rmbuild/Debugger/debugger-code/devices/xpt2046.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/forms/canid_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/forms/dail_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/forms/logic_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj"
   "D:/rmbuild/Debugger/debugger-code/forms/main_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj"
   "D:/rmbuild/Debugger/debugger-code/forms/suscap_debuger_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj"
   )

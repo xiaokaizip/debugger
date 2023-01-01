@@ -471,6 +471,24 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/devices/xpt2046.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/canid_forms.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/canid_forms.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/dail_forms.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/dail_forms.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/logic_forms.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/logic_forms.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/main_forms.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>

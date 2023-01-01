@@ -144,9 +144,10 @@ int main(void) {
 
     forms.id = 0;
     main_Form_Init();
+
     //xpt2046_calibrate();
     uint8_t i = 0;
-    gui_image(1, 1, 1, 1, 1);
+    //gui_image();
 
     HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
 
@@ -160,6 +161,7 @@ int main(void) {
 
         /* USER CODE BEGIN 3 */
         /*获得触摸屏的数据*/
+        //dail_Form_Init();
 
         while (1) {
             key_Enter_flag = Enter_Key();
@@ -181,11 +183,14 @@ int main(void) {
 
         }
         printf("key=%d\n", key_Enter_flag);
-        if (forms.id == Main_Form) {
-            main_Form_Load();
-        } else if (forms.id == SusCapDebuger) {
-            Suscap_Debuger_Show_Load();
-        }
+        Form_UpdateEvent();
+
+        // Form_UpdateEvent();
+        //        if (forms.id == Main_Form) {
+//            main_Form_Load();
+//        } else if (forms.id == SusCapDebuger) {
+//            Suscap_Debuger_Show_Load();
+//        }
 
         HAL_Delay(10);
         HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
