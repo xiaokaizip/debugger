@@ -66,5 +66,11 @@ volatile unsigned char lcd_buffer[128 * 160 * 2] = {0};
 
 - 图形界面只是使用了按键（Button）以及标签（label）来设计的简易界面。Key1用来移动光标，Key2用来确定进入相依的界面，并使用回调函数还进行初始化，配合链表可能会有更好的效果。
 
-### CanId界面
+### 设计思路
+
+- key1为选择键，当key1按下时key_Select_flag++；同时相应的button将会高亮表示被选择到。
+- 当按下key2时，为确定按键。此时key_Verify_flag=1。此时将会根据key_Select_flag的值调用 相应 的回调函数 进入相应的界面。然后key_Verify_flag被重新置零。
+- 此流程是相对较简单的。后面的想法是使用链表来实现界面的切换 。
+
+
 
