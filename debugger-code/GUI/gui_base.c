@@ -13,18 +13,19 @@
 #include "retarget.h"
 #include "dma.h"
 #include "spi.h"
-
+#include "usart.h"
 
 const uint8_t row = 130;
 const uint8_t column = 162;
 
-volatile unsigned char lcd_buffer[128 * 160 * 2] = {0};
+volatile unsigned char lcd_buffer[130 * 162 * 2] = {0};
 
 void gui_config(void) {
     lcd_config();
     lcd_set_direction(4);
     for (unsigned short i = 0; i < 130 * 162; i++)
         ((unsigned short *) lcd_buffer)[i] = C_WHITE;
+
     lcd_set_address(0, 0, 127, 159);
     HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
 

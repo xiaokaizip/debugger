@@ -27,17 +27,16 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xE"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/function"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/hardwares"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/system"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/forms"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/devices"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/GUI"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/Core/Inc"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Drivers/CMSIS/Include"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/devices"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/forms"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/function"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/GUI"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/hardwares"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/system"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -62,17 +61,16 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xE"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/function"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/hardwares"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/system"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/forms"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/devices"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/GUI"/>
-					<Add directory="D:/rmbuild/Debugger/debugger-code/Core/Inc"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/Drivers/CMSIS/Include"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/devices"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/forms"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/function"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/GUI"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/hardwares"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/system"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -420,6 +418,12 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/delay.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/hello.cpp">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/hello.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/key.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -474,114 +478,6 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/hardwares/usart.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun1.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun10.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun11.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun12.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun13.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun14.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun15.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun16.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun17.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun18.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun19.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun2.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun20.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun21.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun22.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun23.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun24.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun25.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun26.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun27.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun28.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun29.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun3.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun30.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun32.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun33.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun4.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun5.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun6.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun7.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun8.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ikun/ikun9.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/jinru.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/ruan.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/pictures/yizhen.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/system/main.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -595,9 +491,6 @@
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/system/startup_stm32f103rctx.s">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/system/stm32f1xx_hal_conf.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/system/stm32f1xx_hal_msp.c">

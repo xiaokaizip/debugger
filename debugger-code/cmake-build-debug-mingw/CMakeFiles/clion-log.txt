@@ -1,12 +1,4 @@
 "D:\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/win-builds/bin/mingw32-make.exe -DCMAKE_C_COMPILER=D:/win-builds/bin/gcc.exe -DCMAKE_CXX_COMPILER=D:/win-builds/bin/g++.exe -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" D:\rmbuild\Debugger\debugger-code
--- Minimal optimization, debug info included
--- Configuring done
-You have changed variables that require your cache to be deleted.
-Configure will be re-run and you may have to reset some variables.
-The following variables have changed:
-CMAKE_C_COMPILER= D:/win-builds/bin/gcc.exe
-CMAKE_CXX_COMPILER= D:/win-builds/bin/g++.exe
-
 -- The C compiler identification is GNU 10.3.1
 -- The CXX compiler identification is GNU 10.3.1
 -- The ASM compiler identification is GNU

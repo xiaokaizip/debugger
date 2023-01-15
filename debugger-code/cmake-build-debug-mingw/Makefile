@@ -824,6 +824,30 @@ function/delay.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/delay.c.s
 .PHONY : function/delay.c.s
 
+function/hello.obj: function/hello.cpp.obj
+.PHONY : function/hello.obj
+
+# target to build an object file
+function/hello.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/hello.cpp.obj
+.PHONY : function/hello.cpp.obj
+
+function/hello.i: function/hello.cpp.i
+.PHONY : function/hello.i
+
+# target to preprocess a source file
+function/hello.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/hello.cpp.i
+.PHONY : function/hello.cpp.i
+
+function/hello.s: function/hello.cpp.s
+.PHONY : function/hello.s
+
+# target to generate assembly for a file
+function/hello.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/hello.cpp.s
+.PHONY : function/hello.cpp.s
+
 function/key.obj: function/key.c.obj
 .PHONY : function/key.obj
 
@@ -1336,6 +1360,9 @@ help:
 	@echo ... function/delay.obj
 	@echo ... function/delay.i
 	@echo ... function/delay.s
+	@echo ... function/hello.obj
+	@echo ... function/hello.i
+	@echo ... function/hello.s
 	@echo ... function/key.obj
 	@echo ... function/key.i
 	@echo ... function/key.s

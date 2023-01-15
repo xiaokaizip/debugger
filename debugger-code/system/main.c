@@ -33,7 +33,6 @@
 #include "retarget.h"
 #include "DynamicX.h"
 
-
 #include <string.h>
 /* USER CODE END Includes */
 
@@ -127,31 +126,32 @@ int main(void) {
     MX_SPI1_Init();
     MX_UART4_Init();
     MX_USART1_UART_Init();
+
     MX_SPI2_Init();
     MX_SPI3_Init();
     MX_TIM6_Init();
     MX_TIM4_Init();
     MX_TIM1_Init();
+
     /* USER CODE BEGIN 2 */
-    RetargetInit(&huart1);//初始化打印的函数
+    // RetargetInit(&huart1);//初始化打印的函数
     //  RetargetInit(&huart4);
     HAL_TIM_Base_Start_IT(&htim1);//开启定时器的中断
     HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);//开启PWM输出
     can_init();//can初始化
+
     gui_config();//lcd屏幕初始化
 
-    /*串口初始化*/
+    /*串口初中断初始化*/
     HAL_UART_Receive_IT(&huart1, usart_data, 8);
     HAL_UART_Receive_IT(&huart4, usart_data, 8);
 
 
     main_Form_Init();
     HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
-
     forms.id = 0;
     uint8_t delay_times = 10;
     /* USER CODE END 2 */
-
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1) {
@@ -180,7 +180,6 @@ int main(void) {
                 times = 0;
                 break;
             }
-
         }
         printf("key=%d\n", key_Enter_flag);
         while (1) {
