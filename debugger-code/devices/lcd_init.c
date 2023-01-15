@@ -4,7 +4,7 @@
 
 #include "lcd_init.h"
 
-#include "delay.h"
+#include "../function/delay.h"
 #include "spi.h"
 #include "gpio.h"
 

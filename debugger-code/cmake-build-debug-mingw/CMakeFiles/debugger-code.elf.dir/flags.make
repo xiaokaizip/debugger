@@ -5,13 +5,13 @@
 # compile C with D:/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
 ASM_DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
 
-ASM_INCLUDES = -ID:\rmbuild\Debugger\debugger-code\forms -ID:\rmbuild\Debugger\debugger-code\devices -ID:\rmbuild\Debugger\debugger-code\GUI -ID:\rmbuild\Debugger\debugger-code\Core\Inc -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Include
+ASM_INCLUDES = -ID:\rmbuild\Debugger\debugger-code\function -ID:\rmbuild\Debugger\debugger-code\hardwares -ID:\rmbuild\Debugger\debugger-code\system -ID:\rmbuild\Debugger\debugger-code\forms -ID:\rmbuild\Debugger\debugger-code\devices -ID:\rmbuild\Debugger\debugger-code\GUI -ID:\rmbuild\Debugger\debugger-code\Core\Inc -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Include
 
-ASM_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
+ASM_FLAGS = -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
 
 C_DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
 
-C_INCLUDES = -ID:\rmbuild\Debugger\debugger-code\forms -ID:\rmbuild\Debugger\debugger-code\devices -ID:\rmbuild\Debugger\debugger-code\GUI -ID:\rmbuild\Debugger\debugger-code\Core\Inc -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Include
+C_INCLUDES = -ID:\rmbuild\Debugger\debugger-code\function -ID:\rmbuild\Debugger\debugger-code\hardwares -ID:\rmbuild\Debugger\debugger-code\system -ID:\rmbuild\Debugger\debugger-code\forms -ID:\rmbuild\Debugger\debugger-code\devices -ID:\rmbuild\Debugger\debugger-code\GUI -ID:\rmbuild\Debugger\debugger-code\Core\Inc -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Include
 
-C_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+C_FLAGS = -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
 

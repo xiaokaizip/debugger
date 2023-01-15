@@ -10,20 +10,23 @@ void Form_UpdateEvent(void) {
 
     switch (forms.id) {
         case Main_Form:
-            main_Form_Init();
             main_Form_Load();
             break;
         case SusCapDebuger:
-            Suscap_Debuger_Show_Init();
             Suscap_Debuger_Show_Load();
             break;
         case Dail:
-            Dail_Form_Init();
             Dail_Form_Load();
             break;
         case CanId:
-            CanId_Form_Init();
             CanId_Form_Load();
+            break;
+        case Usart:
+            Usart_Form_Load();
+            break;
+        default:
+            main_Form_Load();
+            break;
     }
 }
 

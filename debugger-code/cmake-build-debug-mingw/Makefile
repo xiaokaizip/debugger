@@ -128,470 +128,6 @@ debugger-code.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/build
 .PHONY : debugger-code.elf/fast
 
-Core/Src/can.obj: Core/Src/can.c.obj
-.PHONY : Core/Src/can.obj
-
-# target to build an object file
-Core/Src/can.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/can.c.obj
-.PHONY : Core/Src/can.c.obj
-
-Core/Src/can.i: Core/Src/can.c.i
-.PHONY : Core/Src/can.i
-
-# target to preprocess a source file
-Core/Src/can.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/can.c.i
-.PHONY : Core/Src/can.c.i
-
-Core/Src/can.s: Core/Src/can.c.s
-.PHONY : Core/Src/can.s
-
-# target to generate assembly for a file
-Core/Src/can.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/can.c.s
-.PHONY : Core/Src/can.c.s
-
-Core/Src/delay.obj: Core/Src/delay.c.obj
-.PHONY : Core/Src/delay.obj
-
-# target to build an object file
-Core/Src/delay.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/delay.c.obj
-.PHONY : Core/Src/delay.c.obj
-
-Core/Src/delay.i: Core/Src/delay.c.i
-.PHONY : Core/Src/delay.i
-
-# target to preprocess a source file
-Core/Src/delay.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/delay.c.i
-.PHONY : Core/Src/delay.c.i
-
-Core/Src/delay.s: Core/Src/delay.c.s
-.PHONY : Core/Src/delay.s
-
-# target to generate assembly for a file
-Core/Src/delay.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/delay.c.s
-.PHONY : Core/Src/delay.c.s
-
-Core/Src/dma.obj: Core/Src/dma.c.obj
-.PHONY : Core/Src/dma.obj
-
-# target to build an object file
-Core/Src/dma.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/dma.c.obj
-.PHONY : Core/Src/dma.c.obj
-
-Core/Src/dma.i: Core/Src/dma.c.i
-.PHONY : Core/Src/dma.i
-
-# target to preprocess a source file
-Core/Src/dma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/dma.c.i
-.PHONY : Core/Src/dma.c.i
-
-Core/Src/dma.s: Core/Src/dma.c.s
-.PHONY : Core/Src/dma.s
-
-# target to generate assembly for a file
-Core/Src/dma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/dma.c.s
-.PHONY : Core/Src/dma.c.s
-
-Core/Src/gpio.obj: Core/Src/gpio.c.obj
-.PHONY : Core/Src/gpio.obj
-
-# target to build an object file
-Core/Src/gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/gpio.c.obj
-.PHONY : Core/Src/gpio.c.obj
-
-Core/Src/gpio.i: Core/Src/gpio.c.i
-.PHONY : Core/Src/gpio.i
-
-# target to preprocess a source file
-Core/Src/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/gpio.c.i
-.PHONY : Core/Src/gpio.c.i
-
-Core/Src/gpio.s: Core/Src/gpio.c.s
-.PHONY : Core/Src/gpio.s
-
-# target to generate assembly for a file
-Core/Src/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/gpio.c.s
-.PHONY : Core/Src/gpio.c.s
-
-Core/Src/image.obj: Core/Src/image.c.obj
-.PHONY : Core/Src/image.obj
-
-# target to build an object file
-Core/Src/image.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/image.c.obj
-.PHONY : Core/Src/image.c.obj
-
-Core/Src/image.i: Core/Src/image.c.i
-.PHONY : Core/Src/image.i
-
-# target to preprocess a source file
-Core/Src/image.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/image.c.i
-.PHONY : Core/Src/image.c.i
-
-Core/Src/image.s: Core/Src/image.c.s
-.PHONY : Core/Src/image.s
-
-# target to generate assembly for a file
-Core/Src/image.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/image.c.s
-.PHONY : Core/Src/image.c.s
-
-Core/Src/key.obj: Core/Src/key.c.obj
-.PHONY : Core/Src/key.obj
-
-# target to build an object file
-Core/Src/key.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/key.c.obj
-.PHONY : Core/Src/key.c.obj
-
-Core/Src/key.i: Core/Src/key.c.i
-.PHONY : Core/Src/key.i
-
-# target to preprocess a source file
-Core/Src/key.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/key.c.i
-.PHONY : Core/Src/key.c.i
-
-Core/Src/key.s: Core/Src/key.c.s
-.PHONY : Core/Src/key.s
-
-# target to generate assembly for a file
-Core/Src/key.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/key.c.s
-.PHONY : Core/Src/key.c.s
-
-Core/Src/main.obj: Core/Src/main.c.obj
-.PHONY : Core/Src/main.obj
-
-# target to build an object file
-Core/Src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/main.c.obj
-.PHONY : Core/Src/main.c.obj
-
-Core/Src/main.i: Core/Src/main.c.i
-.PHONY : Core/Src/main.i
-
-# target to preprocess a source file
-Core/Src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/main.c.i
-.PHONY : Core/Src/main.c.i
-
-Core/Src/main.s: Core/Src/main.c.s
-.PHONY : Core/Src/main.s
-
-# target to generate assembly for a file
-Core/Src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/main.c.s
-.PHONY : Core/Src/main.c.s
-
-Core/Src/motor.obj: Core/Src/motor.c.obj
-.PHONY : Core/Src/motor.obj
-
-# target to build an object file
-Core/Src/motor.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/motor.c.obj
-.PHONY : Core/Src/motor.c.obj
-
-Core/Src/motor.i: Core/Src/motor.c.i
-.PHONY : Core/Src/motor.i
-
-# target to preprocess a source file
-Core/Src/motor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/motor.c.i
-.PHONY : Core/Src/motor.c.i
-
-Core/Src/motor.s: Core/Src/motor.c.s
-.PHONY : Core/Src/motor.s
-
-# target to generate assembly for a file
-Core/Src/motor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/motor.c.s
-.PHONY : Core/Src/motor.c.s
-
-Core/Src/pid.obj: Core/Src/pid.c.obj
-.PHONY : Core/Src/pid.obj
-
-# target to build an object file
-Core/Src/pid.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/pid.c.obj
-.PHONY : Core/Src/pid.c.obj
-
-Core/Src/pid.i: Core/Src/pid.c.i
-.PHONY : Core/Src/pid.i
-
-# target to preprocess a source file
-Core/Src/pid.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/pid.c.i
-.PHONY : Core/Src/pid.c.i
-
-Core/Src/pid.s: Core/Src/pid.c.s
-.PHONY : Core/Src/pid.s
-
-# target to generate assembly for a file
-Core/Src/pid.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/pid.c.s
-.PHONY : Core/Src/pid.c.s
-
-Core/Src/retarget.obj: Core/Src/retarget.c.obj
-.PHONY : Core/Src/retarget.obj
-
-# target to build an object file
-Core/Src/retarget.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/retarget.c.obj
-.PHONY : Core/Src/retarget.c.obj
-
-Core/Src/retarget.i: Core/Src/retarget.c.i
-.PHONY : Core/Src/retarget.i
-
-# target to preprocess a source file
-Core/Src/retarget.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/retarget.c.i
-.PHONY : Core/Src/retarget.c.i
-
-Core/Src/retarget.s: Core/Src/retarget.c.s
-.PHONY : Core/Src/retarget.s
-
-# target to generate assembly for a file
-Core/Src/retarget.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/retarget.c.s
-.PHONY : Core/Src/retarget.c.s
-
-Core/Src/spi.obj: Core/Src/spi.c.obj
-.PHONY : Core/Src/spi.obj
-
-# target to build an object file
-Core/Src/spi.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/spi.c.obj
-.PHONY : Core/Src/spi.c.obj
-
-Core/Src/spi.i: Core/Src/spi.c.i
-.PHONY : Core/Src/spi.i
-
-# target to preprocess a source file
-Core/Src/spi.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/spi.c.i
-.PHONY : Core/Src/spi.c.i
-
-Core/Src/spi.s: Core/Src/spi.c.s
-.PHONY : Core/Src/spi.s
-
-# target to generate assembly for a file
-Core/Src/spi.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/spi.c.s
-.PHONY : Core/Src/spi.c.s
-
-Core/Src/stm32f1xx_hal_msp.obj: Core/Src/stm32f1xx_hal_msp.c.obj
-.PHONY : Core/Src/stm32f1xx_hal_msp.obj
-
-# target to build an object file
-Core/Src/stm32f1xx_hal_msp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj
-.PHONY : Core/Src/stm32f1xx_hal_msp.c.obj
-
-Core/Src/stm32f1xx_hal_msp.i: Core/Src/stm32f1xx_hal_msp.c.i
-.PHONY : Core/Src/stm32f1xx_hal_msp.i
-
-# target to preprocess a source file
-Core/Src/stm32f1xx_hal_msp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i
-.PHONY : Core/Src/stm32f1xx_hal_msp.c.i
-
-Core/Src/stm32f1xx_hal_msp.s: Core/Src/stm32f1xx_hal_msp.c.s
-.PHONY : Core/Src/stm32f1xx_hal_msp.s
-
-# target to generate assembly for a file
-Core/Src/stm32f1xx_hal_msp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s
-.PHONY : Core/Src/stm32f1xx_hal_msp.c.s
-
-Core/Src/stm32f1xx_it.obj: Core/Src/stm32f1xx_it.c.obj
-.PHONY : Core/Src/stm32f1xx_it.obj
-
-# target to build an object file
-Core/Src/stm32f1xx_it.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_it.c.obj
-.PHONY : Core/Src/stm32f1xx_it.c.obj
-
-Core/Src/stm32f1xx_it.i: Core/Src/stm32f1xx_it.c.i
-.PHONY : Core/Src/stm32f1xx_it.i
-
-# target to preprocess a source file
-Core/Src/stm32f1xx_it.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_it.c.i
-.PHONY : Core/Src/stm32f1xx_it.c.i
-
-Core/Src/stm32f1xx_it.s: Core/Src/stm32f1xx_it.c.s
-.PHONY : Core/Src/stm32f1xx_it.s
-
-# target to generate assembly for a file
-Core/Src/stm32f1xx_it.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/stm32f1xx_it.c.s
-.PHONY : Core/Src/stm32f1xx_it.c.s
-
-Core/Src/syscalls.obj: Core/Src/syscalls.c.obj
-.PHONY : Core/Src/syscalls.obj
-
-# target to build an object file
-Core/Src/syscalls.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/syscalls.c.obj
-.PHONY : Core/Src/syscalls.c.obj
-
-Core/Src/syscalls.i: Core/Src/syscalls.c.i
-.PHONY : Core/Src/syscalls.i
-
-# target to preprocess a source file
-Core/Src/syscalls.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/syscalls.c.i
-.PHONY : Core/Src/syscalls.c.i
-
-Core/Src/syscalls.s: Core/Src/syscalls.c.s
-.PHONY : Core/Src/syscalls.s
-
-# target to generate assembly for a file
-Core/Src/syscalls.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/syscalls.c.s
-.PHONY : Core/Src/syscalls.c.s
-
-Core/Src/sysmem.obj: Core/Src/sysmem.c.obj
-.PHONY : Core/Src/sysmem.obj
-
-# target to build an object file
-Core/Src/sysmem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/sysmem.c.obj
-.PHONY : Core/Src/sysmem.c.obj
-
-Core/Src/sysmem.i: Core/Src/sysmem.c.i
-.PHONY : Core/Src/sysmem.i
-
-# target to preprocess a source file
-Core/Src/sysmem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/sysmem.c.i
-.PHONY : Core/Src/sysmem.c.i
-
-Core/Src/sysmem.s: Core/Src/sysmem.c.s
-.PHONY : Core/Src/sysmem.s
-
-# target to generate assembly for a file
-Core/Src/sysmem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/sysmem.c.s
-.PHONY : Core/Src/sysmem.c.s
-
-Core/Src/system_stm32f1xx.obj: Core/Src/system_stm32f1xx.c.obj
-.PHONY : Core/Src/system_stm32f1xx.obj
-
-# target to build an object file
-Core/Src/system_stm32f1xx.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/system_stm32f1xx.c.obj
-.PHONY : Core/Src/system_stm32f1xx.c.obj
-
-Core/Src/system_stm32f1xx.i: Core/Src/system_stm32f1xx.c.i
-.PHONY : Core/Src/system_stm32f1xx.i
-
-# target to preprocess a source file
-Core/Src/system_stm32f1xx.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/system_stm32f1xx.c.i
-.PHONY : Core/Src/system_stm32f1xx.c.i
-
-Core/Src/system_stm32f1xx.s: Core/Src/system_stm32f1xx.c.s
-.PHONY : Core/Src/system_stm32f1xx.s
-
-# target to generate assembly for a file
-Core/Src/system_stm32f1xx.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/system_stm32f1xx.c.s
-.PHONY : Core/Src/system_stm32f1xx.c.s
-
-Core/Src/tim.obj: Core/Src/tim.c.obj
-.PHONY : Core/Src/tim.obj
-
-# target to build an object file
-Core/Src/tim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/tim.c.obj
-.PHONY : Core/Src/tim.c.obj
-
-Core/Src/tim.i: Core/Src/tim.c.i
-.PHONY : Core/Src/tim.i
-
-# target to preprocess a source file
-Core/Src/tim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/tim.c.i
-.PHONY : Core/Src/tim.c.i
-
-Core/Src/tim.s: Core/Src/tim.c.s
-.PHONY : Core/Src/tim.s
-
-# target to generate assembly for a file
-Core/Src/tim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/tim.c.s
-.PHONY : Core/Src/tim.c.s
-
-Core/Src/ui.obj: Core/Src/ui.c.obj
-.PHONY : Core/Src/ui.obj
-
-# target to build an object file
-Core/Src/ui.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/ui.c.obj
-.PHONY : Core/Src/ui.c.obj
-
-Core/Src/ui.i: Core/Src/ui.c.i
-.PHONY : Core/Src/ui.i
-
-# target to preprocess a source file
-Core/Src/ui.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/ui.c.i
-.PHONY : Core/Src/ui.c.i
-
-Core/Src/ui.s: Core/Src/ui.c.s
-.PHONY : Core/Src/ui.s
-
-# target to generate assembly for a file
-Core/Src/ui.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/ui.c.s
-.PHONY : Core/Src/ui.c.s
-
-Core/Src/usart.obj: Core/Src/usart.c.obj
-.PHONY : Core/Src/usart.obj
-
-# target to build an object file
-Core/Src/usart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/usart.c.obj
-.PHONY : Core/Src/usart.c.obj
-
-Core/Src/usart.i: Core/Src/usart.c.i
-.PHONY : Core/Src/usart.i
-
-# target to preprocess a source file
-Core/Src/usart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/usart.c.i
-.PHONY : Core/Src/usart.c.i
-
-Core/Src/usart.s: Core/Src/usart.c.s
-.PHONY : Core/Src/usart.s
-
-# target to generate assembly for a file
-Core/Src/usart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Src/usart.c.s
-.PHONY : Core/Src/usart.c.s
-
-Core/Startup/startup_stm32f103rctx.obj: Core/Startup/startup_stm32f103rctx.s.obj
-.PHONY : Core/Startup/startup_stm32f103rctx.obj
-
-# target to build an object file
-Core/Startup/startup_stm32f103rctx.s.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/Core/Startup/startup_stm32f103rctx.s.obj
-.PHONY : Core/Startup/startup_stm32f103rctx.s.obj
-
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj
 
@@ -1024,6 +560,30 @@ GUI/gui_button.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.s
 .PHONY : GUI/gui_button.c.s
 
+GUI/gui_form.obj: GUI/gui_form.c.obj
+.PHONY : GUI/gui_form.obj
+
+# target to build an object file
+GUI/gui_form.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj
+.PHONY : GUI/gui_form.c.obj
+
+GUI/gui_form.i: GUI/gui_form.c.i
+.PHONY : GUI/gui_form.i
+
+# target to preprocess a source file
+GUI/gui_form.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.i
+.PHONY : GUI/gui_form.c.i
+
+GUI/gui_form.s: GUI/gui_form.c.s
+.PHONY : GUI/gui_form.s
+
+# target to generate assembly for a file
+GUI/gui_form.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.s
+.PHONY : GUI/gui_form.c.s
+
 GUI/gui_label.obj: GUI/gui_label.c.obj
 .PHONY : GUI/gui_label.obj
 
@@ -1216,6 +776,470 @@ forms/suscap_debuger_forms.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.s
 .PHONY : forms/suscap_debuger_forms.c.s
 
+forms/usart_forms.obj: forms/usart_forms.c.obj
+.PHONY : forms/usart_forms.obj
+
+# target to build an object file
+forms/usart_forms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj
+.PHONY : forms/usart_forms.c.obj
+
+forms/usart_forms.i: forms/usart_forms.c.i
+.PHONY : forms/usart_forms.i
+
+# target to preprocess a source file
+forms/usart_forms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.i
+.PHONY : forms/usart_forms.c.i
+
+forms/usart_forms.s: forms/usart_forms.c.s
+.PHONY : forms/usart_forms.s
+
+# target to generate assembly for a file
+forms/usart_forms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.s
+.PHONY : forms/usart_forms.c.s
+
+function/delay.obj: function/delay.c.obj
+.PHONY : function/delay.obj
+
+# target to build an object file
+function/delay.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/delay.c.obj
+.PHONY : function/delay.c.obj
+
+function/delay.i: function/delay.c.i
+.PHONY : function/delay.i
+
+# target to preprocess a source file
+function/delay.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/delay.c.i
+.PHONY : function/delay.c.i
+
+function/delay.s: function/delay.c.s
+.PHONY : function/delay.s
+
+# target to generate assembly for a file
+function/delay.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/delay.c.s
+.PHONY : function/delay.c.s
+
+function/key.obj: function/key.c.obj
+.PHONY : function/key.obj
+
+# target to build an object file
+function/key.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/key.c.obj
+.PHONY : function/key.c.obj
+
+function/key.i: function/key.c.i
+.PHONY : function/key.i
+
+# target to preprocess a source file
+function/key.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/key.c.i
+.PHONY : function/key.c.i
+
+function/key.s: function/key.c.s
+.PHONY : function/key.s
+
+# target to generate assembly for a file
+function/key.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/key.c.s
+.PHONY : function/key.c.s
+
+function/motor.obj: function/motor.c.obj
+.PHONY : function/motor.obj
+
+# target to build an object file
+function/motor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/motor.c.obj
+.PHONY : function/motor.c.obj
+
+function/motor.i: function/motor.c.i
+.PHONY : function/motor.i
+
+# target to preprocess a source file
+function/motor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/motor.c.i
+.PHONY : function/motor.c.i
+
+function/motor.s: function/motor.c.s
+.PHONY : function/motor.s
+
+# target to generate assembly for a file
+function/motor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/motor.c.s
+.PHONY : function/motor.c.s
+
+function/pid.obj: function/pid.c.obj
+.PHONY : function/pid.obj
+
+# target to build an object file
+function/pid.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/pid.c.obj
+.PHONY : function/pid.c.obj
+
+function/pid.i: function/pid.c.i
+.PHONY : function/pid.i
+
+# target to preprocess a source file
+function/pid.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/pid.c.i
+.PHONY : function/pid.c.i
+
+function/pid.s: function/pid.c.s
+.PHONY : function/pid.s
+
+# target to generate assembly for a file
+function/pid.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/pid.c.s
+.PHONY : function/pid.c.s
+
+hardwares/can.obj: hardwares/can.c.obj
+.PHONY : hardwares/can.obj
+
+# target to build an object file
+hardwares/can.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/can.c.obj
+.PHONY : hardwares/can.c.obj
+
+hardwares/can.i: hardwares/can.c.i
+.PHONY : hardwares/can.i
+
+# target to preprocess a source file
+hardwares/can.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/can.c.i
+.PHONY : hardwares/can.c.i
+
+hardwares/can.s: hardwares/can.c.s
+.PHONY : hardwares/can.s
+
+# target to generate assembly for a file
+hardwares/can.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/can.c.s
+.PHONY : hardwares/can.c.s
+
+hardwares/dma.obj: hardwares/dma.c.obj
+.PHONY : hardwares/dma.obj
+
+# target to build an object file
+hardwares/dma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.obj
+.PHONY : hardwares/dma.c.obj
+
+hardwares/dma.i: hardwares/dma.c.i
+.PHONY : hardwares/dma.i
+
+# target to preprocess a source file
+hardwares/dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.i
+.PHONY : hardwares/dma.c.i
+
+hardwares/dma.s: hardwares/dma.c.s
+.PHONY : hardwares/dma.s
+
+# target to generate assembly for a file
+hardwares/dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.s
+.PHONY : hardwares/dma.c.s
+
+hardwares/gpio.obj: hardwares/gpio.c.obj
+.PHONY : hardwares/gpio.obj
+
+# target to build an object file
+hardwares/gpio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.obj
+.PHONY : hardwares/gpio.c.obj
+
+hardwares/gpio.i: hardwares/gpio.c.i
+.PHONY : hardwares/gpio.i
+
+# target to preprocess a source file
+hardwares/gpio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.i
+.PHONY : hardwares/gpio.c.i
+
+hardwares/gpio.s: hardwares/gpio.c.s
+.PHONY : hardwares/gpio.s
+
+# target to generate assembly for a file
+hardwares/gpio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.s
+.PHONY : hardwares/gpio.c.s
+
+hardwares/spi.obj: hardwares/spi.c.obj
+.PHONY : hardwares/spi.obj
+
+# target to build an object file
+hardwares/spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.obj
+.PHONY : hardwares/spi.c.obj
+
+hardwares/spi.i: hardwares/spi.c.i
+.PHONY : hardwares/spi.i
+
+# target to preprocess a source file
+hardwares/spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.i
+.PHONY : hardwares/spi.c.i
+
+hardwares/spi.s: hardwares/spi.c.s
+.PHONY : hardwares/spi.s
+
+# target to generate assembly for a file
+hardwares/spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.s
+.PHONY : hardwares/spi.c.s
+
+hardwares/tim.obj: hardwares/tim.c.obj
+.PHONY : hardwares/tim.obj
+
+# target to build an object file
+hardwares/tim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.obj
+.PHONY : hardwares/tim.c.obj
+
+hardwares/tim.i: hardwares/tim.c.i
+.PHONY : hardwares/tim.i
+
+# target to preprocess a source file
+hardwares/tim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.i
+.PHONY : hardwares/tim.c.i
+
+hardwares/tim.s: hardwares/tim.c.s
+.PHONY : hardwares/tim.s
+
+# target to generate assembly for a file
+hardwares/tim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.s
+.PHONY : hardwares/tim.c.s
+
+hardwares/usart.obj: hardwares/usart.c.obj
+.PHONY : hardwares/usart.obj
+
+# target to build an object file
+hardwares/usart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.obj
+.PHONY : hardwares/usart.c.obj
+
+hardwares/usart.i: hardwares/usart.c.i
+.PHONY : hardwares/usart.i
+
+# target to preprocess a source file
+hardwares/usart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.i
+.PHONY : hardwares/usart.c.i
+
+hardwares/usart.s: hardwares/usart.c.s
+.PHONY : hardwares/usart.s
+
+# target to generate assembly for a file
+hardwares/usart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.s
+.PHONY : hardwares/usart.c.s
+
+system/main.obj: system/main.c.obj
+.PHONY : system/main.obj
+
+# target to build an object file
+system/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/main.c.obj
+.PHONY : system/main.c.obj
+
+system/main.i: system/main.c.i
+.PHONY : system/main.i
+
+# target to preprocess a source file
+system/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/main.c.i
+.PHONY : system/main.c.i
+
+system/main.s: system/main.c.s
+.PHONY : system/main.s
+
+# target to generate assembly for a file
+system/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/main.c.s
+.PHONY : system/main.c.s
+
+system/retarget.obj: system/retarget.c.obj
+.PHONY : system/retarget.obj
+
+# target to build an object file
+system/retarget.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/retarget.c.obj
+.PHONY : system/retarget.c.obj
+
+system/retarget.i: system/retarget.c.i
+.PHONY : system/retarget.i
+
+# target to preprocess a source file
+system/retarget.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/retarget.c.i
+.PHONY : system/retarget.c.i
+
+system/retarget.s: system/retarget.c.s
+.PHONY : system/retarget.s
+
+# target to generate assembly for a file
+system/retarget.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/retarget.c.s
+.PHONY : system/retarget.c.s
+
+system/startup_stm32f103rctx.obj: system/startup_stm32f103rctx.s.obj
+.PHONY : system/startup_stm32f103rctx.obj
+
+# target to build an object file
+system/startup_stm32f103rctx.s.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/startup_stm32f103rctx.s.obj
+.PHONY : system/startup_stm32f103rctx.s.obj
+
+system/stm32f1xx_hal_msp.obj: system/stm32f1xx_hal_msp.c.obj
+.PHONY : system/stm32f1xx_hal_msp.obj
+
+# target to build an object file
+system/stm32f1xx_hal_msp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.obj
+.PHONY : system/stm32f1xx_hal_msp.c.obj
+
+system/stm32f1xx_hal_msp.i: system/stm32f1xx_hal_msp.c.i
+.PHONY : system/stm32f1xx_hal_msp.i
+
+# target to preprocess a source file
+system/stm32f1xx_hal_msp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.i
+.PHONY : system/stm32f1xx_hal_msp.c.i
+
+system/stm32f1xx_hal_msp.s: system/stm32f1xx_hal_msp.c.s
+.PHONY : system/stm32f1xx_hal_msp.s
+
+# target to generate assembly for a file
+system/stm32f1xx_hal_msp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.s
+.PHONY : system/stm32f1xx_hal_msp.c.s
+
+system/stm32f1xx_it.obj: system/stm32f1xx_it.c.obj
+.PHONY : system/stm32f1xx_it.obj
+
+# target to build an object file
+system/stm32f1xx_it.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.obj
+.PHONY : system/stm32f1xx_it.c.obj
+
+system/stm32f1xx_it.i: system/stm32f1xx_it.c.i
+.PHONY : system/stm32f1xx_it.i
+
+# target to preprocess a source file
+system/stm32f1xx_it.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.i
+.PHONY : system/stm32f1xx_it.c.i
+
+system/stm32f1xx_it.s: system/stm32f1xx_it.c.s
+.PHONY : system/stm32f1xx_it.s
+
+# target to generate assembly for a file
+system/stm32f1xx_it.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.s
+.PHONY : system/stm32f1xx_it.c.s
+
+system/syscalls.obj: system/syscalls.c.obj
+.PHONY : system/syscalls.obj
+
+# target to build an object file
+system/syscalls.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/syscalls.c.obj
+.PHONY : system/syscalls.c.obj
+
+system/syscalls.i: system/syscalls.c.i
+.PHONY : system/syscalls.i
+
+# target to preprocess a source file
+system/syscalls.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/syscalls.c.i
+.PHONY : system/syscalls.c.i
+
+system/syscalls.s: system/syscalls.c.s
+.PHONY : system/syscalls.s
+
+# target to generate assembly for a file
+system/syscalls.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/syscalls.c.s
+.PHONY : system/syscalls.c.s
+
+system/sysmem.obj: system/sysmem.c.obj
+.PHONY : system/sysmem.obj
+
+# target to build an object file
+system/sysmem.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/sysmem.c.obj
+.PHONY : system/sysmem.c.obj
+
+system/sysmem.i: system/sysmem.c.i
+.PHONY : system/sysmem.i
+
+# target to preprocess a source file
+system/sysmem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/sysmem.c.i
+.PHONY : system/sysmem.c.i
+
+system/sysmem.s: system/sysmem.c.s
+.PHONY : system/sysmem.s
+
+# target to generate assembly for a file
+system/sysmem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/sysmem.c.s
+.PHONY : system/sysmem.c.s
+
+system/system.obj: system/system.c.obj
+.PHONY : system/system.obj
+
+# target to build an object file
+system/system.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/system.c.obj
+.PHONY : system/system.c.obj
+
+system/system.i: system/system.c.i
+.PHONY : system/system.i
+
+# target to preprocess a source file
+system/system.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/system.c.i
+.PHONY : system/system.c.i
+
+system/system.s: system/system.c.s
+.PHONY : system/system.s
+
+# target to generate assembly for a file
+system/system.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/system.c.s
+.PHONY : system/system.c.s
+
+system/system_stm32f1xx.obj: system/system_stm32f1xx.c.obj
+.PHONY : system/system_stm32f1xx.obj
+
+# target to build an object file
+system/system_stm32f1xx.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.obj
+.PHONY : system/system_stm32f1xx.c.obj
+
+system/system_stm32f1xx.i: system/system_stm32f1xx.c.i
+.PHONY : system/system_stm32f1xx.i
+
+# target to preprocess a source file
+system/system_stm32f1xx.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.i
+.PHONY : system/system_stm32f1xx.c.i
+
+system/system_stm32f1xx.s: system/system_stm32f1xx.c.s
+.PHONY : system/system_stm32f1xx.s
+
+# target to generate assembly for a file
+system/system_stm32f1xx.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.s
+.PHONY : system/system_stm32f1xx.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1225,64 +1249,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... debugger-code.elf
-	@echo ... Core/Src/can.obj
-	@echo ... Core/Src/can.i
-	@echo ... Core/Src/can.s
-	@echo ... Core/Src/delay.obj
-	@echo ... Core/Src/delay.i
-	@echo ... Core/Src/delay.s
-	@echo ... Core/Src/dma.obj
-	@echo ... Core/Src/dma.i
-	@echo ... Core/Src/dma.s
-	@echo ... Core/Src/gpio.obj
-	@echo ... Core/Src/gpio.i
-	@echo ... Core/Src/gpio.s
-	@echo ... Core/Src/image.obj
-	@echo ... Core/Src/image.i
-	@echo ... Core/Src/image.s
-	@echo ... Core/Src/key.obj
-	@echo ... Core/Src/key.i
-	@echo ... Core/Src/key.s
-	@echo ... Core/Src/main.obj
-	@echo ... Core/Src/main.i
-	@echo ... Core/Src/main.s
-	@echo ... Core/Src/motor.obj
-	@echo ... Core/Src/motor.i
-	@echo ... Core/Src/motor.s
-	@echo ... Core/Src/pid.obj
-	@echo ... Core/Src/pid.i
-	@echo ... Core/Src/pid.s
-	@echo ... Core/Src/retarget.obj
-	@echo ... Core/Src/retarget.i
-	@echo ... Core/Src/retarget.s
-	@echo ... Core/Src/spi.obj
-	@echo ... Core/Src/spi.i
-	@echo ... Core/Src/spi.s
-	@echo ... Core/Src/stm32f1xx_hal_msp.obj
-	@echo ... Core/Src/stm32f1xx_hal_msp.i
-	@echo ... Core/Src/stm32f1xx_hal_msp.s
-	@echo ... Core/Src/stm32f1xx_it.obj
-	@echo ... Core/Src/stm32f1xx_it.i
-	@echo ... Core/Src/stm32f1xx_it.s
-	@echo ... Core/Src/syscalls.obj
-	@echo ... Core/Src/syscalls.i
-	@echo ... Core/Src/syscalls.s
-	@echo ... Core/Src/sysmem.obj
-	@echo ... Core/Src/sysmem.i
-	@echo ... Core/Src/sysmem.s
-	@echo ... Core/Src/system_stm32f1xx.obj
-	@echo ... Core/Src/system_stm32f1xx.i
-	@echo ... Core/Src/system_stm32f1xx.s
-	@echo ... Core/Src/tim.obj
-	@echo ... Core/Src/tim.i
-	@echo ... Core/Src/tim.s
-	@echo ... Core/Src/ui.obj
-	@echo ... Core/Src/ui.i
-	@echo ... Core/Src/ui.s
-	@echo ... Core/Src/usart.obj
-	@echo ... Core/Src/usart.i
-	@echo ... Core/Src/usart.s
-	@echo ... Core/Startup/startup_stm32f103rctx.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s
@@ -1337,6 +1303,9 @@ help:
 	@echo ... GUI/gui_button.obj
 	@echo ... GUI/gui_button.i
 	@echo ... GUI/gui_button.s
+	@echo ... GUI/gui_form.obj
+	@echo ... GUI/gui_form.i
+	@echo ... GUI/gui_form.s
 	@echo ... GUI/gui_label.obj
 	@echo ... GUI/gui_label.i
 	@echo ... GUI/gui_label.s
@@ -1361,6 +1330,64 @@ help:
 	@echo ... forms/suscap_debuger_forms.obj
 	@echo ... forms/suscap_debuger_forms.i
 	@echo ... forms/suscap_debuger_forms.s
+	@echo ... forms/usart_forms.obj
+	@echo ... forms/usart_forms.i
+	@echo ... forms/usart_forms.s
+	@echo ... function/delay.obj
+	@echo ... function/delay.i
+	@echo ... function/delay.s
+	@echo ... function/key.obj
+	@echo ... function/key.i
+	@echo ... function/key.s
+	@echo ... function/motor.obj
+	@echo ... function/motor.i
+	@echo ... function/motor.s
+	@echo ... function/pid.obj
+	@echo ... function/pid.i
+	@echo ... function/pid.s
+	@echo ... hardwares/can.obj
+	@echo ... hardwares/can.i
+	@echo ... hardwares/can.s
+	@echo ... hardwares/dma.obj
+	@echo ... hardwares/dma.i
+	@echo ... hardwares/dma.s
+	@echo ... hardwares/gpio.obj
+	@echo ... hardwares/gpio.i
+	@echo ... hardwares/gpio.s
+	@echo ... hardwares/spi.obj
+	@echo ... hardwares/spi.i
+	@echo ... hardwares/spi.s
+	@echo ... hardwares/tim.obj
+	@echo ... hardwares/tim.i
+	@echo ... hardwares/tim.s
+	@echo ... hardwares/usart.obj
+	@echo ... hardwares/usart.i
+	@echo ... hardwares/usart.s
+	@echo ... system/main.obj
+	@echo ... system/main.i
+	@echo ... system/main.s
+	@echo ... system/retarget.obj
+	@echo ... system/retarget.i
+	@echo ... system/retarget.s
+	@echo ... system/startup_stm32f103rctx.obj
+	@echo ... system/stm32f1xx_hal_msp.obj
+	@echo ... system/stm32f1xx_hal_msp.i
+	@echo ... system/stm32f1xx_hal_msp.s
+	@echo ... system/stm32f1xx_it.obj
+	@echo ... system/stm32f1xx_it.i
+	@echo ... system/stm32f1xx_it.s
+	@echo ... system/syscalls.obj
+	@echo ... system/syscalls.i
+	@echo ... system/syscalls.s
+	@echo ... system/sysmem.obj
+	@echo ... system/sysmem.i
+	@echo ... system/sysmem.s
+	@echo ... system/system.obj
+	@echo ... system/system.i
+	@echo ... system/system.s
+	@echo ... system/system_stm32f1xx.obj
+	@echo ... system/system_stm32f1xx.i
+	@echo ... system/system_stm32f1xx.s
 .PHONY : help
 
 

@@ -13,7 +13,7 @@
 #include "retarget.h"
 #include "dma.h"
 #include "spi.h"
-#include "DynamicX.h"
+
 
 const uint8_t row = 130;
 const uint8_t column = 162;
@@ -74,19 +74,20 @@ void test(unsigned char *ch, unsigned char *str) {
     }
 }
 
-void gui_image() {
+void gui_image(unsigned int len, unsigned int wide, char gImage[]) {
     unsigned char i, j, k;
-    unsigned char *temp = (unsigned char *) &gImage_DynamicX[0];
+    unsigned char *temp = (unsigned char *) &gImage[0];
     unsigned char str = 0;
-    for (int l = 0; l < 128; ++l) {
-        for (int m = 0; m < 128; ++m) {
-            test(temp + 1, &str);
-            lcd_buffer[(l * 128 + 1 + m + 128 * 15) * 2] = *temp;
-            test(temp, &str);
-            lcd_buffer[(l * 128 + 1 + m + 128 * 15) * 2 + 1] = *(temp + 1);
+    for (int l = 0; l < len; ++l) {
+        for (int m = 0; m < wide; ++m) {
+            // test(temp + 1, &str);
+            lcd_buffer[(l * 128 + 1 + m + 128 * 15) * 2] = (*temp) & 0xEF;
+            // test(temp, &str);
+            lcd_buffer[(l * 128 + 1 + m + 128 * 15) * 2 + 1] = (*(temp + 1));
             temp += 2;
         }
     }
+    HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
 
 }
 

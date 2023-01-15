@@ -16,7 +16,8 @@ enum formsId {
     Main_Form = 0,
     SusCapDebuger = 1,
     Dail = 2,
-    CanId = 3
+    CanId = 3,
+    Usart = 4
 };
 
 

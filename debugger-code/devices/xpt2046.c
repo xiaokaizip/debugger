@@ -8,7 +8,7 @@
 
 #include "xpt2046.h"
 #include "spi.h"
-#include "delay.h"
+#include "../function/delay.h"
 #include "gui_base.h"
 
 

@@ -11,6 +11,7 @@ label_struct_t label_mainForms;
 button_struct_t button_SuscapDebuger;
 button_struct_t button_Dail;
 button_struct_t button_CanId;
+button_struct_t button_Usart;
 
 extern unsigned short x;
 extern unsigned short y;
@@ -41,6 +42,12 @@ void Button_CanId_CallBuck(void *object) {
     key_Select_flag = 0;
 }
 
+void Button_Usart_CallBuck(void *object) {
+    Usart_Form_Init();
+    forms.id = Usart;
+    key_Select_flag = 0;
+}
+
 void main_Form_Init() {
     gui_clear_screan(C_WHITE);
     HAL_Delay(10);
@@ -51,16 +58,20 @@ void main_Form_Init() {
     button_Dail.callback = Button_Dial_CallBack;
     gui_button_init(&button_CanId, 32, 93, 72, 24, "CanId");
     button_CanId.callback = Button_CanId_CallBuck;
+    gui_button_init(&button_Usart, 32, 123, 72, 24, "Usart");
+    button_Usart.callback = Button_Usart_CallBuck;
 
     gui_label_update(&label_mainForms);
     gui_button_update(&button_SuscapDebuger, button_click_status);
     gui_button_update(&button_Dail, button_normal_status);
     gui_button_update(&button_CanId, button_normal_status);
+    gui_button_update(&button_Usart, button_normal_status);
+
 }
 
 void main_Form_Load() {
 
-    if (key_Select_flag >= 3) {
+    if (key_Select_flag >= 4) {
         key_Select_flag = 0;
     }
 
@@ -70,19 +81,29 @@ void main_Form_Load() {
             gui_button_update(&button_SuscapDebuger, button_click_status);
             gui_button_update(&button_Dail, button_normal_status);
             gui_button_update(&button_CanId, button_normal_status);
+            gui_button_update(&button_Usart, button_normal_status);
             key_Select_flag = 0;
             break;
         case 1:
             gui_button_update(&button_SuscapDebuger, button_normal_status);
             gui_button_update(&button_Dail, button_click_status);
             gui_button_update(&button_CanId, button_normal_status);
+            gui_button_update(&button_Usart, button_normal_status);
             key_Select_flag = 1;
             break;
         case 2:
             gui_button_update(&button_SuscapDebuger, button_normal_status);
             gui_button_update(&button_Dail, button_normal_status);
             gui_button_update(&button_CanId, button_click_status);
+            gui_button_update(&button_Usart, button_normal_status);
             key_Select_flag = 2;
+            break;
+        case 3:
+            gui_button_update(&button_SuscapDebuger, button_normal_status);
+            gui_button_update(&button_Dail, button_normal_status);
+            gui_button_update(&button_CanId, button_normal_status);
+            gui_button_update(&button_Usart, button_click_status);
+            key_Select_flag = 3;
             break;
         default:
             key_Select_flag = 0;
@@ -93,11 +114,12 @@ void main_Form_Load() {
     if (key_Verify_flag == 1) {
         if (key_Select_flag == 0) {
             button_SuscapDebuger.callback(&button_SuscapDebuger);
-
         } else if (key_Select_flag == 1) {
             button_Dail.callback(&button_Dail);
         } else if (key_Select_flag == 2) {
             button_CanId.callback(&button_CanId);
+        } else if (key_Select_flag == 3) {
+            button_Usart.callback(&button_Usart);
         }
         key_Verify_flag = 0;
     }

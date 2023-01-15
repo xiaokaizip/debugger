@@ -37,7 +37,7 @@ void gui_putchar_Chinese(unsigned char x,
                          unsigned int dcolor,
                          unsigned int bgcolor);
 
-void gui_image();
+void gui_image(unsigned int len, unsigned int wide, char gImage[]);
 
 void gui_putchar(unsigned char x,
                  unsigned char line,

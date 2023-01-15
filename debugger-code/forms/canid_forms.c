@@ -6,7 +6,7 @@
 #include "main.h"
 
 button_struct_t button_Turnbuck_CanId;
-button_struct_t button_refresh;
+button_struct_t button_refresh_CanId;
 extern unsigned char lcd_buffer[128 * 160 * 2];
 
 extern unsigned short x;
@@ -32,7 +32,7 @@ void CanId_Form_Init() {
     gui_clear_screan(C_WHITE);
     HAL_Delay(10);
     gui_button_init(&button_Turnbuck_CanId, 72, 138, 48, 18, "TurnBuck");
-    gui_button_init(&button_refresh, 12, 138, 48, 18, "refresh");
+    gui_button_init(&button_refresh_CanId, 12, 138, 48, 18, "refresh");
     button_Turnbuck_CanId.callback = Button_TurnBuck_CallBack_CanId;
     gui_printf(12 * 4, 0, C_BLACK, C_WHITE, " id");
     for (int i = 0; i < 6; i++) {
@@ -42,7 +42,7 @@ void CanId_Form_Init() {
     gui_draw_hline(0, 16 * 7, 128, C_BLUE);
 
     gui_button_update(&button_Turnbuck_CanId, button_normal_status);
-    gui_button_update(&button_refresh, button_click_status);
+    gui_button_update(&button_refresh_CanId, button_click_status);
 }
 
 void CanId_Form_Load() {
@@ -51,12 +51,12 @@ void CanId_Form_Load() {
     }
     switch (key_Select_flag) {
         case 0:
-            gui_button_update(&button_refresh, button_click_status);
+            gui_button_update(&button_refresh_CanId, button_click_status);
             gui_button_update(&button_Turnbuck_CanId, button_normal_status);
             key_Select_flag = 0;
             break;
         case 1:
-            gui_button_update(&button_refresh, button_normal_status);
+            gui_button_update(&button_refresh_CanId, button_normal_status);
             gui_button_update(&button_Turnbuck_CanId, button_click_status);
             key_Select_flag = 1;
             break;
