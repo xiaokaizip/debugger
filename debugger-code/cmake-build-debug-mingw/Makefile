@@ -704,6 +704,30 @@ forms/dail_forms.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.s
 .PHONY : forms/dail_forms.c.s
 
+forms/imu_forms.obj: forms/imu_forms.c.obj
+.PHONY : forms/imu_forms.obj
+
+# target to build an object file
+forms/imu_forms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.obj
+.PHONY : forms/imu_forms.c.obj
+
+forms/imu_forms.i: forms/imu_forms.c.i
+.PHONY : forms/imu_forms.i
+
+# target to preprocess a source file
+forms/imu_forms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.i
+.PHONY : forms/imu_forms.c.i
+
+forms/imu_forms.s: forms/imu_forms.c.s
+.PHONY : forms/imu_forms.s
+
+# target to generate assembly for a file
+forms/imu_forms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.s
+.PHONY : forms/imu_forms.c.s
+
 forms/logic_forms.obj: forms/logic_forms.c.obj
 .PHONY : forms/logic_forms.obj
 
@@ -751,6 +775,30 @@ forms/main_forms.s: forms/main_forms.c.s
 forms/main_forms.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.s
 .PHONY : forms/main_forms.c.s
+
+forms/motor_forms.obj: forms/motor_forms.c.obj
+.PHONY : forms/motor_forms.obj
+
+# target to build an object file
+forms/motor_forms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj
+.PHONY : forms/motor_forms.c.obj
+
+forms/motor_forms.i: forms/motor_forms.c.i
+.PHONY : forms/motor_forms.i
+
+# target to preprocess a source file
+forms/motor_forms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.i
+.PHONY : forms/motor_forms.c.i
+
+forms/motor_forms.s: forms/motor_forms.c.s
+.PHONY : forms/motor_forms.s
+
+# target to generate assembly for a file
+forms/motor_forms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.s
+.PHONY : forms/motor_forms.c.s
 
 forms/suscap_debuger_forms.obj: forms/suscap_debuger_forms.c.obj
 .PHONY : forms/suscap_debuger_forms.obj
@@ -800,6 +848,78 @@ forms/usart_forms.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.s
 .PHONY : forms/usart_forms.c.s
 
+function/BMI1088_show.obj: function/BMI1088_show.c.obj
+.PHONY : function/BMI1088_show.obj
+
+# target to build an object file
+function/BMI1088_show.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.obj
+.PHONY : function/BMI1088_show.c.obj
+
+function/BMI1088_show.i: function/BMI1088_show.c.i
+.PHONY : function/BMI1088_show.i
+
+# target to preprocess a source file
+function/BMI1088_show.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.i
+.PHONY : function/BMI1088_show.c.i
+
+function/BMI1088_show.s: function/BMI1088_show.c.s
+.PHONY : function/BMI1088_show.s
+
+# target to generate assembly for a file
+function/BMI1088_show.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.s
+.PHONY : function/BMI1088_show.c.s
+
+function/can_communication.obj: function/can_communication.c.obj
+.PHONY : function/can_communication.obj
+
+# target to build an object file
+function/can_communication.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj
+.PHONY : function/can_communication.c.obj
+
+function/can_communication.i: function/can_communication.c.i
+.PHONY : function/can_communication.i
+
+# target to preprocess a source file
+function/can_communication.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/can_communication.c.i
+.PHONY : function/can_communication.c.i
+
+function/can_communication.s: function/can_communication.c.s
+.PHONY : function/can_communication.s
+
+# target to generate assembly for a file
+function/can_communication.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/can_communication.c.s
+.PHONY : function/can_communication.c.s
+
+function/data_usart.obj: function/data_usart.c.obj
+.PHONY : function/data_usart.obj
+
+# target to build an object file
+function/data_usart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj
+.PHONY : function/data_usart.c.obj
+
+function/data_usart.i: function/data_usart.c.i
+.PHONY : function/data_usart.i
+
+# target to preprocess a source file
+function/data_usart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/data_usart.c.i
+.PHONY : function/data_usart.c.i
+
+function/data_usart.s: function/data_usart.c.s
+.PHONY : function/data_usart.s
+
+# target to generate assembly for a file
+function/data_usart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/data_usart.c.s
+.PHONY : function/data_usart.c.s
+
 function/delay.obj: function/delay.c.obj
 .PHONY : function/delay.obj
 
@@ -823,30 +943,6 @@ function/delay.s: function/delay.c.s
 function/delay.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/delay.c.s
 .PHONY : function/delay.c.s
-
-function/hello.obj: function/hello.cpp.obj
-.PHONY : function/hello.obj
-
-# target to build an object file
-function/hello.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/hello.cpp.obj
-.PHONY : function/hello.cpp.obj
-
-function/hello.i: function/hello.cpp.i
-.PHONY : function/hello.i
-
-# target to preprocess a source file
-function/hello.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/hello.cpp.i
-.PHONY : function/hello.cpp.i
-
-function/hello.s: function/hello.cpp.s
-.PHONY : function/hello.s
-
-# target to generate assembly for a file
-function/hello.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/hello.cpp.s
-.PHONY : function/hello.cpp.s
 
 function/key.obj: function/key.c.obj
 .PHONY : function/key.obj
@@ -1345,24 +1441,36 @@ help:
 	@echo ... forms/dail_forms.obj
 	@echo ... forms/dail_forms.i
 	@echo ... forms/dail_forms.s
+	@echo ... forms/imu_forms.obj
+	@echo ... forms/imu_forms.i
+	@echo ... forms/imu_forms.s
 	@echo ... forms/logic_forms.obj
 	@echo ... forms/logic_forms.i
 	@echo ... forms/logic_forms.s
 	@echo ... forms/main_forms.obj
 	@echo ... forms/main_forms.i
 	@echo ... forms/main_forms.s
+	@echo ... forms/motor_forms.obj
+	@echo ... forms/motor_forms.i
+	@echo ... forms/motor_forms.s
 	@echo ... forms/suscap_debuger_forms.obj
 	@echo ... forms/suscap_debuger_forms.i
 	@echo ... forms/suscap_debuger_forms.s
 	@echo ... forms/usart_forms.obj
 	@echo ... forms/usart_forms.i
 	@echo ... forms/usart_forms.s
+	@echo ... function/BMI1088_show.obj
+	@echo ... function/BMI1088_show.i
+	@echo ... function/BMI1088_show.s
+	@echo ... function/can_communication.obj
+	@echo ... function/can_communication.i
+	@echo ... function/can_communication.s
+	@echo ... function/data_usart.obj
+	@echo ... function/data_usart.i
+	@echo ... function/data_usart.s
 	@echo ... function/delay.obj
 	@echo ... function/delay.i
 	@echo ... function/delay.s
-	@echo ... function/hello.obj
-	@echo ... function/hello.i
-	@echo ... function/hello.s
 	@echo ... function/key.obj
 	@echo ... function/key.i
 	@echo ... function/key.s

@@ -3,7 +3,6 @@
 
 # compile ASM with D:/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
 # compile C with D:/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
-# compile CXX with D:/gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe
 ASM_DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
 
 ASM_INCLUDES = -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Include -ID:\rmbuild\Debugger\debugger-code\devices -ID:\rmbuild\Debugger\debugger-code\forms -ID:\rmbuild\Debugger\debugger-code\function -ID:\rmbuild\Debugger\debugger-code\GUI -ID:\rmbuild\Debugger\debugger-code\hardwares -ID:\rmbuild\Debugger\debugger-code\system
@@ -15,10 +14,4 @@ C_DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
 C_INCLUDES = -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Include -ID:\rmbuild\Debugger\debugger-code\devices -ID:\rmbuild\Debugger\debugger-code\forms -ID:\rmbuild\Debugger\debugger-code\function -ID:\rmbuild\Debugger\debugger-code\GUI -ID:\rmbuild\Debugger\debugger-code\hardwares -ID:\rmbuild\Debugger\debugger-code\system
 
 C_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-
-CXX_DEFINES = -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER
-
-CXX_INCLUDES = -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc -ID:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Device\ST\STM32F1xx\Include -ID:\rmbuild\Debugger\debugger-code\Drivers\CMSIS\Include -ID:\rmbuild\Debugger\debugger-code\devices -ID:\rmbuild\Debugger\debugger-code\forms -ID:\rmbuild\Debugger\debugger-code\function -ID:\rmbuild\Debugger\debugger-code\GUI -ID:\rmbuild\Debugger\debugger-code\hardwares -ID:\rmbuild\Debugger\debugger-code\system
-
-CXX_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu++17
 

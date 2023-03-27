@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 set(CMAKE_DEPENDS_LANGUAGES
   "ASM"
   "C"
-  "CXX"
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
@@ -59,10 +58,15 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/rmbuild/Debugger/debugger-code/devices/xpt2046.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj"
   "D:/rmbuild/Debugger/debugger-code/forms/canid_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj"
   "D:/rmbuild/Debugger/debugger-code/forms/dail_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/forms/imu_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.obj"
   "D:/rmbuild/Debugger/debugger-code/forms/logic_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj"
   "D:/rmbuild/Debugger/debugger-code/forms/main_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/forms/motor_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj"
   "D:/rmbuild/Debugger/debugger-code/forms/suscap_debuger_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj"
   "D:/rmbuild/Debugger/debugger-code/forms/usart_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/function/BMI1088_show.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/function/can_communication.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/function/data_usart.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj"
   "D:/rmbuild/Debugger/debugger-code/function/delay.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/delay.c.obj"
   "D:/rmbuild/Debugger/debugger-code/function/key.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/key.c.obj"
   "D:/rmbuild/Debugger/debugger-code/function/motor.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/motor.c.obj"
@@ -93,31 +97,6 @@ set(CMAKE_TARGET_DEFINITIONS_C
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../Drivers/STM32F1xx_HAL_Driver/Inc"
-  "../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
-  "../Drivers/CMSIS/Device/ST/STM32F1xx/Include"
-  "../Drivers/CMSIS/Include"
-  "../devices"
-  "../forms"
-  "../function"
-  "../GUI"
-  "../hardwares"
-  "../system"
-  )
-set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/rmbuild/Debugger/debugger-code/function/hello.cpp" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/hello.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "DEBUG"
-  "STM32F103xE"
-  "USE_HAL_DRIVER"
-  )
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Drivers/STM32F1xx_HAL_Driver/Inc"
   "../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
   "../Drivers/CMSIS/Device/ST/STM32F1xx/Include"

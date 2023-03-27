@@ -74,6 +74,4 @@ void set_moto_current(int16_t current, uint16_t id);
 void CAN_Id_Sort();
 
 
-void can_init(void);
-
 #endif // MOTOR_TEST_CORE_INC_MOTOR_H_

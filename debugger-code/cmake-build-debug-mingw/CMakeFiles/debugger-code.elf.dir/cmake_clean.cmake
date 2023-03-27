@@ -23,12 +23,16 @@ file(REMOVE_RECURSE
   "CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj"
   "CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj"
   "CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj"
+  "CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.obj"
   "CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj"
   "CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj"
+  "CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj"
   "CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj"
   "CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj"
+  "CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.obj"
+  "CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj"
+  "CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj"
   "CMakeFiles/debugger-code.elf.dir/function/delay.c.obj"
-  "CMakeFiles/debugger-code.elf.dir/function/hello.cpp.obj"
   "CMakeFiles/debugger-code.elf.dir/function/key.c.obj"
   "CMakeFiles/debugger-code.elf.dir/function/motor.c.obj"
   "CMakeFiles/debugger-code.elf.dir/function/pid.c.obj"
@@ -53,6 +57,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang ASM C CXX)
+foreach(lang ASM C)
   include(CMakeFiles/debugger-code.elf.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

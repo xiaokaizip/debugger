@@ -388,6 +388,12 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/dail_forms.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/imu_forms.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/imu_forms.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/logic_forms.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -398,6 +404,12 @@
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/main_forms.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/motor_forms.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/motor_forms.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/suscap_debuger_forms.c">
@@ -412,16 +424,28 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/usart_forms.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/BMI1088_show.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/BMI1088_show.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/can_communication.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/can_communication.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/data_usart.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/data_usart.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/delay.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/delay.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/hello.cpp">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/hello.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/key.c">

@@ -24,6 +24,12 @@ void Form_UpdateEvent(void) {
         case Usart:
             Usart_Form_Load();
             break;
+        case Imu:
+            Imu_Form_Load();
+            break;
+        case Motor:
+            Motor_Form_Load();
+            break;
         default:
             main_Form_Load();
             break;

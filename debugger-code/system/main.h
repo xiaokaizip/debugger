@@ -43,6 +43,8 @@ extern "C" {
 #include "canid_forms.h"
 #include "dail_forms.h"
 #include "usart_forms.h"
+#include "imu_forms.h"
+#include "motor_forms.h"
 
 #include "xpt2046.h"
 

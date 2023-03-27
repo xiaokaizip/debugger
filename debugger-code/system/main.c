@@ -32,8 +32,8 @@
 #include "../function/motor.h"
 #include "retarget.h"
 #include "DynamicX.h"
-
-#include <string.h>
+#include "BMI1088_show.h"
+#include "can_communication.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -62,6 +62,7 @@ uint8_t usart_data[8] = {0};
 
 /* USER CODE BEGIN PV */
 uint16_t usart_times = 0;
+uint16_t can_times = 0;
 uint16_t times = 0;
 uint16_t twinkles = 0;
 extern uint16_t can_id[6];
@@ -69,6 +70,7 @@ extern unsigned char lcd_buffer[128 * 160 * 2];
 
 /*定时器中断*/
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+    can_times++;
     usart_times++;
     times++;
     twinkles++;
@@ -134,7 +136,7 @@ int main(void) {
     MX_TIM1_Init();
 
     /* USER CODE BEGIN 2 */
-    // RetargetInit(&huart1);//初始化打印的函数
+    RetargetInit(&huart1);//初始化打印的函数
     //  RetargetInit(&huart4);
     HAL_TIM_Base_Start_IT(&htim1);//开启定时器的中断
     HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);//开启PWM输出
@@ -148,12 +150,15 @@ int main(void) {
 
 
     main_Form_Init();
+    //Imu_Form_Init();
     HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
     forms.id = 0;
     uint8_t delay_times = 10;
     /* USER CODE END 2 */
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
+
+
     while (1) {
         /* USER CODE END WHILE */
 
@@ -181,12 +186,14 @@ int main(void) {
                 break;
             }
         }
-        printf("key=%d\n", key_Enter_flag);
+        // printf("key=%d\n", key_Enter_flag);
         while (1) {
             Form_UpdateEvent();
-
+            // Imu_Form_Load();
             HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
             HAL_Delay(10);
+            //show_BIM1088_data();
+
             if (times > delay_times) {
                 times = 0;
                 break;
