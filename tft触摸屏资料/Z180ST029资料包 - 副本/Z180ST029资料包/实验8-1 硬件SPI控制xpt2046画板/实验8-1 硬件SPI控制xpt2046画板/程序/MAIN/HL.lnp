@@ -1,8 +1,0 @@
-"main.obj",
-".\delay.obj",
-".\tft.obj",
-".\GUI.obj",
-".\xpt2046.obj",
-".\spi.obj" 
-TO "HL" 
-RAMSIZE(256) 
