@@ -128,6 +128,54 @@ debugger-code.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/build
 .PHONY : debugger-code.elf/fast
 
+BMI088/BMI1088_show.obj: BMI088/BMI1088_show.c.obj
+.PHONY : BMI088/BMI1088_show.obj
+
+# target to build an object file
+BMI088/BMI1088_show.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.obj
+.PHONY : BMI088/BMI1088_show.c.obj
+
+BMI088/BMI1088_show.i: BMI088/BMI1088_show.c.i
+.PHONY : BMI088/BMI1088_show.i
+
+# target to preprocess a source file
+BMI088/BMI1088_show.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.i
+.PHONY : BMI088/BMI1088_show.c.i
+
+BMI088/BMI1088_show.s: BMI088/BMI1088_show.c.s
+.PHONY : BMI088/BMI1088_show.s
+
+# target to generate assembly for a file
+BMI088/BMI1088_show.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.s
+.PHONY : BMI088/BMI1088_show.c.s
+
+BMI088/MahonyAHRS.obj: BMI088/MahonyAHRS.c.obj
+.PHONY : BMI088/MahonyAHRS.obj
+
+# target to build an object file
+BMI088/MahonyAHRS.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.obj
+.PHONY : BMI088/MahonyAHRS.c.obj
+
+BMI088/MahonyAHRS.i: BMI088/MahonyAHRS.c.i
+.PHONY : BMI088/MahonyAHRS.i
+
+# target to preprocess a source file
+BMI088/MahonyAHRS.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.i
+.PHONY : BMI088/MahonyAHRS.c.i
+
+BMI088/MahonyAHRS.s: BMI088/MahonyAHRS.c.s
+.PHONY : BMI088/MahonyAHRS.s
+
+# target to generate assembly for a file
+BMI088/MahonyAHRS.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.s
+.PHONY : BMI088/MahonyAHRS.c.s
+
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj
 
@@ -608,6 +656,30 @@ GUI/gui_label.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.s
 .PHONY : GUI/gui_label.c.s
 
+data_structure/queue.obj: data_structure/queue.c.obj
+.PHONY : data_structure/queue.obj
+
+# target to build an object file
+data_structure/queue.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj
+.PHONY : data_structure/queue.c.obj
+
+data_structure/queue.i: data_structure/queue.c.i
+.PHONY : data_structure/queue.i
+
+# target to preprocess a source file
+data_structure/queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.i
+.PHONY : data_structure/queue.c.i
+
+data_structure/queue.s: data_structure/queue.c.s
+.PHONY : data_structure/queue.s
+
+# target to generate assembly for a file
+data_structure/queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.s
+.PHONY : data_structure/queue.c.s
+
 devices/lcd_init.obj: devices/lcd_init.c.obj
 .PHONY : devices/lcd_init.obj
 
@@ -848,30 +920,6 @@ forms/usart_forms.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.s
 .PHONY : forms/usart_forms.c.s
 
-function/BMI1088_show.obj: function/BMI1088_show.c.obj
-.PHONY : function/BMI1088_show.obj
-
-# target to build an object file
-function/BMI1088_show.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.obj
-.PHONY : function/BMI1088_show.c.obj
-
-function/BMI1088_show.i: function/BMI1088_show.c.i
-.PHONY : function/BMI1088_show.i
-
-# target to preprocess a source file
-function/BMI1088_show.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.i
-.PHONY : function/BMI1088_show.c.i
-
-function/BMI1088_show.s: function/BMI1088_show.c.s
-.PHONY : function/BMI1088_show.s
-
-# target to generate assembly for a file
-function/BMI1088_show.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.s
-.PHONY : function/BMI1088_show.c.s
-
 function/can_communication.obj: function/can_communication.c.obj
 .PHONY : function/can_communication.obj
 
@@ -967,6 +1015,30 @@ function/key.s: function/key.c.s
 function/key.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/key.c.s
 .PHONY : function/key.c.s
+
+function/led.obj: function/led.c.obj
+.PHONY : function/led.obj
+
+# target to build an object file
+function/led.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/led.c.obj
+.PHONY : function/led.c.obj
+
+function/led.i: function/led.c.i
+.PHONY : function/led.i
+
+# target to preprocess a source file
+function/led.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/led.c.i
+.PHONY : function/led.c.i
+
+function/led.s: function/led.c.s
+.PHONY : function/led.s
+
+# target to generate assembly for a file
+function/led.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger-code.elf.dir\build.make CMakeFiles/debugger-code.elf.dir/function/led.c.s
+.PHONY : function/led.c.s
 
 function/motor.obj: function/motor.c.obj
 .PHONY : function/motor.obj
@@ -1369,6 +1441,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... debugger-code.elf
+	@echo ... BMI088/BMI1088_show.obj
+	@echo ... BMI088/BMI1088_show.i
+	@echo ... BMI088/BMI1088_show.s
+	@echo ... BMI088/MahonyAHRS.obj
+	@echo ... BMI088/MahonyAHRS.i
+	@echo ... BMI088/MahonyAHRS.s
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.i
 	@echo ... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s
@@ -1429,6 +1507,9 @@ help:
 	@echo ... GUI/gui_label.obj
 	@echo ... GUI/gui_label.i
 	@echo ... GUI/gui_label.s
+	@echo ... data_structure/queue.obj
+	@echo ... data_structure/queue.i
+	@echo ... data_structure/queue.s
 	@echo ... devices/lcd_init.obj
 	@echo ... devices/lcd_init.i
 	@echo ... devices/lcd_init.s
@@ -1459,9 +1540,6 @@ help:
 	@echo ... forms/usart_forms.obj
 	@echo ... forms/usart_forms.i
 	@echo ... forms/usart_forms.s
-	@echo ... function/BMI1088_show.obj
-	@echo ... function/BMI1088_show.i
-	@echo ... function/BMI1088_show.s
 	@echo ... function/can_communication.obj
 	@echo ... function/can_communication.i
 	@echo ... function/can_communication.s
@@ -1474,6 +1552,9 @@ help:
 	@echo ... function/key.obj
 	@echo ... function/key.i
 	@echo ... function/key.s
+	@echo ... function/led.obj
+	@echo ... function/led.i
+	@echo ... function/led.s
 	@echo ... function/motor.obj
 	@echo ... function/motor.i
 	@echo ... function/motor.s

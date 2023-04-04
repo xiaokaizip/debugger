@@ -32,8 +32,12 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../GUI"
   "../hardwares"
   "../system"
+  "../data structure"
+  "../BMI088"
   )
 set(CMAKE_DEPENDS_CHECK_C
+  "D:/rmbuild/Debugger/debugger-code/BMI088/BMI1088_show.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/BMI088/MahonyAHRS.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj"
   "D:/rmbuild/Debugger/debugger-code/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
@@ -54,6 +58,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/rmbuild/Debugger/debugger-code/GUI/gui_button.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj"
   "D:/rmbuild/Debugger/debugger-code/GUI/gui_form.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj"
   "D:/rmbuild/Debugger/debugger-code/GUI/gui_label.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/data structure/queue.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj"
   "D:/rmbuild/Debugger/debugger-code/devices/lcd_init.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj"
   "D:/rmbuild/Debugger/debugger-code/devices/xpt2046.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj"
   "D:/rmbuild/Debugger/debugger-code/forms/canid_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj"
@@ -64,11 +69,11 @@ set(CMAKE_DEPENDS_CHECK_C
   "D:/rmbuild/Debugger/debugger-code/forms/motor_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj"
   "D:/rmbuild/Debugger/debugger-code/forms/suscap_debuger_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj"
   "D:/rmbuild/Debugger/debugger-code/forms/usart_forms.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj"
-  "D:/rmbuild/Debugger/debugger-code/function/BMI1088_show.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.obj"
   "D:/rmbuild/Debugger/debugger-code/function/can_communication.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj"
   "D:/rmbuild/Debugger/debugger-code/function/data_usart.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj"
   "D:/rmbuild/Debugger/debugger-code/function/delay.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/delay.c.obj"
   "D:/rmbuild/Debugger/debugger-code/function/key.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/key.c.obj"
+  "D:/rmbuild/Debugger/debugger-code/function/led.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/led.c.obj"
   "D:/rmbuild/Debugger/debugger-code/function/motor.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/motor.c.obj"
   "D:/rmbuild/Debugger/debugger-code/function/pid.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/function/pid.c.obj"
   "D:/rmbuild/Debugger/debugger-code/hardwares/can.c" "D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/CMakeFiles/debugger-code.elf.dir/hardwares/can.c.obj"
@@ -107,6 +112,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../GUI"
   "../hardwares"
   "../system"
+  "../data structure"
+  "../BMI088"
   )
 
 # The set of dependency files which are needed:

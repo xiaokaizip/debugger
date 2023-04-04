@@ -28,12 +28,12 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "lcd_init.h"
-#include "../function/key.h"
-#include "../function/motor.h"
+#include "key.h"
+#include "motor.h"
 #include "retarget.h"
 #include "DynamicX.h"
-#include "BMI1088_show.h"
 #include "can_communication.h"
+#include "BMI1088_show.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,6 +56,17 @@ Forms_struct_t forms;
 
 
 uint8_t usart_data[8] = {0};
+
+///////////IMU////////////
+extern float accel[3];
+extern float gyro[3];
+extern float mag[3];
+
+extern float INS_quat[4];
+extern float INS_angle[3];
+uint8_t IMU_updata = 0;
+extern uint8_t can_BMI_accel_data[8];
+extern uint8_t can_BMI_gyro_data[8];
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -74,10 +85,12 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
     usart_times++;
     times++;
     twinkles++;
-    if (twinkles > 1000) {
-        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-        twinkles = 0;
-    }
+    AHRS_update(INS_quat, 1.0f / 1000.0f, gyro, accel, mag);
+    get_angle(INS_quat, &INS_angle[0], &INS_angle[1], &INS_angle[2]);
+//    if (twinkles > 1000) {
+//        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+//        twinkles = 0;
+//    }
 }
 
 
@@ -157,7 +170,20 @@ int main(void) {
     /* USER CODE END 2 */
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
+    led_data_t hLED = {0};
 
+
+    led_init(&hLED, GPIOC, GPIO_PIN_13, 0, GPIOC, GPIO_PIN_14, 0);
+    led_set_mode(&hLED, led_mode_off);
+
+//    while (1) {
+//        led_indicate_trx(&hLED, led_2);
+//        led_indicate_trx(&hLED, led_1);
+//
+//        HAL_Delay(100);
+//        led_update(&hLED);
+//
+//    }
 
     while (1) {
         /* USER CODE END WHILE */
@@ -192,7 +218,6 @@ int main(void) {
             // Imu_Form_Load();
             HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
             HAL_Delay(10);
-            //show_BIM1088_data();
 
             if (times > delay_times) {
                 times = 0;

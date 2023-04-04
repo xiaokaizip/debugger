@@ -40,10 +40,10 @@ int16_t get_moto_measure(moto_measure_t *ptr) {
  * @param id 电机的id
  */
 void set_moto_current(int16_t current, uint16_t id) {
-    can_header.IDE = CAN_ID_STD;
-    can_header.RTR = CAN_RTR_DATA;
-    can_header.StdId = 0x200;
-    can_header.DLC = 8;
+    can_header.IDE = CAN_ID_STD;      //当该位为0时，为标准帧；当该位为1时，为拓展帧
+    can_header.RTR = CAN_RTR_DATA;    //远程帧
+    can_header.StdId = 0x200;         //ID
+    can_header.DLC = 8;               //数据位
 
     can_tx_data[(id - 1) * 2] = current >> 8;
     can_tx_data[(id - 1) * 2 + 1] = current & 0xFF;

@@ -49,12 +49,12 @@ endif ()
 
 include_directories(Drivers/STM32F1xx_HAL_Driver/Inc Drivers/STM32F1xx_HAL_Driver/Inc/Legacy
         Drivers/CMSIS/Device/ST/STM32F1xx/Include Drivers/CMSIS/Include
-        devices forms function GUI hardwares system)
+        devices forms function GUI hardwares system "data structure" BMI088)
 
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE)
 
 file(GLOB_RECURSE SOURCES "devices/*.*" "forms/*.*" "function/*.*" "function/*.cpp" "GUI/*.*" "hardwares/*.*"
-        "system/*.c" "system/*.s" "Drivers/*.*")
+        "system/*.c" "system/*.s" "Drivers/*.*" "data structure/*.*" "BMI088/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103RCTX_FLASH.ld)
 

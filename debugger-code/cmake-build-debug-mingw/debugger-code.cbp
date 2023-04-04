@@ -37,6 +37,8 @@
 					<Add directory="D:/rmbuild/Debugger/debugger-code/GUI"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/hardwares"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/system"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/data structure"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/BMI088"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -71,6 +73,8 @@
 					<Add directory="D:/rmbuild/Debugger/debugger-code/GUI"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/hardwares"/>
 					<Add directory="D:/rmbuild/Debugger/debugger-code/system"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/data structure"/>
+					<Add directory="D:/rmbuild/Debugger/debugger-code/BMI088"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -106,6 +110,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/BMI088/BMI1088_show.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/BMI088/BMI1088_show.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/BMI088/MahonyAHRS.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/BMI088/MahonyAHRS.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -364,6 +380,12 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/STM32F103RCTX_FLASH.ld">
 			<Option target="debugger-code.elf"/>
 		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/data structure/queue.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/data structure/queue.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/devices/lcd_init.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -424,12 +446,6 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/forms/usart_forms.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/BMI1088_show.c">
-			<Option target="debugger-code.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/BMI1088_show.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/can_communication.c">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -452,6 +468,12 @@
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/key.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/led.c">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/led.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger-code/function/motor.c">

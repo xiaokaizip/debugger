@@ -65,9 +65,35 @@ include CMakeFiles/debugger-code.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/debugger-code.elf.dir/flags.make
 
+CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
+CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.obj: ../BMI088/BMI1088_show.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\BMI088\BMI1088_show.c.obj -c D:\rmbuild\Debugger\debugger-code\BMI088\BMI1088_show.c
+
+CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger-code\BMI088\BMI1088_show.c > CMakeFiles\debugger-code.elf.dir\BMI088\BMI1088_show.c.i
+
+CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger-code\BMI088\BMI1088_show.c -o CMakeFiles\debugger-code.elf.dir\BMI088\BMI1088_show.c.s
+
+CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
+CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.obj: ../BMI088/MahonyAHRS.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\BMI088\MahonyAHRS.c.obj -c D:\rmbuild\Debugger\debugger-code\BMI088\MahonyAHRS.c
+
+CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger-code\BMI088\MahonyAHRS.c > CMakeFiles\debugger-code.elf.dir\BMI088\MahonyAHRS.c.i
+
+CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger-code\BMI088\MahonyAHRS.c -o CMakeFiles\debugger-code.elf.dir\BMI088\MahonyAHRS.c.s
+
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
@@ -80,7 +106,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_can.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_can.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.i: cmake_force
@@ -93,7 +119,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
@@ -106,7 +132,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
@@ -119,7 +145,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
@@ -132,7 +158,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
@@ -145,7 +171,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
@@ -158,7 +184,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
@@ -171,7 +197,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
@@ -184,7 +210,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
@@ -197,7 +223,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
@@ -210,7 +236,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
@@ -223,7 +249,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.i: cmake_force
@@ -236,7 +262,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
@@ -249,7 +275,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
@@ -262,7 +288,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj -c D:\rmbuild\Debugger\debugger-code\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c
 
 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i: cmake_force
@@ -275,7 +301,7 @@ CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_
 
 CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj: ../GUI/gui_base.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\GUI\gui_base.c.obj -c D:\rmbuild\Debugger\debugger-code\GUI\gui_base.c
 
 CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.i: cmake_force
@@ -288,7 +314,7 @@ CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj: ../GUI/gui_button.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\GUI\gui_button.c.obj -c D:\rmbuild\Debugger\debugger-code\GUI\gui_button.c
 
 CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.i: cmake_force
@@ -301,7 +327,7 @@ CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj: ../GUI/gui_form.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\GUI\gui_form.c.obj -c D:\rmbuild\Debugger\debugger-code\GUI\gui_form.c
 
 CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.i: cmake_force
@@ -314,7 +340,7 @@ CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj: ../GUI/gui_label.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\GUI\gui_label.c.obj -c D:\rmbuild\Debugger\debugger-code\GUI\gui_label.c
 
 CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.i: cmake_force
@@ -325,9 +351,22 @@ CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger-code\GUI\gui_label.c -o CMakeFiles\debugger-code.elf.dir\GUI\gui_label.c.s
 
+CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
+CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj: ../data\ structure/queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\data_structure\queue.c.obj -c "D:\rmbuild\Debugger\debugger-code\data structure\queue.c"
+
+CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\rmbuild\Debugger\debugger-code\data structure\queue.c" > CMakeFiles\debugger-code.elf.dir\data_structure\queue.c.i
+
+CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\rmbuild\Debugger\debugger-code\data structure\queue.c" -o CMakeFiles\debugger-code.elf.dir\data_structure\queue.c.s
+
 CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj: ../devices/lcd_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\devices\lcd_init.c.obj -c D:\rmbuild\Debugger\debugger-code\devices\lcd_init.c
 
 CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.i: cmake_force
@@ -340,7 +379,7 @@ CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj: ../devices/xpt2046.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\devices\xpt2046.c.obj -c D:\rmbuild\Debugger\debugger-code\devices\xpt2046.c
 
 CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.i: cmake_force
@@ -353,7 +392,7 @@ CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj: ../forms/canid_forms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\canid_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\canid_forms.c
 
 CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.i: cmake_force
@@ -366,7 +405,7 @@ CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj: ../forms/dail_forms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\dail_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\dail_forms.c
 
 CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.i: cmake_force
@@ -379,7 +418,7 @@ CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.obj: ../forms/imu_forms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\imu_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\imu_forms.c
 
 CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.i: cmake_force
@@ -392,7 +431,7 @@ CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj: ../forms/logic_forms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\logic_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\logic_forms.c
 
 CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.i: cmake_force
@@ -405,7 +444,7 @@ CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj: ../forms/main_forms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\main_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\main_forms.c
 
 CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.i: cmake_force
@@ -418,7 +457,7 @@ CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj: ../forms/motor_forms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\motor_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\motor_forms.c
 
 CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.i: cmake_force
@@ -431,7 +470,7 @@ CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj: ../forms/suscap_debuger_forms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\suscap_debuger_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\suscap_debuger_forms.c
 
 CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.i: cmake_force
@@ -444,7 +483,7 @@ CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj: ../forms/usart_forms.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\forms\usart_forms.c.obj -c D:\rmbuild\Debugger\debugger-code\forms\usart_forms.c
 
 CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.i: cmake_force
@@ -455,22 +494,9 @@ CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger-code\forms\usart_forms.c -o CMakeFiles\debugger-code.elf.dir\forms\usart_forms.c.s
 
-CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
-CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.obj: ../function/BMI1088_show.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.obj"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\function\BMI1088_show.c.obj -c D:\rmbuild\Debugger\debugger-code\function\BMI1088_show.c
-
-CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.i"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger-code\function\BMI1088_show.c > CMakeFiles\debugger-code.elf.dir\function\BMI1088_show.c.i
-
-CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.s"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger-code\function\BMI1088_show.c -o CMakeFiles\debugger-code.elf.dir\function\BMI1088_show.c.s
-
 CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj: ../function/can_communication.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\function\can_communication.c.obj -c D:\rmbuild\Debugger\debugger-code\function\can_communication.c
 
 CMakeFiles/debugger-code.elf.dir/function/can_communication.c.i: cmake_force
@@ -483,7 +509,7 @@ CMakeFiles/debugger-code.elf.dir/function/can_communication.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj: ../function/data_usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\function\data_usart.c.obj -c D:\rmbuild\Debugger\debugger-code\function\data_usart.c
 
 CMakeFiles/debugger-code.elf.dir/function/data_usart.c.i: cmake_force
@@ -496,7 +522,7 @@ CMakeFiles/debugger-code.elf.dir/function/data_usart.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/function/delay.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/function/delay.c.obj: ../function/delay.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/debugger-code.elf.dir/function/delay.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/debugger-code.elf.dir/function/delay.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\function\delay.c.obj -c D:\rmbuild\Debugger\debugger-code\function\delay.c
 
 CMakeFiles/debugger-code.elf.dir/function/delay.c.i: cmake_force
@@ -509,7 +535,7 @@ CMakeFiles/debugger-code.elf.dir/function/delay.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/function/key.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/function/key.c.obj: ../function/key.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/debugger-code.elf.dir/function/key.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/debugger-code.elf.dir/function/key.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\function\key.c.obj -c D:\rmbuild\Debugger\debugger-code\function\key.c
 
 CMakeFiles/debugger-code.elf.dir/function/key.c.i: cmake_force
@@ -520,9 +546,22 @@ CMakeFiles/debugger-code.elf.dir/function/key.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger-code.elf.dir/function/key.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger-code\function\key.c -o CMakeFiles\debugger-code.elf.dir\function\key.c.s
 
+CMakeFiles/debugger-code.elf.dir/function/led.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
+CMakeFiles/debugger-code.elf.dir/function/led.c.obj: ../function/led.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/debugger-code.elf.dir/function/led.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\function\led.c.obj -c D:\rmbuild\Debugger\debugger-code\function\led.c
+
+CMakeFiles/debugger-code.elf.dir/function/led.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger-code.elf.dir/function/led.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger-code\function\led.c > CMakeFiles\debugger-code.elf.dir\function\led.c.i
+
+CMakeFiles/debugger-code.elf.dir/function/led.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger-code.elf.dir/function/led.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger-code\function\led.c -o CMakeFiles\debugger-code.elf.dir\function\led.c.s
+
 CMakeFiles/debugger-code.elf.dir/function/motor.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/function/motor.c.obj: ../function/motor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/debugger-code.elf.dir/function/motor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/debugger-code.elf.dir/function/motor.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\function\motor.c.obj -c D:\rmbuild\Debugger\debugger-code\function\motor.c
 
 CMakeFiles/debugger-code.elf.dir/function/motor.c.i: cmake_force
@@ -535,7 +574,7 @@ CMakeFiles/debugger-code.elf.dir/function/motor.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/function/pid.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/function/pid.c.obj: ../function/pid.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/debugger-code.elf.dir/function/pid.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/debugger-code.elf.dir/function/pid.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\function\pid.c.obj -c D:\rmbuild\Debugger\debugger-code\function\pid.c
 
 CMakeFiles/debugger-code.elf.dir/function/pid.c.i: cmake_force
@@ -548,7 +587,7 @@ CMakeFiles/debugger-code.elf.dir/function/pid.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/hardwares/can.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/hardwares/can.c.obj: ../hardwares/can.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/debugger-code.elf.dir/hardwares/can.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/debugger-code.elf.dir/hardwares/can.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\hardwares\can.c.obj -c D:\rmbuild\Debugger\debugger-code\hardwares\can.c
 
 CMakeFiles/debugger-code.elf.dir/hardwares/can.c.i: cmake_force
@@ -561,7 +600,7 @@ CMakeFiles/debugger-code.elf.dir/hardwares/can.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.obj: ../hardwares/dma.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\hardwares\dma.c.obj -c D:\rmbuild\Debugger\debugger-code\hardwares\dma.c
 
 CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.i: cmake_force
@@ -574,7 +613,7 @@ CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.obj: ../hardwares/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\hardwares\gpio.c.obj -c D:\rmbuild\Debugger\debugger-code\hardwares\gpio.c
 
 CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.i: cmake_force
@@ -587,7 +626,7 @@ CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.obj: ../hardwares/spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\hardwares\spi.c.obj -c D:\rmbuild\Debugger\debugger-code\hardwares\spi.c
 
 CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.i: cmake_force
@@ -600,7 +639,7 @@ CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.obj: ../hardwares/tim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\hardwares\tim.c.obj -c D:\rmbuild\Debugger\debugger-code\hardwares\tim.c
 
 CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.i: cmake_force
@@ -613,7 +652,7 @@ CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.obj: ../hardwares/usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\hardwares\usart.c.obj -c D:\rmbuild\Debugger\debugger-code\hardwares\usart.c
 
 CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.i: cmake_force
@@ -626,7 +665,7 @@ CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/system/main.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/system/main.c.obj: ../system/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/debugger-code.elf.dir/system/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/debugger-code.elf.dir/system/main.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\system\main.c.obj -c D:\rmbuild\Debugger\debugger-code\system\main.c
 
 CMakeFiles/debugger-code.elf.dir/system/main.c.i: cmake_force
@@ -639,7 +678,7 @@ CMakeFiles/debugger-code.elf.dir/system/main.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/system/retarget.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/system/retarget.c.obj: ../system/retarget.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/debugger-code.elf.dir/system/retarget.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/debugger-code.elf.dir/system/retarget.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\system\retarget.c.obj -c D:\rmbuild\Debugger\debugger-code\system\retarget.c
 
 CMakeFiles/debugger-code.elf.dir/system/retarget.c.i: cmake_force
@@ -652,7 +691,7 @@ CMakeFiles/debugger-code.elf.dir/system/retarget.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/system/startup_stm32f103rctx.s.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/system/startup_stm32f103rctx.s.obj: ../system/startup_stm32f103rctx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/debugger-code.elf.dir/system/startup_stm32f103rctx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object CMakeFiles/debugger-code.elf.dir/system/startup_stm32f103rctx.s.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\debugger-code.elf.dir\system\startup_stm32f103rctx.s.obj -c D:\rmbuild\Debugger\debugger-code\system\startup_stm32f103rctx.s
 
 CMakeFiles/debugger-code.elf.dir/system/startup_stm32f103rctx.s.i: cmake_force
@@ -665,7 +704,7 @@ CMakeFiles/debugger-code.elf.dir/system/startup_stm32f103rctx.s.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.obj: ../system/stm32f1xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\system\stm32f1xx_hal_msp.c.obj -c D:\rmbuild\Debugger\debugger-code\system\stm32f1xx_hal_msp.c
 
 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.i: cmake_force
@@ -678,7 +717,7 @@ CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.obj: ../system/stm32f1xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\system\stm32f1xx_it.c.obj -c D:\rmbuild\Debugger\debugger-code\system\stm32f1xx_it.c
 
 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.i: cmake_force
@@ -691,7 +730,7 @@ CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/system/syscalls.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/system/syscalls.c.obj: ../system/syscalls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/debugger-code.elf.dir/system/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/debugger-code.elf.dir/system/syscalls.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\system\syscalls.c.obj -c D:\rmbuild\Debugger\debugger-code\system\syscalls.c
 
 CMakeFiles/debugger-code.elf.dir/system/syscalls.c.i: cmake_force
@@ -704,7 +743,7 @@ CMakeFiles/debugger-code.elf.dir/system/syscalls.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/system/sysmem.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/system/sysmem.c.obj: ../system/sysmem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/debugger-code.elf.dir/system/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/debugger-code.elf.dir/system/sysmem.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\system\sysmem.c.obj -c D:\rmbuild\Debugger\debugger-code\system\sysmem.c
 
 CMakeFiles/debugger-code.elf.dir/system/sysmem.c.i: cmake_force
@@ -717,7 +756,7 @@ CMakeFiles/debugger-code.elf.dir/system/sysmem.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/system/system.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/system/system.c.obj: ../system/system.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/debugger-code.elf.dir/system/system.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/debugger-code.elf.dir/system/system.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\system\system.c.obj -c D:\rmbuild\Debugger\debugger-code\system\system.c
 
 CMakeFiles/debugger-code.elf.dir/system/system.c.i: cmake_force
@@ -730,7 +769,7 @@ CMakeFiles/debugger-code.elf.dir/system/system.c.s: cmake_force
 
 CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.obj: CMakeFiles/debugger-code.elf.dir/flags.make
 CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.obj: ../system/system_stm32f1xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\debugger-code.elf.dir\system\system_stm32f1xx.c.obj -c D:\rmbuild\Debugger\debugger-code\system\system_stm32f1xx.c
 
 CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.i: cmake_force
@@ -743,6 +782,8 @@ CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.s: cmake_force
 
 # Object files for target debugger-code.elf
 debugger__code_elf_OBJECTS = \
+"CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.obj" \
+"CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj" \
@@ -763,6 +804,7 @@ debugger__code_elf_OBJECTS = \
 "CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj" \
+"CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj" \
@@ -773,11 +815,11 @@ debugger__code_elf_OBJECTS = \
 "CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj" \
-"CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/function/delay.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/function/key.c.obj" \
+"CMakeFiles/debugger-code.elf.dir/function/led.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/function/motor.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/function/pid.c.obj" \
 "CMakeFiles/debugger-code.elf.dir/hardwares/can.c.obj" \
@@ -799,6 +841,8 @@ debugger__code_elf_OBJECTS = \
 # External object files for target debugger-code.elf
 debugger__code_elf_EXTERNAL_OBJECTS =
 
+debugger-code.elf: CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.obj
+debugger-code.elf: CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
@@ -819,6 +863,7 @@ debugger-code.elf: CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj
+debugger-code.elf: CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj
@@ -829,11 +874,11 @@ debugger-code.elf: CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj
-debugger-code.elf: CMakeFiles/debugger-code.elf.dir/function/BMI1088_show.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/function/delay.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/function/key.c.obj
+debugger-code.elf: CMakeFiles/debugger-code.elf.dir/function/led.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/function/motor.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/function/pid.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/hardwares/can.c.obj
@@ -853,7 +898,7 @@ debugger-code.elf: CMakeFiles/debugger-code.elf.dir/system/system.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.obj
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/build.make
 debugger-code.elf: CMakeFiles/debugger-code.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Linking C executable debugger-code.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\rmbuild\Debugger\debugger-code\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Linking C executable debugger-code.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\debugger-code.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/debugger-code.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/rmbuild/Debugger/debugger-code/cmake-build-debug-mingw/debugger-code.bin"

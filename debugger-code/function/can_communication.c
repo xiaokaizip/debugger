@@ -8,8 +8,8 @@
 #include "string.h"
 
 uint8_t can_rx_data[8];
-uint8_t can_BMI_accel_data[8];
-uint8_t can_BMI_gyro_data[8];
+uint16_t can_BMI_accel_data[8];
+uint16_t can_BMI_gyro_data[8];
 static CAN_TxHeaderTypeDef can_header;
 static uint8_t can_tx_data[8];
 uint16_t can_id[6];
@@ -17,6 +17,8 @@ extern CAN_HandleTypeDef hcan;
 
 extern uint16_t twinkles;
 extern uint16_t times;
+
+extern uint8_t IMU_updata;
 
 /**
  * can ¬À≤®…Ë÷√
@@ -70,10 +72,17 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
         CAN_RxHeaderTypeDef rx_header;
         HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rx_header, can_rx_data);
 
-        if ((uint16_t) rx_header.StdId == 0x100)
-            memcpy(can_BMI_gyro_data, can_rx_data, 8);
-        else if ((uint16_t) rx_header.StdId == 0x101)
-            memcpy(can_BMI_accel_data, can_rx_data, 8);
+        if ((uint16_t) rx_header.StdId == 0x100) {
+            for (int k = 0; k < 8; k++) {
+                can_BMI_gyro_data[k] = can_rx_data[k];
+            }
+            IMU_updata |= 1;
+        } else if ((uint16_t) rx_header.StdId == 0x101) {
+            for (int k = 0; k < 8; k++) {
+                can_BMI_accel_data[k] = can_rx_data[k];
+            }
+            IMU_updata |= (1 << 1);
+        }
         for (int j = 0; j < 6; ++j) {
             for (int k = 0; k < 6; ++k) {
                 if (can_id[k] == (uint16_t) rx_header.StdId) {

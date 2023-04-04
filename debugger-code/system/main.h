@@ -31,12 +31,14 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+//////////////gui///////////////
 #include "lcd_init.h"
 #include "gui_base.h"
 #include "gui_button.h"
 #include "gui_label.h"
 #include "gui_form.h"
 
+/////////////forms/////////////
 #include "main_forms.h"
 #include "suscap_debuger_forms.h"
 #include "logic_forms.h"
@@ -46,9 +48,11 @@ extern "C" {
 #include "imu_forms.h"
 #include "motor_forms.h"
 
+/////////////device/////////////
 #include "xpt2046.h"
 
-
+////////////function////////////
+#include "led.h"
 #include "system.h"
 /* USER CODE END Includes */
 
