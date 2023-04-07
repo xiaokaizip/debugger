@@ -28,7 +28,7 @@ THE SOFTWARE.
 #include <string.h>
 #include "main.h"
 
-#define SEQ_ISPASSED(now, target) ((int32_t) ((now) - (target)) >= 0)
+#define SEQ_ISPASSED(now, target) ((int32_t) ((now) - (target)) >= 0)   /*判断大小*/
 
 /**
  * 初始化led灯
@@ -64,11 +64,15 @@ void led_set_mode(led_data_t *leds, led_mode_t mode) {
     led_update(leds);
 }
 
+/**
+ * 设置led灯的状态
+ * @param led
+ * @param state
+ */
 static void led_set(led_state_t *led, bool state) {
     if (!led->is_active_high) {
         state = !state;
     }
-
     HAL_GPIO_WritePin(led->port, led->pin, state ? GPIO_PIN_SET : GPIO_PIN_RESET);
 }
 
@@ -143,15 +147,21 @@ static void led_update_sequence(led_data_t *leds) {
     }
 }
 
+/**
+ * 更新led结构体的模式。
+ * @param leds
+ */
 void led_update(led_data_t *leds) {
     switch (leds->mode) {
 
         case led_mode_off:
+            //关闭两个led灯
             led_set(&leds->led_state[0], false);
             led_set(&leds->led_state[1], false);
             break;
 
         case led_mode_normal:
+            //更新两个led的状态
             led_update_normal_mode(&leds->led_state[0]);
             led_update_normal_mode(&leds->led_state[1]);
             break;

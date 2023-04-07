@@ -47,7 +47,6 @@ void Button_TurnBuck_CallBack_Imu(void *object) {
 }
 
 void Imu_Form_Init() {
-
     // get_BIM1088_data(gyro, accel);
     AHRS_init(INS_quat, accel, mag);
     for (int i = 0; i < 3; i++) {

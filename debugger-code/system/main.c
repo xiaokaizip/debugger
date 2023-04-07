@@ -173,14 +173,14 @@ int main(void) {
     led_data_t hLED = {0};
 
 
-    led_init(&hLED, GPIOC, GPIO_PIN_13, 0, GPIOC, GPIO_PIN_14, 0);
-    led_set_mode(&hLED, led_mode_off);
-
+    //led_init(&hLED, GPIOC, GPIO_PIN_13, 0, GPIOC, GPIO_PIN_14, 0);
+    //led_set_mode(&hLED, led_mode_off);
+    //led_run_sequence(&hLED, hLED.sequence, 10);
 //    while (1) {
 //        led_indicate_trx(&hLED, led_2);
 //        led_indicate_trx(&hLED, led_1);
-//
-//        HAL_Delay(100);
+//        //HAL_Delay(1000);
+//        //HAL_Delay(10);
 //        led_update(&hLED);
 //
 //    }

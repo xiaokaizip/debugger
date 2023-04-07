@@ -47,6 +47,9 @@ typedef struct {
     uint8_t time_in_10ms;
 } led_seq_step_t;
 
+/**
+ * ledµÆµÄÒı½Å
+ */
 typedef struct {
     void *port;
     uint16_t pin;
