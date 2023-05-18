@@ -352,8 +352,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x60 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
  .debug_ranges  0x00000000       0x50 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
- .debug_line    0x00000000      0x5f9 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
- .debug_str     0x00000000      0x418 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
+ .debug_line    0x00000000      0x608 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
+ .debug_str     0x00000000      0x422 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
  .debug_frame   0x00000000       0xd4 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
  .ARM.attributes
@@ -396,8 +396,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x88 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
  .debug_ranges  0x00000000       0x78 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
- .debug_line    0x00000000      0x796 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
- .debug_str     0x00000000      0x571 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
+ .debug_line    0x00000000      0x7a5 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
+ .debug_str     0x00000000      0x57b CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
  .debug_frame   0x00000000      0x134 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj
  .ARM.attributes
@@ -443,8 +443,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x98 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
  .debug_ranges  0x00000000       0x88 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
- .debug_line    0x00000000      0x92a CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
- .debug_str     0x00000000      0x687 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
+ .debug_line    0x00000000      0x939 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
+ .debug_str     0x00000000      0x691 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
  .debug_frame   0x00000000      0x194 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj
  .ARM.attributes
@@ -475,8 +475,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x30 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
  .debug_ranges  0x00000000       0x20 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
- .debug_line    0x00000000      0x1a9 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
- .debug_str     0x00000000      0x299 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
+ .debug_line    0x00000000      0x1b3 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
+ .debug_str     0x00000000      0x2a3 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
  .debug_frame   0x00000000       0x40 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj
  .ARM.attributes
@@ -529,8 +529,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0xa8 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
  .debug_ranges  0x00000000       0x98 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
- .debug_line    0x00000000      0x490 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
- .debug_str     0x00000000      0x4dd CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
+ .debug_line    0x00000000      0x4a4 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
+ .debug_str     0x00000000      0x4e7 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
  .debug_frame   0x00000000      0x140 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj
  .ARM.attributes
@@ -571,8 +571,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x30 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .debug_ranges  0x00000000       0x38 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
- .debug_line    0x00000000      0x4e2 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
- .debug_str     0x00000000      0x453 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_line    0x00000000      0x4f1 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
+ .debug_str     0x00000000      0x45d CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .debug_frame   0x00000000       0x64 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
  .ARM.attributes
@@ -1080,8 +1080,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x40 CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj
  .debug_ranges  0x00000000       0x48 CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj
- .debug_line    0x00000000      0x374 CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj
- .debug_str     0x00000000      0x420 CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj
+ .debug_line    0x00000000      0x379 CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj
+ .debug_str     0x00000000      0x42a CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj
  .debug_frame   0x00000000       0x98 CMakeFiles/debugger-code.elf.dir/GUI/gui_form.c.obj
  .ARM.attributes
@@ -1093,7 +1093,7 @@ Discarded input sections
  .data          0x00000000        0x0 CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj
  .bss           0x00000000        0x0 CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj
  .debug_line    0x00000000        0x0 CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj
- .debug_str     0x00000000      0x137 CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj
+ .debug_str     0x00000000      0x141 CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj
  .ARM.attributes
                 0x00000000       0x2d CMakeFiles/debugger-code.elf.dir/data_structure/queue.c.obj
@@ -1153,7 +1153,7 @@ Discarded input sections
  .data          0x00000000        0x0 CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj
  .bss           0x00000000        0x0 CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj
  .debug_line    0x00000000        0x0 CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj
- .debug_str     0x00000000      0x136 CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj
+ .debug_str     0x00000000      0x140 CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj
  .ARM.attributes
                 0x00000000       0x2d CMakeFiles/debugger-code.elf.dir/function/data_usart.c.obj
@@ -1189,8 +1189,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x60 CMakeFiles/debugger-code.elf.dir/function/led.c.obj
  .debug_ranges  0x00000000       0x50 CMakeFiles/debugger-code.elf.dir/function/led.c.obj
- .debug_line    0x00000000      0x3dd CMakeFiles/debugger-code.elf.dir/function/led.c.obj
- .debug_str     0x00000000      0x47c CMakeFiles/debugger-code.elf.dir/function/led.c.obj
+ .debug_line    0x00000000      0x3e7 CMakeFiles/debugger-code.elf.dir/function/led.c.obj
+ .debug_str     0x00000000      0x486 CMakeFiles/debugger-code.elf.dir/function/led.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/function/led.c.obj
  .debug_frame   0x00000000      0x100 CMakeFiles/debugger-code.elf.dir/function/led.c.obj
  .ARM.attributes
@@ -1212,8 +1212,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x28 CMakeFiles/debugger-code.elf.dir/function/motor.c.obj
  .debug_ranges  0x00000000       0x18 CMakeFiles/debugger-code.elf.dir/function/motor.c.obj
- .debug_line    0x00000000      0x2b7 CMakeFiles/debugger-code.elf.dir/function/motor.c.obj
- .debug_str     0x00000000      0x644 CMakeFiles/debugger-code.elf.dir/function/motor.c.obj
+ .debug_line    0x00000000      0x2c6 CMakeFiles/debugger-code.elf.dir/function/motor.c.obj
+ .debug_str     0x00000000      0x64e CMakeFiles/debugger-code.elf.dir/function/motor.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/function/motor.c.obj
  .debug_frame   0x00000000       0x50 CMakeFiles/debugger-code.elf.dir/function/motor.c.obj
  .ARM.attributes
@@ -1237,8 +1237,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x40 CMakeFiles/debugger-code.elf.dir/function/pid.c.obj
  .debug_ranges  0x00000000       0x30 CMakeFiles/debugger-code.elf.dir/function/pid.c.obj
- .debug_line    0x00000000      0x33d CMakeFiles/debugger-code.elf.dir/function/pid.c.obj
- .debug_str     0x00000000      0x367 CMakeFiles/debugger-code.elf.dir/function/pid.c.obj
+ .debug_line    0x00000000      0x342 CMakeFiles/debugger-code.elf.dir/function/pid.c.obj
+ .debug_str     0x00000000      0x371 CMakeFiles/debugger-code.elf.dir/function/pid.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/function/pid.c.obj
  .debug_frame   0x00000000       0x8c CMakeFiles/debugger-code.elf.dir/function/pid.c.obj
  .ARM.attributes
@@ -1323,8 +1323,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x28 CMakeFiles/debugger-code.elf.dir/system/system.c.obj
  .debug_ranges  0x00000000       0x18 CMakeFiles/debugger-code.elf.dir/system/system.c.obj
- .debug_line    0x00000000       0xdb CMakeFiles/debugger-code.elf.dir/system/system.c.obj
- .debug_str     0x00000000      0x19e CMakeFiles/debugger-code.elf.dir/system/system.c.obj
+ .debug_line    0x00000000       0xe0 CMakeFiles/debugger-code.elf.dir/system/system.c.obj
+ .debug_str     0x00000000      0x1a8 CMakeFiles/debugger-code.elf.dir/system/system.c.obj
  .comment       0x00000000       0x4a CMakeFiles/debugger-code.elf.dir/system/system.c.obj
  .debug_frame   0x00000000       0x38 CMakeFiles/debugger-code.elf.dir/system/system.c.obj
  .ARM.attributes
@@ -3879,141 +3879,141 @@ LOAD d:/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\li
  .debug_ranges  0x00001348       0x10 CMakeFiles/debugger-code.elf.dir/system/sysmem.c.obj
  .debug_ranges  0x00001358       0x18 CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.obj
 
-.debug_line     0x00000000    0x156f0
- .debug_line    0x00000000      0x2bc CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.obj
- .debug_line    0x000002bc      0x69b CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.obj
- .debug_line    0x00000957      0x55e CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_line    0x00000eb5     0x1127 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
- .debug_line    0x00001fdc      0x647 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_line    0x00002623      0xcf9 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_line    0x0000331c      0x605 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_line    0x00003921      0x287 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.obj
- .debug_line    0x00003ba8      0xc3e CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_line    0x000047e6     0x2478 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_line    0x00006c5e     0x474b CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_line    0x0000b3a9     0x1bd4 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_line    0x0000cf7d     0x20c9 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_line    0x0000f046      0x907 CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj
- .debug_line    0x0000f94d      0x185 CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj
- .debug_line    0x0000fad2      0x212 CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj
- .debug_line    0x0000fce4      0x379 CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj
- .debug_line    0x0001005d      0x5f5 CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj
- .debug_line    0x00010652      0x317 CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj
- .debug_line    0x00010969      0x2e6 CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj
- .debug_line    0x00010c4f      0x39a CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.obj
- .debug_line    0x00010fe9      0x1a1 CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj
- .debug_line    0x0001118a      0x3c8 CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj
- .debug_line    0x00011552      0x366 CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj
- .debug_line    0x000118b8      0x289 CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj
- .debug_line    0x00011b41      0x352 CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj
- .debug_line    0x00011e93      0x43a CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj
- .debug_line    0x000122cd      0x1ff CMakeFiles/debugger-code.elf.dir/function/delay.c.obj
- .debug_line    0x000124cc      0x227 CMakeFiles/debugger-code.elf.dir/function/key.c.obj
- .debug_line    0x000126f3      0x350 CMakeFiles/debugger-code.elf.dir/hardwares/can.c.obj
- .debug_line    0x00012a43      0x1ae CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.obj
- .debug_line    0x00012bf1      0x244 CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.obj
- .debug_line    0x00012e35      0x224 CMakeFiles/debugger-code.elf.dir/hardwares/iwdg.c.obj
- .debug_line    0x00013059      0x570 CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.obj
- .debug_line    0x000135c9      0x543 CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.obj
- .debug_line    0x00013b0c      0x454 CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.obj
- .debug_line    0x00013f60      0x6ad CMakeFiles/debugger-code.elf.dir/system/main.c.obj
- .debug_line    0x0001460d      0x42e CMakeFiles/debugger-code.elf.dir/system/retarget.c.obj
- .debug_line    0x00014a3b       0xa0 CMakeFiles/debugger-code.elf.dir/system/startup_stm32f103rctx.s.obj
- .debug_line    0x00014adb      0x166 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.obj
- .debug_line    0x00014c41      0x3b2 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.obj
- .debug_line    0x00014ff3      0x345 CMakeFiles/debugger-code.elf.dir/system/syscalls.c.obj
- .debug_line    0x00015338      0x188 CMakeFiles/debugger-code.elf.dir/system/sysmem.c.obj
- .debug_line    0x000154c0      0x230 CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.obj
+.debug_line     0x00000000    0x15993
+ .debug_line    0x00000000      0x2c1 CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.obj
+ .debug_line    0x000002c1      0x6a0 CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.obj
+ .debug_line    0x00000961      0x572 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_line    0x00000ed3     0x113b CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+ .debug_line    0x0000200e      0x656 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_line    0x00002664      0xd08 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_line    0x0000336c      0x614 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_line    0x00003980      0x296 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.obj
+ .debug_line    0x00003c16      0xc4d CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_line    0x00004863     0x2487 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_line    0x00006cea     0x475a CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_line    0x0000b444     0x1be3 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_line    0x0000d027     0x20d8 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_line    0x0000f0ff      0x920 CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj
+ .debug_line    0x0000fa1f      0x18a CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj
+ .debug_line    0x0000fba9      0x217 CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj
+ .debug_line    0x0000fdc0      0x392 CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj
+ .debug_line    0x00010152      0x60e CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj
+ .debug_line    0x00010760      0x326 CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj
+ .debug_line    0x00010a86      0x2f5 CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj
+ .debug_line    0x00010d7b      0x3ae CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.obj
+ .debug_line    0x00011129      0x1a6 CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj
+ .debug_line    0x000112cf      0x3d7 CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj
+ .debug_line    0x000116a6      0x375 CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj
+ .debug_line    0x00011a1b      0x298 CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj
+ .debug_line    0x00011cb3      0x361 CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj
+ .debug_line    0x00012014      0x449 CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj
+ .debug_line    0x0001245d      0x20e CMakeFiles/debugger-code.elf.dir/function/delay.c.obj
+ .debug_line    0x0001266b      0x236 CMakeFiles/debugger-code.elf.dir/function/key.c.obj
+ .debug_line    0x000128a1      0x364 CMakeFiles/debugger-code.elf.dir/hardwares/can.c.obj
+ .debug_line    0x00012c05      0x1bd CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.obj
+ .debug_line    0x00012dc2      0x253 CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.obj
+ .debug_line    0x00013015      0x238 CMakeFiles/debugger-code.elf.dir/hardwares/iwdg.c.obj
+ .debug_line    0x0001324d      0x584 CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.obj
+ .debug_line    0x000137d1      0x557 CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.obj
+ .debug_line    0x00013d28      0x468 CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.obj
+ .debug_line    0x00014190      0x6df CMakeFiles/debugger-code.elf.dir/system/main.c.obj
+ .debug_line    0x0001486f      0x43d CMakeFiles/debugger-code.elf.dir/system/retarget.c.obj
+ .debug_line    0x00014cac       0xa5 CMakeFiles/debugger-code.elf.dir/system/startup_stm32f103rctx.s.obj
+ .debug_line    0x00014d51      0x170 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x00014ec1      0x3c1 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.obj
+ .debug_line    0x00015282      0x34a CMakeFiles/debugger-code.elf.dir/system/syscalls.c.obj
+ .debug_line    0x000155cc      0x18d CMakeFiles/debugger-code.elf.dir/system/sysmem.c.obj
+ .debug_line    0x00015759      0x23a CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.obj
 
-.debug_str      0x00000000     0x6152
- .debug_str     0x00000000      0x299 CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.obj
-                                0x2f4 (size before relaxing)
- .debug_str     0x00000299      0x13b CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.obj
-                                0x316 (size before relaxing)
- .debug_str     0x000003d4      0x788 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                                0x94a (size before relaxing)
- .debug_str     0x00000b5c      0x810 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
-                                0xa80 (size before relaxing)
- .debug_str     0x0000136c      0x3bc CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
-                                0x9f9 (size before relaxing)
- .debug_str     0x00001728      0x3ed CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
-                                0x63f (size before relaxing)
- .debug_str     0x00001b15      0x1de CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
-                                0x442 (size before relaxing)
- .debug_str     0x00001cf3       0xb5 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.obj
-                                0x2bd (size before relaxing)
- .debug_str     0x00001da8      0x356 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
-                                0x66d (size before relaxing)
- .debug_str     0x000020fe      0x724 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
-                                0xbaf (size before relaxing)
- .debug_str     0x00002822     0x11bb CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
-                               0x167a (size before relaxing)
- .debug_str     0x000039dd      0x5b3 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
-                                0xe7b (size before relaxing)
- .debug_str     0x00003f90      0x797 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
-                                0xcd0 (size before relaxing)
- .debug_str     0x00004727      0x1a0 CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj
-                                0x760 (size before relaxing)
- .debug_str     0x000048c7      0x100 CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj
-                                0x2e6 (size before relaxing)
- .debug_str     0x000049c7       0xea CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj
-                                0x30b (size before relaxing)
- .debug_str     0x00004ab1       0x5e CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj
-                                0x676 (size before relaxing)
- .debug_str     0x00004b0f      0x173 CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj
-                                0x7e8 (size before relaxing)
- .debug_str     0x00004c82      0x16e CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj
-                                0x400 (size before relaxing)
- .debug_str     0x00004df0       0xbf CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj
-                                0x402 (size before relaxing)
- .debug_str     0x00004eaf       0xe6 CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.obj
-                                0x482 (size before relaxing)
- .debug_str     0x00004f95       0x8f CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj
-                                0x2b9 (size before relaxing)
- .debug_str     0x00005024      0x101 CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj
-                                0x4c2 (size before relaxing)
- .debug_str     0x00005125       0x87 CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj
-                                0x3dc (size before relaxing)
- .debug_str     0x000051ac       0xbf CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj
-                                0x3ee (size before relaxing)
- .debug_str     0x0000526b       0xbc CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj
-                                0x499 (size before relaxing)
- .debug_str     0x00005327       0x98 CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj
-                                0x6fd (size before relaxing)
- .debug_str     0x000053bf       0x66 CMakeFiles/debugger-code.elf.dir/function/delay.c.obj
-                                0x24f (size before relaxing)
- .debug_str     0x00005425       0x3b CMakeFiles/debugger-code.elf.dir/function/key.c.obj
-                                0x261 (size before relaxing)
- .debug_str     0x00005460       0x66 CMakeFiles/debugger-code.elf.dir/hardwares/can.c.obj
-                                0x9cb (size before relaxing)
- .debug_str     0x000054c6       0x3e CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.obj
-                                0x612 (size before relaxing)
- .debug_str     0x00005504       0x40 CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.obj
-                                0x2cb (size before relaxing)
- .debug_str     0x00005544       0x40 CMakeFiles/debugger-code.elf.dir/hardwares/iwdg.c.obj
-                                0x285 (size before relaxing)
- .debug_str     0x00005584       0x76 CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.obj
-                                0x72e (size before relaxing)
- .debug_str     0x000055fa       0xb0 CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.obj
-                                0xdbc (size before relaxing)
- .debug_str     0x000056aa       0x6f CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.obj
-                                0xb44 (size before relaxing)
- .debug_str     0x00005719      0x196 CMakeFiles/debugger-code.elf.dir/system/main.c.obj
-                                0xfef (size before relaxing)
- .debug_str     0x000058af      0x4e2 CMakeFiles/debugger-code.elf.dir/system/retarget.c.obj
-                                0xb53 (size before relaxing)
- .debug_str     0x00005d91       0x4f CMakeFiles/debugger-code.elf.dir/system/startup_stm32f103rctx.s.obj
-                                 0x89 (size before relaxing)
- .debug_str     0x00005de0       0x3d CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.obj
-                                0x26a (size before relaxing)
- .debug_str     0x00005e1d      0x142 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.obj
-                                0xc90 (size before relaxing)
- .debug_str     0x00005f5f       0xf2 CMakeFiles/debugger-code.elf.dir/system/syscalls.c.obj
-                                0x3fe (size before relaxing)
- .debug_str     0x00006051       0x92 CMakeFiles/debugger-code.elf.dir/system/sysmem.c.obj
-                                0x258 (size before relaxing)
- .debug_str     0x000060e3       0x6f CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.obj
-                                0x294 (size before relaxing)
+.debug_str      0x00000000     0x6233
+ .debug_str     0x00000000      0x2a3 CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.obj
+                                0x2fe (size before relaxing)
+ .debug_str     0x000002a3      0x140 CMakeFiles/debugger-code.elf.dir/BMI088/MahonyAHRS.c.obj
+                                0x320 (size before relaxing)
+ .debug_str     0x000003e3      0x78d CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                                0x954 (size before relaxing)
+ .debug_str     0x00000b70      0x815 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+                                0xa8a (size before relaxing)
+ .debug_str     0x00001385      0x3c1 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                                0xa03 (size before relaxing)
+ .debug_str     0x00001746      0x3f2 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                                0x649 (size before relaxing)
+ .debug_str     0x00001b38      0x1e3 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                                0x44c (size before relaxing)
+ .debug_str     0x00001d1b       0xba CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.obj
+                                0x2c7 (size before relaxing)
+ .debug_str     0x00001dd5      0x35b CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                                0x677 (size before relaxing)
+ .debug_str     0x00002130      0x729 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                                0xbb9 (size before relaxing)
+ .debug_str     0x00002859     0x11c0 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                               0x1684 (size before relaxing)
+ .debug_str     0x00003a19      0x5b8 CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                                0xe85 (size before relaxing)
+ .debug_str     0x00003fd1      0x79c CMakeFiles/debugger-code.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                                0xcda (size before relaxing)
+ .debug_str     0x0000476d      0x1a5 CMakeFiles/debugger-code.elf.dir/GUI/gui_base.c.obj
+                                0x76a (size before relaxing)
+ .debug_str     0x00004912      0x105 CMakeFiles/debugger-code.elf.dir/GUI/gui_button.c.obj
+                                0x2f0 (size before relaxing)
+ .debug_str     0x00004a17       0xef CMakeFiles/debugger-code.elf.dir/GUI/gui_label.c.obj
+                                0x315 (size before relaxing)
+ .debug_str     0x00004b06       0x63 CMakeFiles/debugger-code.elf.dir/devices/lcd_init.c.obj
+                                0x680 (size before relaxing)
+ .debug_str     0x00004b69      0x178 CMakeFiles/debugger-code.elf.dir/devices/xpt2046.c.obj
+                                0x7f2 (size before relaxing)
+ .debug_str     0x00004ce1      0x173 CMakeFiles/debugger-code.elf.dir/forms/canid_forms.c.obj
+                                0x40a (size before relaxing)
+ .debug_str     0x00004e54       0xc4 CMakeFiles/debugger-code.elf.dir/forms/dail_forms.c.obj
+                                0x40c (size before relaxing)
+ .debug_str     0x00004f18       0xeb CMakeFiles/debugger-code.elf.dir/forms/imu_forms.c.obj
+                                0x48c (size before relaxing)
+ .debug_str     0x00005003       0x94 CMakeFiles/debugger-code.elf.dir/forms/logic_forms.c.obj
+                                0x2c3 (size before relaxing)
+ .debug_str     0x00005097      0x106 CMakeFiles/debugger-code.elf.dir/forms/main_forms.c.obj
+                                0x4cc (size before relaxing)
+ .debug_str     0x0000519d       0x8c CMakeFiles/debugger-code.elf.dir/forms/motor_forms.c.obj
+                                0x3e6 (size before relaxing)
+ .debug_str     0x00005229       0xc4 CMakeFiles/debugger-code.elf.dir/forms/suscap_debuger_forms.c.obj
+                                0x3f8 (size before relaxing)
+ .debug_str     0x000052ed       0xc1 CMakeFiles/debugger-code.elf.dir/forms/usart_forms.c.obj
+                                0x4a3 (size before relaxing)
+ .debug_str     0x000053ae       0x9d CMakeFiles/debugger-code.elf.dir/function/can_communication.c.obj
+                                0x707 (size before relaxing)
+ .debug_str     0x0000544b       0x6b CMakeFiles/debugger-code.elf.dir/function/delay.c.obj
+                                0x259 (size before relaxing)
+ .debug_str     0x000054b6       0x40 CMakeFiles/debugger-code.elf.dir/function/key.c.obj
+                                0x26b (size before relaxing)
+ .debug_str     0x000054f6       0x6b CMakeFiles/debugger-code.elf.dir/hardwares/can.c.obj
+                                0x9d5 (size before relaxing)
+ .debug_str     0x00005561       0x43 CMakeFiles/debugger-code.elf.dir/hardwares/dma.c.obj
+                                0x61c (size before relaxing)
+ .debug_str     0x000055a4       0x45 CMakeFiles/debugger-code.elf.dir/hardwares/gpio.c.obj
+                                0x2d5 (size before relaxing)
+ .debug_str     0x000055e9       0x45 CMakeFiles/debugger-code.elf.dir/hardwares/iwdg.c.obj
+                                0x28f (size before relaxing)
+ .debug_str     0x0000562e       0x7b CMakeFiles/debugger-code.elf.dir/hardwares/spi.c.obj
+                                0x738 (size before relaxing)
+ .debug_str     0x000056a9       0xb5 CMakeFiles/debugger-code.elf.dir/hardwares/tim.c.obj
+                                0xdc6 (size before relaxing)
+ .debug_str     0x0000575e       0x74 CMakeFiles/debugger-code.elf.dir/hardwares/usart.c.obj
+                                0xb4e (size before relaxing)
+ .debug_str     0x000057d2      0x19b CMakeFiles/debugger-code.elf.dir/system/main.c.obj
+                                0xff9 (size before relaxing)
+ .debug_str     0x0000596d      0x4e7 CMakeFiles/debugger-code.elf.dir/system/retarget.c.obj
+                                0xb5d (size before relaxing)
+ .debug_str     0x00005e54       0x54 CMakeFiles/debugger-code.elf.dir/system/startup_stm32f103rctx.s.obj
+                                 0x93 (size before relaxing)
+ .debug_str     0x00005ea8       0x42 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_hal_msp.c.obj
+                                0x274 (size before relaxing)
+ .debug_str     0x00005eea      0x147 CMakeFiles/debugger-code.elf.dir/system/stm32f1xx_it.c.obj
+                                0xc9a (size before relaxing)
+ .debug_str     0x00006031       0xf7 CMakeFiles/debugger-code.elf.dir/system/syscalls.c.obj
+                                0x408 (size before relaxing)
+ .debug_str     0x00006128       0x97 CMakeFiles/debugger-code.elf.dir/system/sysmem.c.obj
+                                0x262 (size before relaxing)
+ .debug_str     0x000061bf       0x74 CMakeFiles/debugger-code.elf.dir/system/system_stm32f1xx.c.obj
+                                0x29e (size before relaxing)
 
 .comment        0x00000000       0x49
  .comment       0x00000000       0x49 CMakeFiles/debugger-code.elf.dir/BMI088/BMI1088_show.c.obj

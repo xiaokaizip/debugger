@@ -96,6 +96,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
                 break;
             } else {
                 can_id[j] = rx_header.StdId;
+
                 flag = 0;
             }
         }
