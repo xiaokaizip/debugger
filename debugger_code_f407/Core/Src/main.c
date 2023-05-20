@@ -19,17 +19,30 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "can.h"
+#include "dma.h"
 #include "spi.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "lcd_init.h"
+#include "key.h"
+#include "motor.h"
+#include "retarget.h"
+#include "DynamicX.h"
+#include "can_communication.h"
+#include "BMI1088_show.h"
+#include "test1.h"
+#include "test2.h"
+#include "test3.h"
 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+uint8_t usart_data[8] = {0};
 
 /* USER CODE END PTD */
 
@@ -52,11 +65,51 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+#define UART_TYPEC huart3
+#define UART_GH huart2
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+///////////IMU////////////
+extern float accel[3];
+extern float gyro[3];
+extern float mag[3];
+
+extern float INS_quat[4];
+extern float INS_angle[3];
+uint8_t IMU_updata = 0;
+extern uint8_t can_BMI_accel_data[8];
+extern uint8_t can_BMI_gyro_data[8];
+
+unsigned short x = 0;
+unsigned short y = 0;
+uint8_t key_Select_flag = 0;
+uint8_t key_Verify_flag = 0;
+uint8_t key_Enter_flag = 0;
+
+Forms_struct_t forms;
+uint16_t usart_times = 0;
+uint16_t can_times = 0;
+uint16_t times = 0;
+uint16_t twinkles = 0;
+extern uint16_t can_id[6];
+extern unsigned char lcd_buffer[130 * 162 * 2];
+
+/*定时器中断*/
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+    can_times++;
+    usart_times++;
+    times++;
+    twinkles++;
+    AHRS_update(INS_quat, 1.0f / 1000.0f, gyro, accel, mag);
+    get_angle(INS_quat, &INS_angle[0], &INS_angle[1], &INS_angle[2]);
+//    if (twinkles > 1000) {
+//        HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+//        twinkles = 0;
+//    }
+}
+
 
 /* USER CODE END 0 */
 
@@ -88,24 +141,90 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_CAN1_Init();
   MX_SPI1_Init();
   MX_SPI2_Init();
   MX_SPI3_Init();
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
+  MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
-
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+    RetargetInit(&huart3);//初始化打印的函数
+    HAL_TIM_Base_Start_IT(&htim7);//开启定时器的中断
+
+    can_init();//can初始化
+
+
+    /*串口初中断初始化*/
+    HAL_UART_Receive_IT(&huart2, usart_data, 8);
+    HAL_UART_Receive_IT(&huart3, usart_data, 8);
+
+    gui_config();//lcd屏幕初始化
+    HAL_Delay(5);
+    main_Form_Init();
+    HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
+    HAL_Delay(5);
+
+    uint8_t delay_times = 10;
+    int count = 0;
+    while (1) {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+
+
+
+
+        while (1) {
+
+            key_Enter_flag = Enter_Key();
+//            if (xpt2046_readxy(&x, &y) != 0xFF) {
+//
+//                x = (unsigned short) ((float) x * (0.0363f) - 8.2952f);
+//                y = (unsigned short) ((float) y * (0.0492f) - 8.5976f);
+//                printf("%d,%d\n", x, y);
+//                break;
+//            }
+            if (key_Enter_flag == 2) {
+                key_Verify_flag = 1;
+                HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_7);
+                break;
+            }
+            if (key_Enter_flag == 1) {
+                key_Select_flag = (key_Select_flag + 1) % 5;
+                HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_8);
+
+                break;
+            }
+            if (times > 10) {
+                times = 0;
+                break;
+            }
+
+        }
+        // printf("key=%d\n", key_Enter_flag);
+        while (1) {
+
+            Form_UpdateEvent();
+            HAL_Delay(5);
+
+            HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
+            HAL_Delay(10);
+
+            if (times > 10) {
+                times = 0;
+                break;
+            }
+        }
+
+
+    }
   /* USER CODE END 3 */
 }
 
@@ -165,11 +284,10 @@ void SystemClock_Config(void)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  __disable_irq();
-  while (1)
-  {
-  }
+    /* User can add his own implementation to report the HAL error return state */
+    __disable_irq();
+    while (1) {
+    }
   /* USER CODE END Error_Handler_Debug */
 }
 

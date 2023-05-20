@@ -1,0 +1,11 @@
+//
+// Created by 86136 on 2023/3/24.
+//
+
+#ifndef DEBUGGER_CODE_CAN_COMMUNICATION_H
+#define DEBUGGER_CODE_CAN_COMMUNICATION_H
+
+void can_init(void);
+
+
+#endif //DEBUGGER_CODE_CAN_COMMUNICATION_H
