@@ -5,26 +5,19 @@
 #include "usart.h"
 
 
-extern uint8_t can_rx_data[8];
-
-
 static CAN_TxHeaderTypeDef can_header;
 static uint8_t can_tx_data[8];
-extern uint16_t can_id[6];
 extern CAN_HandleTypeDef hcan1;
 
-extern uint16_t twinkles;
-extern uint16_t times;
 
-
-int16_t get_moto_measure(moto_measure_t *ptr) {
+int16_t get_moto_measure(moto_measure_t *ptr, uint8_t can_data[8]) {
     ptr->last_angle = ptr->angle;
-    ptr->angle = (uint16_t) (can_rx_data[0] << 8 | can_rx_data[1]);
-    ptr->real_current = (int16_t) (can_rx_data[2] << 8 | can_rx_data[3]);
+    ptr->angle = (uint16_t) (can_data[0] << 8 | can_data[1]);
+    ptr->real_current = (int16_t) (can_data[2] << 8 | can_data[3]);
     ptr->speed_rpm = C1 * ptr->real_current + C2 * ptr->last_speed_rpm;    //这里是因为两种电调对应位不一样的信息
     ptr->last_speed_rpm = ptr->speed_rpm;
-    ptr->given_current = (int16_t) (can_rx_data[4] << 8 | can_rx_data[5]) / -5;
-    ptr->hall = can_rx_data[6];
+    ptr->given_current = (int16_t) (can_data[4] << 8 | can_data[5]) / -5;
+    ptr->hall = can_data[6];
     if (ptr->angle - ptr->last_angle > 4096)
         ptr->round_cnt--;
     else if (ptr->angle - ptr->last_angle < -4096)

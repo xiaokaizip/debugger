@@ -14,6 +14,7 @@
 #include "spi.h"
 #include "usart.h"
 #include<stdio.h>
+
 const uint8_t row = 130;
 const uint8_t column = 162;
 
@@ -21,6 +22,7 @@ volatile unsigned char lcd_buffer[130 * 162 * 2] = {0};
 
 void gui_config(void) {
     lcd_config();
+
     lcd_set_direction(4);
     gui_clear_screan(C_WHITE);
 

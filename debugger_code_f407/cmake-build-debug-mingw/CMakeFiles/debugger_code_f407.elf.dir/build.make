@@ -124,10 +124,24 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Src/dma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Core/Src/dma.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Core\Src\dma.c -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\dma.c.s
 
+CMakeFiles/debugger_code_f407.elf.dir/Core/Src/freertos.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/Core/Src/freertos.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/freertos.c
+CMakeFiles/debugger_code_f407.elf.dir/Core/Src/freertos.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/freertos.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/freertos.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\freertos.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\freertos.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\freertos.c
+
+CMakeFiles/debugger_code_f407.elf.dir/Core/Src/freertos.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/Core/Src/freertos.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\Core\Src\freertos.c > CMakeFiles\debugger_code_f407.elf.dir\Core\Src\freertos.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/Core/Src/freertos.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Core/Src/freertos.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Core\Src\freertos.c -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\freertos.c.s
+
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/gpio.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/gpio.c
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/gpio.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\gpio.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\gpio.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/gpio.c.i: cmake_force
@@ -141,7 +155,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Src/gpio.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/main.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/main.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/main.c
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/main.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/main.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\main.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\main.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/main.c.i: cmake_force
@@ -155,7 +169,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/retarget.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/retarget.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/retarget.c
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/retarget.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/retarget.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/retarget.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/retarget.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\retarget.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\retarget.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\retarget.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/retarget.c.i: cmake_force
@@ -169,7 +183,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Src/retarget.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/spi.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/spi.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/spi.c
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/spi.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/spi.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/spi.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\spi.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\spi.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\spi.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/spi.c.i: cmake_force
@@ -183,7 +197,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Src/spi.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/stm32f4xx_hal_msp.c
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\stm32f4xx_hal_msp.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\stm32f4xx_hal_msp.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\stm32f4xx_hal_msp.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_msp.c.i: cmake_force
@@ -194,10 +208,24 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_msp.c.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_msp.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Core\Src\stm32f4xx_hal_msp.c -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\stm32f4xx_hal_msp.c.s
 
+CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/stm32f4xx_hal_timebase_tim.c
+CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\stm32f4xx_hal_timebase_tim.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\stm32f4xx_hal_timebase_tim.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\stm32f4xx_hal_timebase_tim.c
+
+CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\Core\Src\stm32f4xx_hal_timebase_tim.c > CMakeFiles\debugger_code_f407.elf.dir\Core\Src\stm32f4xx_hal_timebase_tim.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Core\Src\stm32f4xx_hal_timebase_tim.c -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\stm32f4xx_hal_timebase_tim.c.s
+
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_it.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/stm32f4xx_it.c
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_it.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_it.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\stm32f4xx_it.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\stm32f4xx_it.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\stm32f4xx_it.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_it.c.i: cmake_force
@@ -211,7 +239,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_it.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/syscalls.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/syscalls.c
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/syscalls.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\syscalls.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\syscalls.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -225,7 +253,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/sysmem.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/sysmem.c
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/sysmem.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\sysmem.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\sysmem.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -239,7 +267,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/system_stm32f4xx.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/system_stm32f4xx.c
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/system_stm32f4xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/system_stm32f4xx.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/system_stm32f4xx.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\system_stm32f4xx.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\system_stm32f4xx.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\system_stm32f4xx.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/system_stm32f4xx.c.i: cmake_force
@@ -253,7 +281,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Src/system_stm32f4xx.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/tim.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/tim.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/tim.c
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/tim.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/tim.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/tim.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\tim.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\tim.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\tim.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/tim.c.i: cmake_force
@@ -267,7 +295,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Src/tim.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/usart.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/usart.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Src/usart.c
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/usart.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Core/Src/usart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Core\Src\usart.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Src\usart.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Src/usart.c.i: cmake_force
@@ -280,7 +308,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Src/usart.c.s: cmake_force
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj: D:/rmbuild/Debugger/debugger_code_f407/Core/Startup/startup_stm32f407vetx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building ASM object CMakeFiles/debugger_code_f407.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building ASM object CMakeFiles/debugger_code_f407.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\debugger_code_f407.elf.dir\Core\Startup\startup_stm32f407vetx.s.obj -c D:\rmbuild\Debugger\debugger_code_f407\Core\Startup\startup_stm32f407vetx.s
 
 CMakeFiles/debugger_code_f407.elf.dir/Core/Startup/startup_stm32f407vetx.s.i: cmake_force
@@ -294,7 +322,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Core/Startup/startup_stm32f407vetx.s.s: cm
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i: cmake_force
@@ -308,7 +336,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_can.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.i: cmake_force
@@ -322,7 +350,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i: cmake_force
@@ -336,7 +364,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i: cmake_force
@@ -350,7 +378,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i: cmake_force
@@ -364,7 +392,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i: cmake_force
@@ -378,7 +406,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i: cmake_force
@@ -392,7 +420,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i: cmake_force
@@ -406,7 +434,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i: cmake_force
@@ -420,7 +448,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i: cmake_force
@@ -434,7 +462,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i: cmake_force
@@ -448,7 +476,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i: cmake_force
@@ -462,7 +490,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i: cmake_force
@@ -476,7 +504,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i: cmake_force
@@ -490,7 +518,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i: cmake_force
@@ -504,7 +532,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.i: cmake_force
@@ -518,7 +546,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.i: cmake_force
@@ -532,7 +560,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c
 
 CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i: cmake_force
@@ -546,7 +574,7 @@ CMakeFiles/debugger_code_f407.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_base.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_base.c.obj: D:/rmbuild/Debugger/debugger_code_f407/GUI/gui_base.c
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_base.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_base.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_base.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_base.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\GUI\gui_base.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\GUI\gui_base.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\GUI\gui_base.c
 
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_base.c.i: cmake_force
@@ -560,7 +588,7 @@ CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_base.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_button.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_button.c.obj: D:/rmbuild/Debugger/debugger_code_f407/GUI/gui_button.c
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_button.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_button.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_button.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_button.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\GUI\gui_button.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\GUI\gui_button.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\GUI\gui_button.c
 
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_button.c.i: cmake_force
@@ -574,7 +602,7 @@ CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_button.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_form.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_form.c.obj: D:/rmbuild/Debugger/debugger_code_f407/GUI/gui_form.c
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_form.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_form.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_form.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_form.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\GUI\gui_form.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\GUI\gui_form.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\GUI\gui_form.c
 
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_form.c.i: cmake_force
@@ -588,7 +616,7 @@ CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_form.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_label.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_label.c.obj: D:/rmbuild/Debugger/debugger_code_f407/GUI/gui_label.c
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_label.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_label.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_label.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_label.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\GUI\gui_label.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\GUI\gui_label.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\GUI\gui_label.c
 
 CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_label.c.i: cmake_force
@@ -602,7 +630,7 @@ CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_label.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/GUI/test.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/GUI/test.c.obj: D:/rmbuild/Debugger/debugger_code_f407/GUI/test.c
 CMakeFiles/debugger_code_f407.elf.dir/GUI/test.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/debugger_code_f407.elf.dir/GUI/test.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/debugger_code_f407.elf.dir/GUI/test.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/GUI/test.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\GUI\test.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\GUI\test.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\GUI\test.c
 
 CMakeFiles/debugger_code_f407.elf.dir/GUI/test.c.i: cmake_force
@@ -613,24 +641,178 @@ CMakeFiles/debugger_code_f407.elf.dir/GUI/test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/GUI/test.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\GUI\test.c -o CMakeFiles\debugger_code_f407.elf.dir\GUI\test.c.s
 
-CMakeFiles/debugger_code_f407.elf.dir/data_structure/queue.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
-CMakeFiles/debugger_code_f407.elf.dir/data_structure/queue.c.obj: D:/rmbuild/Debugger/debugger_code_f407/data\ structure/queue.c
-CMakeFiles/debugger_code_f407.elf.dir/data_structure/queue.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/debugger_code_f407.elf.dir/data_structure/queue.c.obj"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/data_structure/queue.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\data_structure\queue.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\data_structure\queue.c.obj -c "D:\rmbuild\Debugger\debugger_code_f407\data structure\queue.c"
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c
 
-CMakeFiles/debugger_code_f407.elf.dir/data_structure/queue.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/data_structure/queue.c.i"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\rmbuild\Debugger\debugger_code_f407\data structure\queue.c" > CMakeFiles\debugger_code_f407.elf.dir\data_structure\queue.c.i
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c > CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c.i
 
-CMakeFiles/debugger_code_f407.elf.dir/data_structure/queue.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/data_structure/queue.c.s"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\rmbuild\Debugger\debugger_code_f407\data structure\queue.c" -o CMakeFiles\debugger_code_f407.elf.dir\data_structure\queue.c.s
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c.s
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/croutine.c
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\croutine.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\croutine.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\croutine.c
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\croutine.c > CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\croutine.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\croutine.c -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\croutine.c.s
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c > CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\event_groups.c.s
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/list.c
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\list.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\list.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\list.c
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\list.c > CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\list.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\list.c -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\list.c.s
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c > CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c.s
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c > CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\portable\MemMang\heap_4.c.s
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/queue.c
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\queue.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\queue.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\queue.c
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\queue.c > CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\queue.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\queue.c -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\queue.c.s
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c > CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\stream_buffer.c.s
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/tasks.c
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\tasks.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\tasks.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\tasks.c
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\tasks.c > CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\tasks.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\tasks.c -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\tasks.c.s
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/timers.c
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\timers.c
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\timers.c > CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\Middlewares\Third_Party\FreeRTOS\Source\timers.c -o CMakeFiles\debugger_code_f407.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.s
+
+CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.obj: D:/rmbuild/Debugger/debugger_code_f407/data_processing/can_data.c
+CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\data_processing\can_data.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\data_processing\can_data.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\data_processing\can_data.c
+
+CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\data_processing\can_data.c > CMakeFiles\debugger_code_f407.elf.dir\data_processing\can_data.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\data_processing\can_data.c -o CMakeFiles\debugger_code_f407.elf.dir\data_processing\can_data.c.s
+
+CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.obj: D:/rmbuild/Debugger/debugger_code_f407/data_processing/uart_data.c
+CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\data_processing\uart_data.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\data_processing\uart_data.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\data_processing\uart_data.c
+
+CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\data_processing\uart_data.c > CMakeFiles\debugger_code_f407.elf.dir\data_processing\uart_data.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\data_processing\uart_data.c -o CMakeFiles\debugger_code_f407.elf.dir\data_processing\uart_data.c.s
 
 CMakeFiles/debugger_code_f407.elf.dir/devices/lcd_init.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/devices/lcd_init.c.obj: D:/rmbuild/Debugger/debugger_code_f407/devices/lcd_init.c
 CMakeFiles/debugger_code_f407.elf.dir/devices/lcd_init.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/debugger_code_f407.elf.dir/devices/lcd_init.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/debugger_code_f407.elf.dir/devices/lcd_init.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/devices/lcd_init.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\devices\lcd_init.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\devices\lcd_init.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\devices\lcd_init.c
 
 CMakeFiles/debugger_code_f407.elf.dir/devices/lcd_init.c.i: cmake_force
@@ -644,7 +826,7 @@ CMakeFiles/debugger_code_f407.elf.dir/devices/lcd_init.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.obj: D:/rmbuild/Debugger/debugger_code_f407/devices/xpt2046.c
 CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\devices\xpt2046.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\devices\xpt2046.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\devices\xpt2046.c
 
 CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.i: cmake_force
@@ -658,7 +840,7 @@ CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/forms/canid_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/forms/canid_forms.c.obj: D:/rmbuild/Debugger/debugger_code_f407/forms/canid_forms.c
 CMakeFiles/debugger_code_f407.elf.dir/forms/canid_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/canid_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/canid_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/forms/canid_forms.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\forms\canid_forms.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\forms\canid_forms.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\forms\canid_forms.c
 
 CMakeFiles/debugger_code_f407.elf.dir/forms/canid_forms.c.i: cmake_force
@@ -672,7 +854,7 @@ CMakeFiles/debugger_code_f407.elf.dir/forms/canid_forms.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/forms/dail_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/forms/dail_forms.c.obj: D:/rmbuild/Debugger/debugger_code_f407/forms/dail_forms.c
 CMakeFiles/debugger_code_f407.elf.dir/forms/dail_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/dail_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/dail_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/forms/dail_forms.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\forms\dail_forms.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\forms\dail_forms.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\forms\dail_forms.c
 
 CMakeFiles/debugger_code_f407.elf.dir/forms/dail_forms.c.i: cmake_force
@@ -686,7 +868,7 @@ CMakeFiles/debugger_code_f407.elf.dir/forms/dail_forms.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/forms/imu_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/forms/imu_forms.c.obj: D:/rmbuild/Debugger/debugger_code_f407/forms/imu_forms.c
 CMakeFiles/debugger_code_f407.elf.dir/forms/imu_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/imu_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/imu_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/forms/imu_forms.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\forms\imu_forms.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\forms\imu_forms.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\forms\imu_forms.c
 
 CMakeFiles/debugger_code_f407.elf.dir/forms/imu_forms.c.i: cmake_force
@@ -700,7 +882,7 @@ CMakeFiles/debugger_code_f407.elf.dir/forms/imu_forms.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/forms/logic_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/forms/logic_forms.c.obj: D:/rmbuild/Debugger/debugger_code_f407/forms/logic_forms.c
 CMakeFiles/debugger_code_f407.elf.dir/forms/logic_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/logic_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/logic_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/forms/logic_forms.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\forms\logic_forms.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\forms\logic_forms.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\forms\logic_forms.c
 
 CMakeFiles/debugger_code_f407.elf.dir/forms/logic_forms.c.i: cmake_force
@@ -714,7 +896,7 @@ CMakeFiles/debugger_code_f407.elf.dir/forms/logic_forms.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/forms/main_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/forms/main_forms.c.obj: D:/rmbuild/Debugger/debugger_code_f407/forms/main_forms.c
 CMakeFiles/debugger_code_f407.elf.dir/forms/main_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/main_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/main_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/forms/main_forms.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\forms\main_forms.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\forms\main_forms.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\forms\main_forms.c
 
 CMakeFiles/debugger_code_f407.elf.dir/forms/main_forms.c.i: cmake_force
@@ -728,7 +910,7 @@ CMakeFiles/debugger_code_f407.elf.dir/forms/main_forms.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/forms/motor_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/forms/motor_forms.c.obj: D:/rmbuild/Debugger/debugger_code_f407/forms/motor_forms.c
 CMakeFiles/debugger_code_f407.elf.dir/forms/motor_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/motor_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/motor_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/forms/motor_forms.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\forms\motor_forms.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\forms\motor_forms.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\forms\motor_forms.c
 
 CMakeFiles/debugger_code_f407.elf.dir/forms/motor_forms.c.i: cmake_force
@@ -742,7 +924,7 @@ CMakeFiles/debugger_code_f407.elf.dir/forms/motor_forms.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/forms/suscap_debuger_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/forms/suscap_debuger_forms.c.obj: D:/rmbuild/Debugger/debugger_code_f407/forms/suscap_debuger_forms.c
 CMakeFiles/debugger_code_f407.elf.dir/forms/suscap_debuger_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/suscap_debuger_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/suscap_debuger_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/forms/suscap_debuger_forms.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\forms\suscap_debuger_forms.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\forms\suscap_debuger_forms.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\forms\suscap_debuger_forms.c
 
 CMakeFiles/debugger_code_f407.elf.dir/forms/suscap_debuger_forms.c.i: cmake_force
@@ -756,7 +938,7 @@ CMakeFiles/debugger_code_f407.elf.dir/forms/suscap_debuger_forms.c.s: cmake_forc
 CMakeFiles/debugger_code_f407.elf.dir/forms/usart_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/forms/usart_forms.c.obj: D:/rmbuild/Debugger/debugger_code_f407/forms/usart_forms.c
 CMakeFiles/debugger_code_f407.elf.dir/forms/usart_forms.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/usart_forms.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/debugger_code_f407.elf.dir/forms/usart_forms.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/forms/usart_forms.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\forms\usart_forms.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\forms\usart_forms.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\forms\usart_forms.c
 
 CMakeFiles/debugger_code_f407.elf.dir/forms/usart_forms.c.i: cmake_force
@@ -770,7 +952,7 @@ CMakeFiles/debugger_code_f407.elf.dir/forms/usart_forms.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.obj: D:/rmbuild/Debugger/debugger_code_f407/function/can_communication.c
 CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\function\can_communication.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\function\can_communication.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\function\can_communication.c
 
 CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.i: cmake_force
@@ -781,24 +963,10 @@ CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\function\can_communication.c -o CMakeFiles\debugger_code_f407.elf.dir\function\can_communication.c.s
 
-CMakeFiles/debugger_code_f407.elf.dir/function/data_usart.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
-CMakeFiles/debugger_code_f407.elf.dir/function/data_usart.c.obj: D:/rmbuild/Debugger/debugger_code_f407/function/data_usart.c
-CMakeFiles/debugger_code_f407.elf.dir/function/data_usart.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/data_usart.c.obj"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/function/data_usart.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\function\data_usart.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\function\data_usart.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\function\data_usart.c
-
-CMakeFiles/debugger_code_f407.elf.dir/function/data_usart.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/function/data_usart.c.i"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\function\data_usart.c > CMakeFiles\debugger_code_f407.elf.dir\function\data_usart.c.i
-
-CMakeFiles/debugger_code_f407.elf.dir/function/data_usart.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/function/data_usart.c.s"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\function\data_usart.c -o CMakeFiles\debugger_code_f407.elf.dir\function\data_usart.c.s
-
 CMakeFiles/debugger_code_f407.elf.dir/function/delay.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/function/delay.c.obj: D:/rmbuild/Debugger/debugger_code_f407/function/delay.c
 CMakeFiles/debugger_code_f407.elf.dir/function/delay.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/delay.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/delay.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/function/delay.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\function\delay.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\function\delay.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\function\delay.c
 
 CMakeFiles/debugger_code_f407.elf.dir/function/delay.c.i: cmake_force
@@ -812,7 +980,7 @@ CMakeFiles/debugger_code_f407.elf.dir/function/delay.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/function/key.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/function/key.c.obj: D:/rmbuild/Debugger/debugger_code_f407/function/key.c
 CMakeFiles/debugger_code_f407.elf.dir/function/key.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/key.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/key.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/function/key.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\function\key.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\function\key.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\function\key.c
 
 CMakeFiles/debugger_code_f407.elf.dir/function/key.c.i: cmake_force
@@ -826,7 +994,7 @@ CMakeFiles/debugger_code_f407.elf.dir/function/key.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/function/led.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/function/led.c.obj: D:/rmbuild/Debugger/debugger_code_f407/function/led.c
 CMakeFiles/debugger_code_f407.elf.dir/function/led.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/led.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/led.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/function/led.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\function\led.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\function\led.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\function\led.c
 
 CMakeFiles/debugger_code_f407.elf.dir/function/led.c.i: cmake_force
@@ -840,7 +1008,7 @@ CMakeFiles/debugger_code_f407.elf.dir/function/led.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.obj: D:/rmbuild/Debugger/debugger_code_f407/function/motor.c
 CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\function\motor.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\function\motor.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\function\motor.c
 
 CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.i: cmake_force
@@ -854,7 +1022,7 @@ CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.s: cmake_force
 CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.obj: D:/rmbuild/Debugger/debugger_code_f407/function/pid.c
 CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.obj"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\function\pid.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\function\pid.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\function\pid.c
 
 CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.i: cmake_force
@@ -865,17 +1033,33 @@ CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.s"
 	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\function\pid.c -o CMakeFiles\debugger_code_f407.elf.dir\function\pid.c.s
 
+CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.obj: D:/rmbuild/Debugger/debugger_code_f407/support/fifo.c
+CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\support\fifo.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\support\fifo.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\support\fifo.c
+
+CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\support\fifo.c > CMakeFiles\debugger_code_f407.elf.dir\support\fifo.c.i
+
+CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\support\fifo.c -o CMakeFiles\debugger_code_f407.elf.dir\support\fifo.c.s
+
 # Object files for target debugger_code_f407.elf
 debugger_code_f407_elf_OBJECTS = \
 "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/BMI088/MahonyAHRS.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/can.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/dma.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/Core/Src/freertos.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/gpio.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/main.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/retarget.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/spi.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_it.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/syscalls.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/sysmem.c.obj" \
@@ -906,7 +1090,18 @@ debugger_code_f407_elf_OBJECTS = \
 "CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_form.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_label.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/GUI/test.c.obj" \
-"CMakeFiles/debugger_code_f407.elf.dir/data_structure/queue.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/devices/lcd_init.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/forms/canid_forms.c.obj" \
@@ -918,12 +1113,12 @@ debugger_code_f407_elf_OBJECTS = \
 "CMakeFiles/debugger_code_f407.elf.dir/forms/suscap_debuger_forms.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/forms/usart_forms.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.obj" \
-"CMakeFiles/debugger_code_f407.elf.dir/function/data_usart.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/function/delay.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/function/key.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/function/led.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.obj" \
-"CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.obj"
+"CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.obj"
 
 # External object files for target debugger_code_f407.elf
 debugger_code_f407_elf_EXTERNAL_OBJECTS =
@@ -932,11 +1127,13 @@ debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_sho
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/BMI088/MahonyAHRS.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/can.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/dma.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/freertos.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/gpio.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/main.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/retarget.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/spi.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/stm32f4xx_it.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/syscalls.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/sysmem.c.obj
@@ -967,7 +1164,18 @@ debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_button.c.o
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_form.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/GUI/gui_label.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/GUI/test.c.obj
-debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/data_structure/queue.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/devices/lcd_init.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/forms/canid_forms.c.obj
@@ -979,16 +1187,16 @@ debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/forms/motor_forms.
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/forms/suscap_debuger_forms.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/forms/usart_forms.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.obj
-debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/function/data_usart.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/function/delay.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/function/key.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/function/led.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/build.make
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/objects1
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Linking C executable debugger_code_f407.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Linking C executable debugger_code_f407.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\debugger_code_f407.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/rmbuild/Debugger/debugger_code_f407/cmake-build-debug-mingw/debugger_code_f407.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building D:/rmbuild/Debugger/debugger_code_f407/cmake-build-debug-mingw/debugger_code_f407.bin"

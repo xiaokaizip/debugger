@@ -62,12 +62,8 @@ typedef struct {
     moto_measure_t motorMeasure;//电机信息的结构体
 } motor_state_t;
 
-extern uint8_t can_rx_data[8];
-extern moto_measure_t moto_measure[5];
-extern motor_state_t motor_state[5];
 
-
-int16_t get_moto_measure(moto_measure_t *ptr);
+int16_t get_moto_measure(moto_measure_t *ptr, uint8_t can_data[8]);
 
 void set_moto_current(int16_t current, uint16_t id);
 

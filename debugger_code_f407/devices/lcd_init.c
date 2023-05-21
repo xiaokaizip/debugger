@@ -88,13 +88,13 @@ void lcd_set_direction(unsigned char mode) {
 void lcd_config() {
 
     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-    delayus(1000);
+    HAL_Delay(1);
     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
-    delayus(1000);
+    HAL_Delay(1);
     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-    delayus(120 * 1000);
+    HAL_Delay(120);
     lcd_write_command(0x11);
-    delayus(120 * 1000);
+    HAL_Delay(120);
 
     lcd_write_command(0xB1);
     lcd_write_data(0x05);

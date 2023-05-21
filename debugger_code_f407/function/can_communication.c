@@ -6,19 +6,22 @@
 #include "motor.h"
 #include "usart.h"
 #include "string.h"
+#include "fifo.h"
 
 uint8_t can_rx_data[8];
 uint16_t can_BMI_accel_data[8];
 uint16_t can_BMI_gyro_data[8];
-static CAN_TxHeaderTypeDef can_header;
-static uint8_t can_tx_data[8];
 uint16_t can_id[6];
 extern CAN_HandleTypeDef hcan1;
 
-extern uint16_t twinkles;
-extern uint16_t times;
-
 extern uint8_t IMU_updata;
+
+/////////////can_fifo///////////
+
+fifo_s_t can_fifo;
+
+unsigned char can_fifo_buf[1024];
+can_data_t can_data_buff;
 
 /**
  * can 滤波设置
@@ -37,6 +40,11 @@ void can_init(void) {
     HAL_CAN_ConfigFilter(&hcan1, &can_filter_st);
     HAL_CAN_Start(&hcan1);
     HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
+}
+
+
+void can_fifo_init() {
+    fifo_s_init(&can_fifo, can_fifo_buf, 1024);
 }
 
 void CAN_Id_Sort() {
@@ -58,6 +66,8 @@ void CAN_Id_Sort() {
  * 获取电机的id，以及相应电机的信息
  * @param hcan
  */
+uint16_t twinkles = 0;
+
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
     //当接受到电机的id是，led灯闪烁
     if (twinkles > 200) {
@@ -65,12 +75,17 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
         twinkles = 0;
     }
 
-
     uint8_t i = 0;
     uint8_t flag = 0;
     if (hcan->Instance == CAN1) {
         CAN_RxHeaderTypeDef rx_header;
         HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rx_header, can_rx_data);
+////////can_fifo////////////////////////////
+        can_data_buff.id = (uint16_t) rx_header.StdId;
+        memcpy(&can_fifo, &can_rx_data, sizeof(can_rx_data));
+        fifo_s_puts(&can_fifo, (char *) &can_data_buff.id, sizeof(can_data_t));
+///////////////////////////////////////////
+        twinkles++;
 
         if ((uint16_t) rx_header.StdId == 0x100) {
             for (int k = 0; k < 8; k++) {
@@ -101,36 +116,6 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
             }
         }
         CAN_Id_Sort();
-//        switch (rx_header.StdId) {
-//            case 0x201: {
-//                can_id[0] = 1;
-//                break;
-//            }
-//            case 0x202: {
-//                can_id[1] = 2;
-//                break;
-//            }
-//            case 0x203: {
-//                can_id[2] = 3;
-//                break;
-//            }
-//            case 0x204: {
-//                can_id[3] = 4;
-//                break;
-//            }
-//            case 0x205: {
-//                can_id[4] = 5;
-//                break;
-//            }
-//            case 0x206: {
-//                can_id[5] = 6;
-//                break;
-//            }
-//            default:
-//                break;
-//        }
-//
-
     }
 
 }
