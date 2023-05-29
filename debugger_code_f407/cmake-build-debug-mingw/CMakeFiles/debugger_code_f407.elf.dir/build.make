@@ -68,19 +68,19 @@ include CMakeFiles/debugger_code_f407.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/debugger_code_f407.elf.dir/flags.make
 
-CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
-CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj: D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088_show.c
-CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\BMI088\BMI1088_show.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\BMI088\BMI1088_show.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\BMI088\BMI1088_show.c
+CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
+CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj: D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088.c
+CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj: CMakeFiles/debugger_code_f407.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\rmbuild\Debugger\debugger_code_f407\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj -MF CMakeFiles\debugger_code_f407.elf.dir\BMI088\BMI1088.c.obj.d -o CMakeFiles\debugger_code_f407.elf.dir\BMI088\BMI1088.c.obj -c D:\rmbuild\Debugger\debugger_code_f407\BMI088\BMI1088.c
 
-CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.i"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\BMI088\BMI1088_show.c > CMakeFiles\debugger_code_f407.elf.dir\BMI088\BMI1088_show.c.i
+CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.i"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\rmbuild\Debugger\debugger_code_f407\BMI088\BMI1088.c > CMakeFiles\debugger_code_f407.elf.dir\BMI088\BMI1088.c.i
 
-CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.s"
-	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\BMI088\BMI1088_show.c -o CMakeFiles\debugger_code_f407.elf.dir\BMI088\BMI1088_show.c.s
+CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.s"
+	D:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\rmbuild\Debugger\debugger_code_f407\BMI088\BMI1088.c -o CMakeFiles\debugger_code_f407.elf.dir\BMI088\BMI1088.c.s
 
 CMakeFiles/debugger_code_f407.elf.dir/BMI088/MahonyAHRS.c.obj: CMakeFiles/debugger_code_f407.elf.dir/flags.make
 CMakeFiles/debugger_code_f407.elf.dir/BMI088/MahonyAHRS.c.obj: D:/rmbuild/Debugger/debugger_code_f407/BMI088/MahonyAHRS.c
@@ -1049,7 +1049,7 @@ CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.s: cmake_force
 
 # Object files for target debugger_code_f407.elf
 debugger_code_f407_elf_OBJECTS = \
-"CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj" \
+"CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/BMI088/MahonyAHRS.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/can.c.obj" \
 "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/dma.c.obj" \
@@ -1123,7 +1123,7 @@ debugger_code_f407_elf_OBJECTS = \
 # External object files for target debugger_code_f407.elf
 debugger_code_f407_elf_EXTERNAL_OBJECTS =
 
-debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj
+debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/BMI088/MahonyAHRS.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/can.c.obj
 debugger_code_f407.elf: CMakeFiles/debugger_code_f407.elf.dir/Core/Src/dma.c.obj

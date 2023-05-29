@@ -46,7 +46,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088_show.c" "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj.d"
+  "D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088.c" "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/BMI088/MahonyAHRS.c" "CMakeFiles/debugger_code_f407.elf.dir/BMI088/MahonyAHRS.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/BMI088/MahonyAHRS.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/Core/Src/can.c" "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/can.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/can.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/Core/Src/dma.c" "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/dma.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/dma.c.obj.d"

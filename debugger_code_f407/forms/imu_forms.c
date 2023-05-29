@@ -7,7 +7,7 @@
 #include "string.h"
 #include "main.h"
 #include <stdio.h>
-#include "../BMI088/BMI1088_show.h"
+#include "BMI1088.h"
 
 button_struct_t button_Turnbuck_Imu;
 extern unsigned char lcd_buffer[128 * 160 * 2];

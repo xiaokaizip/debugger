@@ -34,7 +34,7 @@
 #include "retarget.h"
 #include "DynamicX.h"
 #include "can_communication.h"
-#include "BMI1088_show.h"
+#include "BMI1088.h"
 #include "test1.h"
 #include "test2.h"
 #include "test3.h"
@@ -84,6 +84,8 @@ extern float INS_angle[3];
 uint8_t IMU_updata = 0;
 extern uint8_t can_BMI_accel_data[8];
 extern uint8_t can_BMI_gyro_data[8];
+
+extern IMU_measure_t IMU_measure;
 
 unsigned short x = 0;
 unsigned short y = 0;
@@ -173,8 +175,6 @@ int main(void) {
 
     uint8_t delay_times = 10;
     int count = 0;
-
-
 
     //HAL_UART_Transmit(&huart3, "test=", 5, HAL_MAX_DELAY);
 

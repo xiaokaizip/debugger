@@ -128,29 +128,29 @@ debugger_code_f407.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/build
 .PHONY : debugger_code_f407.elf/fast
 
-BMI088/BMI1088_show.obj: BMI088/BMI1088_show.c.obj
-.PHONY : BMI088/BMI1088_show.obj
+BMI088/BMI1088.obj: BMI088/BMI1088.c.obj
+.PHONY : BMI088/BMI1088.obj
 
 # target to build an object file
-BMI088/BMI1088_show.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj
-.PHONY : BMI088/BMI1088_show.c.obj
+BMI088/BMI1088.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj
+.PHONY : BMI088/BMI1088.c.obj
 
-BMI088/BMI1088_show.i: BMI088/BMI1088_show.c.i
-.PHONY : BMI088/BMI1088_show.i
+BMI088/BMI1088.i: BMI088/BMI1088.c.i
+.PHONY : BMI088/BMI1088.i
 
 # target to preprocess a source file
-BMI088/BMI1088_show.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.i
-.PHONY : BMI088/BMI1088_show.c.i
+BMI088/BMI1088.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.i
+.PHONY : BMI088/BMI1088.c.i
 
-BMI088/BMI1088_show.s: BMI088/BMI1088_show.c.s
-.PHONY : BMI088/BMI1088_show.s
+BMI088/BMI1088.s: BMI088/BMI1088.c.s
+.PHONY : BMI088/BMI1088.s
 
 # target to generate assembly for a file
-BMI088/BMI1088_show.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.s
-.PHONY : BMI088/BMI1088_show.c.s
+BMI088/BMI1088.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.s
+.PHONY : BMI088/BMI1088.c.s
 
 BMI088/MahonyAHRS.obj: BMI088/MahonyAHRS.c.obj
 .PHONY : BMI088/MahonyAHRS.obj
@@ -1801,9 +1801,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... debugger_code_f407.elf
-	@echo ... BMI088/BMI1088_show.obj
-	@echo ... BMI088/BMI1088_show.i
-	@echo ... BMI088/BMI1088_show.s
+	@echo ... BMI088/BMI1088.obj
+	@echo ... BMI088/BMI1088.i
+	@echo ... BMI088/BMI1088.s
 	@echo ... BMI088/MahonyAHRS.obj
 	@echo ... BMI088/MahonyAHRS.i
 	@echo ... BMI088/MahonyAHRS.s

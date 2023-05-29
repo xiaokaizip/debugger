@@ -793,12 +793,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "BMI088/BMI1088_show.c",
+			"path" : "BMI088/BMI1088.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "BMI088/BMI1088_show.h",
+			"path" : "BMI088/BMI1088.h",
 			"sourceGroupIndex" : 1
 		},
 		{

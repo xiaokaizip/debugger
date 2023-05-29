@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj"
-  "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj.d"
+  "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj"
+  "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj.d"
   "CMakeFiles/debugger_code_f407.elf.dir/BMI088/MahonyAHRS.c.obj"
   "CMakeFiles/debugger_code_f407.elf.dir/BMI088/MahonyAHRS.c.obj.d"
   "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/can.c.obj"

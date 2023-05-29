@@ -128,10 +128,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088_show.c">
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088.c">
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088_show.h">
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088.h">
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/BMI088/MahonyAHRS.c">

@@ -3,15 +3,10 @@
 //
 #include "motor.h"
 
-#include "BMI1088_show.h"
+#include "BMI1088.h"
 #include "usart.h"
 #include "MahonyAHRS.h"
 #include <math.h>
-
-#define BMI088_ACCEL_3G_SEN 0.0008974358974f
-#define BMI088_ACCEL_6G_SEN     0.00179443359375f
-
-#define BMI088_GYRO_2000_SEN 0.00106526443603169529841533860381f
 
 extern uint8_t can_rx_data[8];
 extern uint16_t can_BMI_accel_data[8];
@@ -23,23 +18,24 @@ float gyro_sen = BMI088_GYRO_2000_SEN;
 
 double imu_data[6];
 
-void get_BIM1088_data(float gyro[3], float accel[3]) {
+void get_BIM1088_data(IMU_measure_t *IMU_measure, uint8_t can_data[8], uint16_t can_id) {
     int16_t data_temp = 0;
+    if (can_id == 0x100 = 1) {
+        data_temp = (int16_t) ((can_data[1]) << 8) | can_data[0];
+        IMU_measure->accel[0] = data_temp * accel_sen;
+        data_temp = (int16_t) ((can_data[3]) << 8) | can_data[2];
+        IMU_measure->accel[1] = data_temp * accel_sen;
+        data_temp = (int16_t) ((can_data[5]) << 8) | can_data[4];
+        IMU_measure->accel[2] = data_temp * accel_sen;
+    } else if (can_id == 0x100) {
+        data_temp = (int16_t) ((can_data[1]) << 8) | can_data[0];
+        IMU_measure->gyro[0] = (float) data_temp * gyro_sen;
+        data_temp = (int16_t) ((can_data[3]) << 8) | can_data[2];
+        IMU_measure->gyro[1] = (float) data_temp * gyro_sen;
+        data_temp = (int16_t) ((can_data[5]) << 8) | can_data[4];
+        IMU_measure->gyro[2] = (float) data_temp * gyro_sen;
+    }
 
-
-    data_temp = (int16_t) ((can_BMI_accel_data[1]) << 8) | can_BMI_accel_data[0];
-    accel[0] = data_temp * accel_sen;
-    data_temp = (int16_t) ((can_BMI_accel_data[3]) << 8) | can_BMI_accel_data[2];
-    accel[1] = data_temp * accel_sen;
-    data_temp = (int16_t) ((can_BMI_accel_data[5]) << 8) | can_BMI_accel_data[4];
-    accel[2] = data_temp * accel_sen;
-
-    data_temp = (int16_t) ((can_BMI_gyro_data[1]) << 8) | can_BMI_gyro_data[0];
-    gyro[0] = (float) data_temp * gyro_sen;
-    data_temp = (int16_t) ((can_BMI_gyro_data[3]) << 8) | can_BMI_gyro_data[2];
-    gyro[1] = (float) data_temp * gyro_sen;
-    data_temp = (int16_t) ((can_BMI_gyro_data[5]) << 8) | can_BMI_gyro_data[4];
-    gyro[2] = (float) data_temp * gyro_sen;
 
 }
 
