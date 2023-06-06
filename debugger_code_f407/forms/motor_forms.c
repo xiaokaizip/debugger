@@ -4,6 +4,8 @@
 
 #include "motor_forms.h"
 #include "main.h"
+#include "fifo.h"
+#include "can_data.h"
 
 button_struct_t button_Turnbuck_Motor;
 button_struct_t button_refresh_Motor;
@@ -18,7 +20,8 @@ extern Forms_struct_t forms;
 
 extern uint16_t can_id[6];
 extern uint16_t can_times;
-
+extern fifo_s_t can_fifo_IMU;
+can_data_t can_datas[6];
 
 void Button_TurnBuck_CallBack_Motor(void *object) {
 
@@ -36,10 +39,10 @@ void Motor_Form_Init() {
     gui_button_init(&button_refresh_Motor, 12, 138, 48, 18, "refresh");
     button_Turnbuck_Motor.callback = Button_TurnBuck_CallBack_Motor;
     gui_printf(12 * 4, 0, C_BLACK, C_WHITE, " id");
-    for (int i = 0; i < 6; i++) {
-        gui_draw_hline(0, 16 * (i + 1), 128, C_BLUE);
-        gui_printf(12 * 4, 16 * (i + 1) + 4, C_BLACK, C_WHITE, "0X%x", can_id[i]);
-    }
+//    for (int i = 0; i < 6; i++) {
+//        gui_draw_hline(0, 16 * (i + 1), 128, C_BLUE);
+//        gui_printf(12 * 4, 16 * (i + 1) + 4, C_BLACK, C_WHITE, "0X%x", can_datas[i].id);
+//    }
     gui_draw_hline(0, 16 * 7, 128, C_BLUE);
 
     gui_button_update(&button_Turnbuck_Motor, button_normal_status);
@@ -72,11 +75,20 @@ void Motor_Form_Load() {
             can_times = 0;
         }
     }
+
+
     if (key_Select_flag == 0) {
         for (int i = 0; i < 6; i++) {
             gui_draw_hline(0, 16 * (i + 1), 128, C_BLUE);
             gui_printf(12 * 4, 16 * (i + 1) + 4, C_BLACK, C_WHITE, "     ");
-            gui_printf(12 * 4, 16 * (i + 1) + 4, C_BLACK, C_WHITE, "0X%x", can_id[i]);
+            if (fifo_s_used(&can_fifo_IMU)) {
+                fifo_s_gets(&can_fifo_IMU, (char *) &can_datas[i], 10);
+                gui_printf(12 * 4, 16 * (i + 1) + 4, C_BLACK, C_WHITE, "0X%x", can_datas[i].id);
+            } else {
+                gui_printf(12 * 4, 16 * (i + 1) + 4, C_BLACK, C_WHITE, "0X%x", 0);
+
+            }
+
         }
     }
 

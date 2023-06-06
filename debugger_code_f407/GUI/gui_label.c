@@ -9,7 +9,7 @@
 #include "gui_label.h"
 #include "gui_base.h"
 #include "stdarg.h"
-#include "retarget.h"
+#include "printf.h"
 #include "string.h"
 
 void gui_label_init(label_struct_t *label,

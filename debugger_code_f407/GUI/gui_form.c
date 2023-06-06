@@ -11,18 +11,22 @@
 #include "gui_button.h"
 #include "gui_label.h"
 #include "string.h"
+#include "FreeRTOS.h"
+#include "task.h"
+
+#define GUI_CALLBACK_PRIO       2
 
 
 static unsigned char gui_form_counter = 0;
 static form_struct_t *current_form = NULL;
-//static TaskHandle_t gui_callback_taskhandler;
+static TaskHandle_t gui_callback_taskhandler;
 extern unsigned char battery_voltage;
 
-//void gui_callback_task(void *parameters) {
-//    vTaskDelay(220);
-//    ((button_struct_t *) parameters)->callback(parameters);
-//    vTaskDelete(NULL);
-//}
+void gui_callback_task(void *parameters) {
+    vTaskDelay(220);
+    ((button_struct_t *) parameters)->callback(parameters);
+    vTaskDelete(NULL);
+}
 
 void gui_form_init(form_struct_t *form, const char *name, void (*callback)(void *object)) {
     gui_form_counter++;
@@ -127,9 +131,9 @@ void gui_form_update(unsigned char x_pos, unsigned char y_pos) {
             tmp_label = tmp_label->next_label;
         }
     }
-//    if (pressed_button != NULL) {
-//        xTaskCreate(gui_callback_task, "gui_callback", 256,
-//                    pressed_button, GUI_CALLBACK_PRIO, &gui_callback_taskhandler);
-//    }
+    if (pressed_button != NULL) {
+        xTaskCreate(gui_callback_task, "gui_callback", 256,
+                    pressed_button, GUI_CALLBACK_PRIO, &gui_callback_taskhandler);
+    }
     current_form->callback(current_form);
 }

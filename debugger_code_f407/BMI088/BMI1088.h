@@ -36,5 +36,10 @@ void get_angle(float q[4], float *yaw, float *pitch, float *roll);
 
 void Show_BMI088_Attitude(float *yaw, float *pitch, float *roll);
 
+void get_IMU_attitude_algorithm_callback();
+
+void Init_IMU_attitude_algorithm();
+
+void get_IMU_attitude_algorithm_data(float *roll, float *pitch, float *yaw);
 
 #endif //DEBUGGER_CODE_BMI1088_H

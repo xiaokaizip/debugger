@@ -75,15 +75,7 @@ void MX_FREERTOS_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 ///////////IMU////////////
-extern float accel[3];
-extern float gyro[3];
-extern float mag[3];
 
-extern float INS_quat[4];
-extern float INS_angle[3];
-uint8_t IMU_updata = 0;
-extern uint8_t can_BMI_accel_data[8];
-extern uint8_t can_BMI_gyro_data[8];
 
 extern IMU_measure_t IMU_measure;
 
@@ -97,7 +89,6 @@ Forms_struct_t forms;
 uint16_t usart_times = 0;
 uint16_t can_times = 0;
 uint16_t times = 0;
-uint16_t twinkles = 0;
 extern uint16_t can_id[6];
 extern unsigned char lcd_buffer[130 * 162 * 2];
 
@@ -295,12 +286,12 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
         HAL_IncTick();
     }
     /* USER CODE BEGIN Callback 1 */
-    can_times++;
     usart_times++;
     times++;
-    twinkles++;
-    AHRS_update(INS_quat, 1.0f / 1000.0f, gyro, accel, mag);
-    get_angle(INS_quat, &INS_angle[0], &INS_angle[1], &INS_angle[2]);
+    if (htim->Instance == TIM7) {
+        get_IMU_attitude_algorithm_callback();
+    }
+
     /* USER CODE END Callback 1 */
 }
 

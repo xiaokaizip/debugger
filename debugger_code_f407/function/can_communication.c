@@ -14,14 +14,16 @@ uint16_t can_BMI_gyro_data[8];
 uint16_t can_id[6];
 extern CAN_HandleTypeDef hcan1;
 
-extern uint8_t IMU_updata;
+uint8_t IMU_updata;
 
 /////////////can_fifo///////////
 
-fifo_s_t can_fifo;
+fifo_s_t can_fifo_motor;
+fifo_s_t can_fifo_IMU;
 
-unsigned char can_fifo_buf[1024];
-can_data_t can_data_buff;
+unsigned char can_fifo_motor_buf[1024];
+unsigned char can_fifo_IMU_buf[256];
+can_data_t can_data_buf;
 
 /**
  * can ÂË²¨ÉèÖÃ
@@ -44,7 +46,9 @@ void can_init(void) {
 
 
 void can_fifo_init() {
-    fifo_s_init(&can_fifo, can_fifo_buf, 1024);
+    fifo_s_init(&can_fifo_motor, can_fifo_motor_buf, 1024);
+    fifo_s_init(&can_fifo_IMU, can_fifo_IMU_buf, 256);
+
 }
 
 void CAN_Id_Sort() {
@@ -81,9 +85,15 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
         CAN_RxHeaderTypeDef rx_header;
         HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rx_header, can_rx_data);
 ////////can_fifo////////////////////////////
-        can_data_buff.id = (uint16_t) rx_header.StdId;
-        memcpy(&can_fifo, &can_rx_data, sizeof(can_rx_data));
-        fifo_s_puts(&can_fifo, (char *) &can_data_buff.id, sizeof(can_data_t));
+        can_data_buf.id = (uint16_t) rx_header.StdId;
+        memcpy(&can_fifo_motor, &can_rx_data, sizeof(can_rx_data));
+        if (can_data_buf.id >= 0x201 && can_data_buf.id <= 0x208) {
+
+            fifo_s_puts(&can_fifo_motor, (char *) &can_data_buf.id, sizeof(can_data_t));
+        } else if (can_data_buf.id == 0x100 || can_data_buf.id == 0x101) {
+            fifo_s_puts(&can_fifo_IMU, (char *) &can_data_buf.id, sizeof(can_data_t));
+
+        }
 ///////////////////////////////////////////
         twinkles++;
 
