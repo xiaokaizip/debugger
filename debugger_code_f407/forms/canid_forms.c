@@ -4,36 +4,32 @@
 
 #include "canid_forms.h"
 #include "main.h"
+#include "key.h"
+#include "can_data.h"
 
 button_struct_t button_Imu_CanId;
 button_struct_t button_Motor_CanId;
+button_struct_t button_all_canid;
 button_struct_t button_Turnbuck_CanId;
 extern unsigned char lcd_buffer[128 * 160 * 2];
 
-extern unsigned short x;
-extern unsigned short y;
-extern uint8_t key_Select_flag;
-extern uint8_t key_Enter_flag;
-extern uint8_t key_Verify_flag;
-extern Forms_struct_t forms;
+press_key_t canid_key;
 
-extern uint16_t can_id[6];
-extern uint16_t can_times;
+extern Forms_struct_t forms;
 
 
 void Button_TurnBuck_CallBack_CanId(void *object) {
 
     main_Form_Init();
     forms.id = Main_Form;
-    key_Select_flag = 0;
-
+    canid_key.key_select_num = 0;
 }
 
 void Button_Imu_CallBack_CanId(void *object) {
 
     Imu_Form_Init();
     forms.id = Imu;
-    key_Select_flag = 0;
+    canid_key.key_select_num = 0;
 
 }
 
@@ -41,7 +37,15 @@ void Button_Motor_CallBack_CanId(void *object) {
 
     Motor_Form_Init();
     forms.id = Motor;
-    key_Select_flag = 0;
+    canid_key.key_select_num = 0;
+
+}
+
+void button_all_callback_canid(void *object) {
+
+    all_canid_Form_Init();
+    forms.id = AllCAN;
+    canid_key.key_select_num = 0;
 
 }
 
@@ -51,55 +55,62 @@ void CanId_Form_Init() {
     HAL_Delay(10);
     gui_button_init(&button_Imu_CanId, 32, 33, 72, 24, "IMU");
     gui_button_init(&button_Motor_CanId, 32, 63, 72, 24, "motor");
-    gui_button_init(&button_Turnbuck_CanId, 32, 93, 72, 24, "TurnBuck");
+    gui_button_init(&button_all_canid, 32, 93, 72, 24, "all");
+    gui_button_init(&button_Turnbuck_CanId, 32, 123, 72, 24, "TurnBuck");
 
     button_Turnbuck_CanId.callback = Button_TurnBuck_CallBack_CanId;
     button_Imu_CanId.callback = Button_Imu_CallBack_CanId;
     button_Motor_CanId.callback = Button_Motor_CallBack_CanId;
-
+    button_all_canid.callback = button_all_callback_canid;
 
     gui_button_update(&button_Turnbuck_CanId, button_normal_status);
     gui_button_update(&button_Imu_CanId, button_normal_status);
     gui_button_update(&button_Motor_CanId, button_normal_status);
+    gui_button_update(&button_all_canid, button_normal_status);
 
 }
 
 void CanId_Form_Load() {
-    if (key_Select_flag >= 3) {
-        key_Select_flag = 0;
-    }
-    switch (key_Select_flag) {
+    press_key(&canid_key, 4);
+    switch (canid_key.key_select_num) {
         case 0:
             gui_button_update(&button_Imu_CanId, button_click_status);
             gui_button_update(&button_Motor_CanId, button_normal_status);
+            gui_button_update(&button_all_canid, button_normal_status);
             gui_button_update(&button_Turnbuck_CanId, button_normal_status);
-            key_Select_flag = 0;
             break;
         case 1:
             gui_button_update(&button_Imu_CanId, button_normal_status);
             gui_button_update(&button_Motor_CanId, button_click_status);
+            gui_button_update(&button_all_canid, button_normal_status);
             gui_button_update(&button_Turnbuck_CanId, button_normal_status);
-            key_Select_flag = 1;
             break;
         case 2:
             gui_button_update(&button_Imu_CanId, button_normal_status);
             gui_button_update(&button_Motor_CanId, button_normal_status);
+            gui_button_update(&button_all_canid, button_click_status);
+            gui_button_update(&button_Turnbuck_CanId, button_normal_status);
+            break;
+        case 3:
+            gui_button_update(&button_Imu_CanId, button_normal_status);
+            gui_button_update(&button_Motor_CanId, button_normal_status);
+            gui_button_update(&button_all_canid, button_normal_status);
             gui_button_update(&button_Turnbuck_CanId, button_click_status);
-            key_Select_flag = 2;
             break;
         default:
-            key_Select_flag = 0;
             break;
     }
 
-    if (key_Verify_flag == 1) {
-        if (key_Select_flag == 0) {
+    if (canid_key.key_verify == 1) {
+        if (canid_key.key_select_num == 0) {
             button_Imu_CanId.callback(&button_Imu_CanId);
-        } else if (key_Select_flag == 1) {
+        } else if (canid_key.key_select_num == 1) {
             button_Motor_CanId.callback(&button_Motor_CanId);
-        } else if (key_Select_flag == 2) {
+        } else if (canid_key.key_select_num == 2) {
+            button_all_canid.callback(&button_all_canid);
+        } else if (canid_key.key_select_num == 3) {
             button_Turnbuck_CanId.callback(&button_Turnbuck_CanId);
         }
-        key_Verify_flag = 0;
+        canid_key.key_verify = 0;
     }
 }

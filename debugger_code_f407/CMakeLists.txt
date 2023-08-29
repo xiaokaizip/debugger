@@ -54,11 +54,12 @@ include_directories(Core/Inc Drivers/STM32F4xx_HAL_Driver/Inc Drivers/STM32F4xx_
         devices forms function GUI system "data structure" BMI088 system/cmsis
         Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS
         Middlewares/Third_Party/FreeRTOS/Source/include Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
-        support data_processing)
+        support data_processing task controller)
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx)
 
 file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*" "devices/*.*" "forms/*.*" "function/*.*" "function/*.cpp" "GUI/*.*"
-        "system/*.c" "data structure/*.*" "BMI088/*.*" "system/cmsis/*.*" "Middlewares/*.*" "support/*.*" "data_processing/*.*")
+        "system/*.c" "data structure/*.*" "BMI088/*.*" "system/cmsis/*.*" "Middlewares/*.*" "support/*.*" "data_processing/*.*"
+        "task/*.*" "controller/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F407VETX_FLASH.ld)
 

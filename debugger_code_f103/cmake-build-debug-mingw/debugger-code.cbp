@@ -353,9 +353,6 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f103/GUI/color.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger_code_f103/GUI/fenjing.h">
-			<Option target="debugger-code.elf"/>
-		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f103/GUI/font.h">
 			<Option target="debugger-code.elf"/>
 		</Unit>
@@ -390,6 +387,18 @@
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f103/data structure/queue.h">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f103/devices/.idea/devices.iml">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f103/devices/.idea/misc.xml">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f103/devices/.idea/modules.xml">
+			<Option target="debugger-code.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f103/devices/.idea/workspace.xml">
 			<Option target="debugger-code.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f103/devices/lcd_init.c">

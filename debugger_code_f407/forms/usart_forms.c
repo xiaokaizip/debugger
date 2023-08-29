@@ -6,6 +6,7 @@
 #include "main.h"
 #include "usart.h"
 #include "string.h"
+#include "key.h"
 
 button_struct_t button_turnbuck_usart;
 button_struct_t button_usart;
@@ -14,11 +15,7 @@ char usart_name[20] = {0};
 extern uint16_t usart_times;
 
 
-extern unsigned short x;
-extern unsigned short y;
-extern uint8_t key_Select_flag;
-extern uint8_t key_Enter_flag;
-extern uint8_t key_Verify_flag;
+press_key_t uart_key;
 extern Forms_struct_t forms;
 
 extern uint8_t usart_data[8];
@@ -27,12 +24,12 @@ void Button_TurnBuck_CallBack_Usart(void *object) {
 
     main_Form_Init();
     forms.id = Main_Form;
-    key_Select_flag = 0;
+    uart_key.key_select_num = 0;
 
 }
 
 void Button_Usart_CallBack(void *object) {
-    key_Select_flag = 0;
+    uart_key.key_select_num = 0;
 }
 
 void Usart_Form_Init() {
@@ -61,9 +58,7 @@ void Usart_Form_Init() {
 }
 
 void Usart_Form_Load() {
-    if (key_Select_flag >= 2) {
-        key_Select_flag = 0;
-    }
+    press_key(&uart_key, 2);
 
     gui_label_settext(&label_usart, usart_name);
     gui_label_update(&label_usart);
@@ -76,38 +71,33 @@ void Usart_Form_Load() {
     gui_printf(12, 88, C_BLACK, C_WHITE, "data7:%d", usart_data[6]);
     gui_printf(72, 88, C_BLACK, C_WHITE, "data8:%d", usart_data[7]);
 
-    if (usart_times > 5000) {
-        strcpy(usart_name, "wating...");
-        gui_label_settext(&label_usart, usart_name);
-    }
-
-
-    switch (key_Select_flag) {
+    
+    switch (uart_key.key_select_num) {
         case 0:
             gui_label_update(&label_usart);
             gui_button_update(&button_usart, button_click_status);
             gui_button_update(&button_turnbuck_usart, button_normal_status);
-            key_Select_flag = 0;
+            uart_key.key_select_num = 0;
             break;
         case 1:
             gui_label_update(&label_usart);
             gui_button_update(&button_usart, button_normal_status);
             gui_button_update(&button_turnbuck_usart, button_click_status);
-            key_Select_flag = 1;
+            uart_key.key_select_num = 1;
             break;
         default:
-            key_Select_flag = 0;
+            uart_key.key_select_num = 0;
             break;
     }
 
-    if (key_Verify_flag == 1) {
-        if (key_Select_flag == 0) {
+    if (uart_key.key_verify == 1) {
+        if (uart_key.key_select_num == 0) {
             button_usart.callback(&button_usart);
         }
-        if (key_Select_flag == 1) {
+        if (uart_key.key_select_num == 1) {
             button_turnbuck_usart.callback(&button_turnbuck_usart);
         }
-        key_Verify_flag = 0;
+        uart_key.key_verify = 0;
     }
 
 }

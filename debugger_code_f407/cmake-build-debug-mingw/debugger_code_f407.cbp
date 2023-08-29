@@ -48,6 +48,8 @@
 					<Add directory="D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
 					<Add directory="D:/rmbuild/Debugger/debugger_code_f407/support"/>
 					<Add directory="D:/rmbuild/Debugger/debugger_code_f407/data_processing"/>
+					<Add directory="D:/rmbuild/Debugger/debugger_code_f407/task"/>
+					<Add directory="D:/rmbuild/Debugger/debugger_code_f407/controller"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -93,6 +95,8 @@
 					<Add directory="D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
 					<Add directory="D:/rmbuild/Debugger/debugger_code_f407/support"/>
 					<Add directory="D:/rmbuild/Debugger/debugger_code_f407/data_processing"/>
+					<Add directory="D:/rmbuild/Debugger/debugger_code_f407/task"/>
+					<Add directory="D:/rmbuild/Debugger/debugger_code_f407/controller"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -128,10 +132,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088_show.c">
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088.c">
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088_show.h">
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088.h">
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/BMI088/MahonyAHRS.c">
@@ -593,6 +597,12 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/STM32F407VETX_FLASH.ld">
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/controller/pid.c">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/controller/pid.h">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/data_processing/can_data.c">
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
@@ -629,6 +639,12 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/devices/xpt2046.h">
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/forms/all_canid_form.c">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/forms/all_canid_form.h">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/forms/canid_forms.c">
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
@@ -663,6 +679,12 @@
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/forms/motor_forms.h">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/forms/osinfo_forms.c">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/forms/osinfo_forms.h">
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/forms/suscap_debuger_forms.c">
@@ -707,16 +729,40 @@
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/function/motor.h">
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/function/pid.c">
-			<Option target="debugger_code_f407.elf"/>
-		</Unit>
-		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/function/pid.h">
-			<Option target="debugger_code_f407.elf"/>
-		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/support/fifo.c">
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/support/fifo.h">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/task/INS_task.c">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/task/INS_task.h">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/task/can_show_task.c">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/task/can_show_task.h">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/task/gui_task.c">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/task/gui_task.h">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/task/led_task.c">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/task/led_task.h">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/task/motor_task.c">
+			<Option target="debugger_code_f407.elf"/>
+		</Unit>
+		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/task/motor_task.h">
 			<Option target="debugger_code_f407.elf"/>
 		</Unit>
 		<Unit filename="D:/rmbuild/Debugger/debugger_code_f407/CMakeLists.txt">

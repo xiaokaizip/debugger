@@ -8,7 +8,7 @@ extern Forms_struct_t forms;
 
 void Form_UpdateEvent(void) {
 
-    switch (forms.id) {
+    switch (Usart) {
         case Main_Form:
             main_Form_Load();
             break;

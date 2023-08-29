@@ -47,6 +47,8 @@ extern "C" {
 #include "usart_forms.h"
 #include "imu_forms.h"
 #include "motor_forms.h"
+#include "osinfo_forms.h"
+#include "all_canid_form.h"
 
 /////////////device/////////////
 #include "xpt2046.h"

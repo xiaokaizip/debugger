@@ -5,6 +5,7 @@
 #include "main.h"
 #include "main_forms.h"
 #include "retarget.h"
+#include "key.h"
 
 label_struct_t label_mainForms;
 
@@ -13,11 +14,8 @@ button_struct_t button_Dail;
 button_struct_t button_CanId;
 button_struct_t button_Usart;
 
-extern unsigned short x;
-extern unsigned short y;
-extern uint8_t key_Select_flag;
-extern uint8_t key_Enter_flag;
-extern uint8_t key_Verify_flag;
+press_key_t main_key;
+
 extern Forms_struct_t forms;
 
 
@@ -25,27 +23,27 @@ void Button_SusCap_CallBack(void *object) {
 
     Suscap_Debuger_Show_Init();
     forms.id = SusCapDebuger;
-    key_Select_flag = 0;
+    main_key.key_select_num = 0;
 }
 
 void Button_Dial_CallBack(void *object) {
 
     Dail_Form_Init();
     forms.id = Dail;
-    key_Select_flag = 0;
+    main_key.key_select_num = 0;
 
 }
 
 void Button_CanId_CallBuck(void *object) {
     CanId_Form_Init();
     forms.id = CanId;
-    key_Select_flag = 0;
+    main_key.key_select_num = 0;
 }
 
 void Button_Usart_CallBuck(void *object) {
     Usart_Form_Init();
     forms.id = Usart;
-    key_Select_flag = 0;
+    main_key.key_select_num = 0;
 }
 
 void main_Form_Init() {
@@ -71,57 +69,49 @@ void main_Form_Init() {
 
 void main_Form_Load() {
 
-    if (key_Select_flag >= 4) {
-        key_Select_flag = 0;
-    }
+    press_key(&main_key, 4);
 
-    printf("%d", key_Select_flag);
-    switch (key_Select_flag) {
+    switch (main_key.key_select_num) {
         case 0:
             gui_button_update(&button_SuscapDebuger, button_click_status);
             gui_button_update(&button_Dail, button_normal_status);
             gui_button_update(&button_CanId, button_normal_status);
             gui_button_update(&button_Usart, button_normal_status);
-            key_Select_flag = 0;
             break;
         case 1:
             gui_button_update(&button_SuscapDebuger, button_normal_status);
             gui_button_update(&button_Dail, button_click_status);
             gui_button_update(&button_CanId, button_normal_status);
             gui_button_update(&button_Usart, button_normal_status);
-            key_Select_flag = 1;
             break;
         case 2:
             gui_button_update(&button_SuscapDebuger, button_normal_status);
             gui_button_update(&button_Dail, button_normal_status);
             gui_button_update(&button_CanId, button_click_status);
             gui_button_update(&button_Usart, button_normal_status);
-            key_Select_flag = 2;
             break;
         case 3:
             gui_button_update(&button_SuscapDebuger, button_normal_status);
             gui_button_update(&button_Dail, button_normal_status);
             gui_button_update(&button_CanId, button_normal_status);
             gui_button_update(&button_Usart, button_click_status);
-            key_Select_flag = 3;
             break;
         default:
-            key_Select_flag = 0;
             break;
     }
 
 
-    if (key_Verify_flag == 1) {
-        if (key_Select_flag == 0) {
+    if (main_key.key_verify == 1) {
+        if (main_key.key_select_num == 0) {
             button_SuscapDebuger.callback(&button_SuscapDebuger);
-        } else if (key_Select_flag == 1) {
+        } else if (main_key.key_select_num == 1) {
             button_Dail.callback(&button_Dail);
-        } else if (key_Select_flag == 2) {
+        } else if (main_key.key_select_num == 2) {
             button_CanId.callback(&button_CanId);
-        } else if (key_Select_flag == 3) {
+        } else if (main_key.key_select_num == 3) {
             button_Usart.callback(&button_Usart);
         }
-        key_Verify_flag = 0;
+        main_key.key_verify = 0;
     }
 
 }

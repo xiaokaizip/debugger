@@ -128,29 +128,29 @@ debugger_code_f407.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/build
 .PHONY : debugger_code_f407.elf/fast
 
-BMI088/BMI1088_show.obj: BMI088/BMI1088_show.c.obj
-.PHONY : BMI088/BMI1088_show.obj
+BMI088/BMI1088.obj: BMI088/BMI1088.c.obj
+.PHONY : BMI088/BMI1088.obj
 
 # target to build an object file
-BMI088/BMI1088_show.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj
-.PHONY : BMI088/BMI1088_show.c.obj
+BMI088/BMI1088.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj
+.PHONY : BMI088/BMI1088.c.obj
 
-BMI088/BMI1088_show.i: BMI088/BMI1088_show.c.i
-.PHONY : BMI088/BMI1088_show.i
+BMI088/BMI1088.i: BMI088/BMI1088.c.i
+.PHONY : BMI088/BMI1088.i
 
 # target to preprocess a source file
-BMI088/BMI1088_show.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.i
-.PHONY : BMI088/BMI1088_show.c.i
+BMI088/BMI1088.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.i
+.PHONY : BMI088/BMI1088.c.i
 
-BMI088/BMI1088_show.s: BMI088/BMI1088_show.c.s
-.PHONY : BMI088/BMI1088_show.s
+BMI088/BMI1088.s: BMI088/BMI1088.c.s
+.PHONY : BMI088/BMI1088.s
 
 # target to generate assembly for a file
-BMI088/BMI1088_show.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.s
-.PHONY : BMI088/BMI1088_show.c.s
+BMI088/BMI1088.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.s
+.PHONY : BMI088/BMI1088.c.s
 
 BMI088/MahonyAHRS.obj: BMI088/MahonyAHRS.c.obj
 .PHONY : BMI088/MahonyAHRS.obj
@@ -1336,6 +1336,30 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
+controller/pid.obj: controller/pid.c.obj
+.PHONY : controller/pid.obj
+
+# target to build an object file
+controller/pid.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/controller/pid.c.obj
+.PHONY : controller/pid.c.obj
+
+controller/pid.i: controller/pid.c.i
+.PHONY : controller/pid.i
+
+# target to preprocess a source file
+controller/pid.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/controller/pid.c.i
+.PHONY : controller/pid.c.i
+
+controller/pid.s: controller/pid.c.s
+.PHONY : controller/pid.s
+
+# target to generate assembly for a file
+controller/pid.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/controller/pid.c.s
+.PHONY : controller/pid.c.s
+
 data_processing/can_data.obj: data_processing/can_data.c.obj
 .PHONY : data_processing/can_data.obj
 
@@ -1431,6 +1455,30 @@ devices/xpt2046.s: devices/xpt2046.c.s
 devices/xpt2046.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.s
 .PHONY : devices/xpt2046.c.s
+
+forms/all_canid_form.obj: forms/all_canid_form.c.obj
+.PHONY : forms/all_canid_form.obj
+
+# target to build an object file
+forms/all_canid_form.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/forms/all_canid_form.c.obj
+.PHONY : forms/all_canid_form.c.obj
+
+forms/all_canid_form.i: forms/all_canid_form.c.i
+.PHONY : forms/all_canid_form.i
+
+# target to preprocess a source file
+forms/all_canid_form.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/forms/all_canid_form.c.i
+.PHONY : forms/all_canid_form.c.i
+
+forms/all_canid_form.s: forms/all_canid_form.c.s
+.PHONY : forms/all_canid_form.s
+
+# target to generate assembly for a file
+forms/all_canid_form.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/forms/all_canid_form.c.s
+.PHONY : forms/all_canid_form.c.s
 
 forms/canid_forms.obj: forms/canid_forms.c.obj
 .PHONY : forms/canid_forms.obj
@@ -1575,6 +1623,30 @@ forms/motor_forms.s: forms/motor_forms.c.s
 forms/motor_forms.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/forms/motor_forms.c.s
 .PHONY : forms/motor_forms.c.s
+
+forms/osinfo_forms.obj: forms/osinfo_forms.c.obj
+.PHONY : forms/osinfo_forms.obj
+
+# target to build an object file
+forms/osinfo_forms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/forms/osinfo_forms.c.obj
+.PHONY : forms/osinfo_forms.c.obj
+
+forms/osinfo_forms.i: forms/osinfo_forms.c.i
+.PHONY : forms/osinfo_forms.i
+
+# target to preprocess a source file
+forms/osinfo_forms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/forms/osinfo_forms.c.i
+.PHONY : forms/osinfo_forms.c.i
+
+forms/osinfo_forms.s: forms/osinfo_forms.c.s
+.PHONY : forms/osinfo_forms.s
+
+# target to generate assembly for a file
+forms/osinfo_forms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/forms/osinfo_forms.c.s
+.PHONY : forms/osinfo_forms.c.s
 
 forms/suscap_debuger_forms.obj: forms/suscap_debuger_forms.c.obj
 .PHONY : forms/suscap_debuger_forms.obj
@@ -1744,30 +1816,6 @@ function/motor.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.s
 .PHONY : function/motor.c.s
 
-function/pid.obj: function/pid.c.obj
-.PHONY : function/pid.obj
-
-# target to build an object file
-function/pid.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.obj
-.PHONY : function/pid.c.obj
-
-function/pid.i: function/pid.c.i
-.PHONY : function/pid.i
-
-# target to preprocess a source file
-function/pid.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.i
-.PHONY : function/pid.c.i
-
-function/pid.s: function/pid.c.s
-.PHONY : function/pid.s
-
-# target to generate assembly for a file
-function/pid.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.s
-.PHONY : function/pid.c.s
-
 support/fifo.obj: support/fifo.c.obj
 .PHONY : support/fifo.obj
 
@@ -1792,6 +1840,126 @@ support/fifo.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.s
 .PHONY : support/fifo.c.s
 
+task/INS_task.obj: task/INS_task.c.obj
+.PHONY : task/INS_task.obj
+
+# target to build an object file
+task/INS_task.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/INS_task.c.obj
+.PHONY : task/INS_task.c.obj
+
+task/INS_task.i: task/INS_task.c.i
+.PHONY : task/INS_task.i
+
+# target to preprocess a source file
+task/INS_task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/INS_task.c.i
+.PHONY : task/INS_task.c.i
+
+task/INS_task.s: task/INS_task.c.s
+.PHONY : task/INS_task.s
+
+# target to generate assembly for a file
+task/INS_task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/INS_task.c.s
+.PHONY : task/INS_task.c.s
+
+task/can_show_task.obj: task/can_show_task.c.obj
+.PHONY : task/can_show_task.obj
+
+# target to build an object file
+task/can_show_task.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/can_show_task.c.obj
+.PHONY : task/can_show_task.c.obj
+
+task/can_show_task.i: task/can_show_task.c.i
+.PHONY : task/can_show_task.i
+
+# target to preprocess a source file
+task/can_show_task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/can_show_task.c.i
+.PHONY : task/can_show_task.c.i
+
+task/can_show_task.s: task/can_show_task.c.s
+.PHONY : task/can_show_task.s
+
+# target to generate assembly for a file
+task/can_show_task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/can_show_task.c.s
+.PHONY : task/can_show_task.c.s
+
+task/gui_task.obj: task/gui_task.c.obj
+.PHONY : task/gui_task.obj
+
+# target to build an object file
+task/gui_task.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/gui_task.c.obj
+.PHONY : task/gui_task.c.obj
+
+task/gui_task.i: task/gui_task.c.i
+.PHONY : task/gui_task.i
+
+# target to preprocess a source file
+task/gui_task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/gui_task.c.i
+.PHONY : task/gui_task.c.i
+
+task/gui_task.s: task/gui_task.c.s
+.PHONY : task/gui_task.s
+
+# target to generate assembly for a file
+task/gui_task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/gui_task.c.s
+.PHONY : task/gui_task.c.s
+
+task/led_task.obj: task/led_task.c.obj
+.PHONY : task/led_task.obj
+
+# target to build an object file
+task/led_task.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/led_task.c.obj
+.PHONY : task/led_task.c.obj
+
+task/led_task.i: task/led_task.c.i
+.PHONY : task/led_task.i
+
+# target to preprocess a source file
+task/led_task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/led_task.c.i
+.PHONY : task/led_task.c.i
+
+task/led_task.s: task/led_task.c.s
+.PHONY : task/led_task.s
+
+# target to generate assembly for a file
+task/led_task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/led_task.c.s
+.PHONY : task/led_task.c.s
+
+task/motor_task.obj: task/motor_task.c.obj
+.PHONY : task/motor_task.obj
+
+# target to build an object file
+task/motor_task.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/motor_task.c.obj
+.PHONY : task/motor_task.c.obj
+
+task/motor_task.i: task/motor_task.c.i
+.PHONY : task/motor_task.i
+
+# target to preprocess a source file
+task/motor_task.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/motor_task.c.i
+.PHONY : task/motor_task.c.i
+
+task/motor_task.s: task/motor_task.c.s
+.PHONY : task/motor_task.s
+
+# target to generate assembly for a file
+task/motor_task.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\debugger_code_f407.elf.dir\build.make CMakeFiles/debugger_code_f407.elf.dir/task/motor_task.c.s
+.PHONY : task/motor_task.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1801,9 +1969,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... debugger_code_f407.elf
-	@echo ... BMI088/BMI1088_show.obj
-	@echo ... BMI088/BMI1088_show.i
-	@echo ... BMI088/BMI1088_show.s
+	@echo ... BMI088/BMI1088.obj
+	@echo ... BMI088/BMI1088.i
+	@echo ... BMI088/BMI1088.s
 	@echo ... BMI088/MahonyAHRS.obj
 	@echo ... BMI088/MahonyAHRS.i
 	@echo ... BMI088/MahonyAHRS.s
@@ -1952,6 +2120,9 @@ help:
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.obj
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.i
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.s
+	@echo ... controller/pid.obj
+	@echo ... controller/pid.i
+	@echo ... controller/pid.s
 	@echo ... data_processing/can_data.obj
 	@echo ... data_processing/can_data.i
 	@echo ... data_processing/can_data.s
@@ -1964,6 +2135,9 @@ help:
 	@echo ... devices/xpt2046.obj
 	@echo ... devices/xpt2046.i
 	@echo ... devices/xpt2046.s
+	@echo ... forms/all_canid_form.obj
+	@echo ... forms/all_canid_form.i
+	@echo ... forms/all_canid_form.s
 	@echo ... forms/canid_forms.obj
 	@echo ... forms/canid_forms.i
 	@echo ... forms/canid_forms.s
@@ -1982,6 +2156,9 @@ help:
 	@echo ... forms/motor_forms.obj
 	@echo ... forms/motor_forms.i
 	@echo ... forms/motor_forms.s
+	@echo ... forms/osinfo_forms.obj
+	@echo ... forms/osinfo_forms.i
+	@echo ... forms/osinfo_forms.s
 	@echo ... forms/suscap_debuger_forms.obj
 	@echo ... forms/suscap_debuger_forms.i
 	@echo ... forms/suscap_debuger_forms.s
@@ -2003,12 +2180,24 @@ help:
 	@echo ... function/motor.obj
 	@echo ... function/motor.i
 	@echo ... function/motor.s
-	@echo ... function/pid.obj
-	@echo ... function/pid.i
-	@echo ... function/pid.s
 	@echo ... support/fifo.obj
 	@echo ... support/fifo.i
 	@echo ... support/fifo.s
+	@echo ... task/INS_task.obj
+	@echo ... task/INS_task.i
+	@echo ... task/INS_task.s
+	@echo ... task/can_show_task.obj
+	@echo ... task/can_show_task.i
+	@echo ... task/can_show_task.s
+	@echo ... task/gui_task.obj
+	@echo ... task/gui_task.i
+	@echo ... task/gui_task.s
+	@echo ... task/led_task.obj
+	@echo ... task/led_task.i
+	@echo ... task/led_task.s
+	@echo ... task/motor_task.obj
+	@echo ... task/motor_task.i
+	@echo ... task/motor_task.s
 .PHONY : help
 
 

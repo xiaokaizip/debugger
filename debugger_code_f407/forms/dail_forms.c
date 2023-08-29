@@ -3,6 +3,7 @@
 //
 
 #include "main.h"
+#include"key.h"
 
 button_struct_t button_start;
 button_struct_t button_stop;
@@ -11,12 +12,8 @@ button_struct_t button_down;
 button_struct_t button_turnbuck_dail;
 
 int16_t speed = 0;
-int16_t set_speed = 1;
-extern unsigned short x;
-extern unsigned short y;
-extern uint8_t key_Select_flag;
-extern uint8_t key_Enter_flag;
-extern uint8_t key_Verify_flag;
+int16_t set_speed = 0;
+press_key_t dail_key;
 extern Forms_struct_t forms;
 
 void Button_TurnBuck_CallBack_Dail(void *object) {
@@ -24,7 +21,7 @@ void Button_TurnBuck_CallBack_Dail(void *object) {
     main_Form_Init();
     speed = 0;
     forms.id = Main_Form;
-    key_Select_flag = 0;
+    dail_key.key_select_num = 0;
 
 }
 
@@ -51,15 +48,15 @@ void Dail_Form_Init() {
 }
 
 void Dail_Form_Load() {
-
-    switch (key_Select_flag) {
+    press_key(&dail_key, 5);
+    switch (dail_key.key_select_num) {
         case 0:
             gui_button_update(&button_up, button_click_status);
             gui_button_update(&button_down, button_normal_status);
             gui_button_update(&button_start, button_normal_status);
             gui_button_update(&button_stop, button_normal_status);
             gui_button_update(&button_turnbuck_dail, button_normal_status);
-            key_Select_flag = 0;
+            dail_key.key_select_num = 0;
             break;
         case 1:
             gui_button_update(&button_up, button_normal_status);
@@ -67,7 +64,7 @@ void Dail_Form_Load() {
             gui_button_update(&button_start, button_normal_status);
             gui_button_update(&button_stop, button_normal_status);
             gui_button_update(&button_turnbuck_dail, button_normal_status);
-            key_Select_flag = 1;
+            dail_key.key_select_num = 1;
             break;
         case 2:
             gui_button_update(&button_up, button_normal_status);
@@ -75,7 +72,7 @@ void Dail_Form_Load() {
             gui_button_update(&button_start, button_click_status);
             gui_button_update(&button_stop, button_normal_status);
             gui_button_update(&button_turnbuck_dail, button_normal_status);
-            key_Select_flag = 2;
+            dail_key.key_select_num = 2;
             break;
         case 3:
             gui_button_update(&button_up, button_normal_status);
@@ -83,7 +80,7 @@ void Dail_Form_Load() {
             gui_button_update(&button_start, button_normal_status);
             gui_button_update(&button_stop, button_click_status);
             gui_button_update(&button_turnbuck_dail, button_normal_status);
-            key_Select_flag = 3;
+            dail_key.key_select_num = 3;
             break;
         case 4:
             gui_button_update(&button_up, button_normal_status);
@@ -91,26 +88,26 @@ void Dail_Form_Load() {
             gui_button_update(&button_start, button_normal_status);
             gui_button_update(&button_stop, button_normal_status);
             gui_button_update(&button_turnbuck_dail, button_click_status);
-            key_Select_flag = 4;
+            dail_key.key_select_num = 4;
             break;
         default:
-            key_Select_flag = 0;
+            dail_key.key_select_num = 0;
             break;
     }
 
-    if (key_Verify_flag == 1) {
-        if (key_Select_flag == 0) {
+    if (dail_key.key_verify == 1) {
+        if (dail_key.key_select_num == 0) {
             set_speed++;
-        } else if (key_Select_flag == 1) {
+        } else if (dail_key.key_select_num == 1) {
             set_speed--;
-        } else if (key_Select_flag == 2) {
+        } else if (dail_key.key_select_num == 2) {
             speed = 0;
-        } else if (key_Select_flag == 3) {
+        } else if (dail_key.key_select_num == 3) {
             speed = 0;
-        } else if (key_Select_flag == 4) {
+        } else if (dail_key.key_select_num == 4) {
             button_turnbuck_dail.callback(&button_turnbuck_dail);
         }
-        key_Verify_flag = 0;
+        dail_key.key_verify = 0;
     }
 
     if (speed != 0) {

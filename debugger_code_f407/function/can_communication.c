@@ -9,18 +9,20 @@
 #include "fifo.h"
 
 uint8_t can_rx_data[8];
-uint16_t can_BMI_accel_data[8];
-uint16_t can_BMI_gyro_data[8];
-uint16_t can_id[6];
+
 extern CAN_HandleTypeDef hcan1;
 
-extern uint8_t IMU_updata;
 
 /////////////can_fifo///////////
 
 fifo_s_t can_fifo;
-
+fifo_s_t can_fifo_RM_motor;
+fifo_s_t can_fifo_IMU;
 unsigned char can_fifo_buf[1024];
+unsigned char can_fifo_RM_motor_buf[1024];
+unsigned char can_fifo_IMU_buf[1024];
+
+
 can_data_t can_data_buff;
 
 /**
@@ -44,21 +46,9 @@ void can_init(void) {
 
 
 void can_fifo_init() {
-    fifo_s_init(&can_fifo, can_fifo_buf, 1024);
-}
-
-void CAN_Id_Sort() {
-    for (int i = 0; i < 6; i++) {
-        for (int j = 0; j < 5 - i; j++) {
-            if (can_id[j] > can_id[j + 1]) {
-                uint16_t temp = 0;
-                temp = can_id[j];
-                can_id[j] = can_id[j + 1];
-                can_id[j + 1] = temp;
-            }
-
-        }
-    }
+    fifo_s_init(&can_fifo, &can_fifo_buf, 1000);
+    fifo_s_init(&can_fifo_RM_motor, &can_fifo_RM_motor_buf, 1000);
+    fifo_s_init(&can_fifo_IMU, &can_fifo_IMU_buf, 1000);
 }
 
 
@@ -66,56 +56,37 @@ void CAN_Id_Sort() {
  * 获取电机的id，以及相应电机的信息
  * @param hcan
  */
-uint16_t twinkles = 0;
+
+uint16_t count = 0;
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan) {
     //当接受到电机的id是，led灯闪烁
-    if (twinkles > 200) {
-        HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_7);
-        twinkles = 0;
-    }
-
-    uint8_t i = 0;
+    count++;
+    led_can_rx(&count);
     uint8_t flag = 0;
     if (hcan->Instance == CAN1) {
         CAN_RxHeaderTypeDef rx_header;
         HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rx_header, can_rx_data);
 ////////can_fifo////////////////////////////
         can_data_buff.id = (uint16_t) rx_header.StdId;
-        memcpy(&can_fifo, &can_rx_data, sizeof(can_rx_data));
+        memcpy(&can_data_buff.data, &can_rx_data, sizeof(can_data_buff.data));
         fifo_s_puts(&can_fifo, (char *) &can_data_buff.id, sizeof(can_data_t));
 ///////////////////////////////////////////
-        twinkles++;
 
-        if ((uint16_t) rx_header.StdId == 0x100) {
-            for (int k = 0; k < 8; k++) {
-                can_BMI_gyro_data[k] = can_rx_data[k];
-            }
-            IMU_updata |= 1;
-        } else if ((uint16_t) rx_header.StdId == 0x101) {
-            for (int k = 0; k < 8; k++) {
-                can_BMI_accel_data[k] = can_rx_data[k];
-            }
-            IMU_updata |= (1 << 1);
+
+        if ((uint16_t) rx_header.StdId == 0x100 || (uint16_t) rx_header.StdId == 0x101) {
+            can_data_buff.id = (uint16_t) rx_header.StdId;
+            memcpy(&can_data_buff.data, &can_rx_data, sizeof(can_data_buff.data));
+            fifo_s_puts(&can_fifo_IMU, (char *) &can_data_buff.id, sizeof(can_data_t));
+
         }
 
-        for (int j = 0; j < 6; ++j) {
-            for (int k = 0; k < 6; ++k) {
-                if (can_id[k] == (uint16_t) rx_header.StdId) {
-                    flag = 1;
-                    break;
-                }
-            }
-            if (flag == 1) {
-                flag = 0;
-                break;
-            } else {
-                can_id[j] = rx_header.StdId;
-
-                flag = 0;
-            }
+        if ((uint16_t) rx_header.StdId > 0x200 && (uint16_t) rx_header.StdId <= 0x212) {
+            can_data_buff.id = (uint16_t) rx_header.StdId;
+            memcpy(&can_data_buff.data, &can_rx_data, sizeof(can_data_buff.data));
+            fifo_s_puts(&can_fifo_RM_motor, (char *) &can_data_buff.id, sizeof(can_data_t));
         }
-        CAN_Id_Sort();
+
     }
 
 }

@@ -1,3 +1,5 @@
 (fp_lib_table
+  (version 7)
   (lib (name "debugger")(type "KiCad")(uri "${KIPRJMOD}/ControlBoard.pretty")(options "")(descr ""))
+  (lib (name "ic")(type "KiCad")(uri "${KIPRJMOD}/ic.pretty")(options "")(descr ""))
 )

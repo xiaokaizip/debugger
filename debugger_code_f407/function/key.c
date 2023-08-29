@@ -28,3 +28,13 @@ uint8_t Enter_Key() {
     }
     return flag;
 }
+
+void press_key(press_key_t *press_key, uint8_t max_select_num) {
+
+    uint8_t key_flag = Enter_Key();
+    if (key_flag == 1) {
+        press_key->key_verify = 1;
+    } else if (key_flag == 2) {
+        press_key->key_select_num = (press_key->key_select_num + 1) % max_select_num;
+    }
+}

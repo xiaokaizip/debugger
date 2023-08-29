@@ -28,18 +28,7 @@ extern uint16_t usart_times;
 extern char usart_name[20];
 extern uint8_t usart_data[8];
 
-//串口中断的回调函数
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
-    if (huart == &huart1) {
-        strcpy(usart_name, "usart_typeC");
-        usart_times = 0;
-    } else if (huart == &huart4) {
-        strcpy(usart_name, "usart_gh1.25");
-        usart_times = 0;
-    }
-    HAL_UART_Receive_IT(&huart1, usart_data, 8);
-    HAL_UART_Receive_IT(&huart4, usart_data, 8);
-}
+
 
 /* USER CODE END 0 */
 

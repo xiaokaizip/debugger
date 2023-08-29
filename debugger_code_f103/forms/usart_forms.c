@@ -38,84 +38,54 @@ void Button_Usart_CallBack(void *object) {
 void Usart_Form_Init() {
     gui_clear_screan(C_WHITE);
     HAL_Delay(10);
-    gui_printf(12, 16, C_BLACK, C_WHITE, "data1:%d", usart_data[0]);
-    gui_printf(72, 16, C_BLACK, C_WHITE, "data2:%d", usart_data[1]);
-    gui_printf(12, 40, C_BLACK, C_WHITE, "data3:%d", usart_data[2]);
-    gui_printf(72, 40, C_BLACK, C_WHITE, "data4:%d", usart_data[3]);
-    gui_printf(12, 64, C_BLACK, C_WHITE, "data5:%d", usart_data[4]);
-    gui_printf(72, 64, C_BLACK, C_WHITE, "data6:%d", usart_data[5]);
-    gui_printf(12, 88, C_BLACK, C_WHITE, "data7:%d", usart_data[6]);
-    gui_printf(72, 88, C_BLACK, C_WHITE, "data8:%d", usart_data[7]);
-
-    strcpy(usart_name, "wating...");
-    gui_label_init(&label_usart, 8, C_BLACK, label_align_middle, usart_name);
-    gui_button_init(&button_usart, 12, 128, 48, 24, "usart");
-    gui_button_init(&button_turnbuck_usart, 72, 128, 48, 24, "TurnBuck");
-    button_turnbuck_usart.callback = Button_TurnBuck_CallBack_Usart;
-    button_usart.callback = Button_Usart_CallBack;
-
-    gui_label_update(&label_usart);
-    gui_button_update(&button_usart, button_click_status);
-    gui_button_update(&button_turnbuck_usart, button_normal_status);
+    gui_printf(12, 16, C_BLACK, C_WHITE, "yaw:      ");
+    gui_printf(12, 40, C_BLACK, C_WHITE, "pitch:      ");
 
 }
+
+float servo_yaw = 0;
+float servo_pitch = 0;
+uint8_t servo_data[4];
 
 void Usart_Form_Load() {
-    if (key_Select_flag >= 2) {
-        key_Select_flag = 0;
-    }
 
-    gui_label_settext(&label_usart, usart_name);
-    gui_label_update(&label_usart);
-    gui_printf(12, 16, C_BLACK, C_WHITE, "data1:%d", usart_data[0]);
-    gui_printf(72, 16, C_BLACK, C_WHITE, "data2:%d", usart_data[1]);
-    gui_printf(12, 40, C_BLACK, C_WHITE, "data3:%d", usart_data[2]);
-    gui_printf(72, 40, C_BLACK, C_WHITE, "data4:%d", usart_data[3]);
-    gui_printf(12, 64, C_BLACK, C_WHITE, "data5:%d", usart_data[4]);
-    gui_printf(72, 64, C_BLACK, C_WHITE, "data6:%d", usart_data[5]);
-    gui_printf(12, 88, C_BLACK, C_WHITE, "data7:%d", usart_data[6]);
-    gui_printf(72, 88, C_BLACK, C_WHITE, "data8:%d", usart_data[7]);
-
-    if (usart_times > 5000) {
-        strcpy(usart_name, "wating...");
-        gui_label_settext(&label_usart, usart_name);
-    }
-
-
-    switch (key_Select_flag) {
-        case 0:
-            gui_label_update(&label_usart);
-            gui_button_update(&button_usart, button_click_status);
-            gui_button_update(&button_turnbuck_usart, button_normal_status);
-            key_Select_flag = 0;
-            break;
-        case 1:
-            gui_label_update(&label_usart);
-            gui_button_update(&button_usart, button_normal_status);
-            gui_button_update(&button_turnbuck_usart, button_click_status);
-            key_Select_flag = 1;
-            break;
-        default:
-            key_Select_flag = 0;
-            break;
-    }
-
-    if (key_Verify_flag == 1) {
-        if (key_Select_flag == 0) {
-            button_usart.callback(&button_usart);
-        }
-        if (key_Select_flag == 1) {
-            button_turnbuck_usart.callback(&button_turnbuck_usart);
-        }
-        key_Verify_flag = 0;
-    }
+    gui_printf(12, 16, C_BLACK, C_WHITE, "yaw:%2d.%2d", (int) servo_yaw,
+               (int) (servo_yaw * 100) - ((int) servo_yaw * 100));
+    gui_printf(12, 40, C_BLACK, C_WHITE, "pitch:%2d.%2d", (int) servo_pitch,
+               (int) (servo_pitch * 100) - ((int) servo_pitch * 100));
 
 }
 
+void updata() {
+    servo_yaw = (float) ((int16_t) servo_data[0] | (int16_t) servo_data[1] << 8) / 100.0f;
+    servo_pitch = (float) ((int16_t) servo_data[2] | (int16_t) servo_data[3] << 8) / 100.0f;
+    HAL_UART_Transmit(&huart4, servo_data, 4, HAL_MAX_DELAY);
+
+}
+
+//串口中断的回调函数
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+    // HAL_UART_Transmit(&huart1,(uint8_t*)"h\n",2,HAL_MAX_DELAY);
+    static uint8_t flag = 0;
+    static uint8_t index = 0;
+    if (usart_data[0] == 0xAA) {
+        index = 0;
+        flag = 1;
+    } else if (flag == 1) {
+        servo_data[index] = usart_data[0];
+        index++;
+    }
+    if (index == 4) {
+        updata();
+        index = 0;
+        flag = 0;
+    }
 
 
-
-
+    // servo_yaw++;
+    //HAL_UART_Receive_IT(&huart1, usart_data, 1);
+    HAL_UART_Receive_IT(&huart4, &usart_data[0], 1);
+}
 
 
 

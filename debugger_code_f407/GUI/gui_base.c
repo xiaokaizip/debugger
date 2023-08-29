@@ -20,6 +20,10 @@ const uint8_t column = 162;
 
 volatile unsigned char lcd_buffer[130 * 162 * 2] = {0};
 
+void gui_updata() {
+    HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
+}
+
 void gui_config(void) {
     lcd_config();
 

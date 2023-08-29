@@ -19,7 +19,10 @@ enum formsId {
     CanId = 3,
     Usart = 4,
     Imu = 5,
-    Motor = 6
+    Motor = 6,
+    Osinfo = 7,
+    AllCAN = 8
+
 };
 
 

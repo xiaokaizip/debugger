@@ -16,6 +16,8 @@ typedef enum {
     UnFilled = 1,
 } Filled_Status_e;
 
+void gui_updata();
+
 void gui_config(void);
 
 void gui_clear_screan(unsigned short color);

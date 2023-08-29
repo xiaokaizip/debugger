@@ -34,11 +34,19 @@
 #include "retarget.h"
 #include "DynamicX.h"
 #include "can_communication.h"
-#include "BMI1088_show.h"
+#include "BMI1088.h"
 #include "test1.h"
 #include "test2.h"
 #include "test3.h"
 #include "fifo.h"
+#include "pid.h"
+#include "can_data.h"
+#include "led_task.h"
+#include"gui_task.h"
+#include "can_show_task.h"
+#include "INS_task.h"
+
+#include "motor_task.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -74,30 +82,10 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-///////////IMU////////////
-extern float accel[3];
-extern float gyro[3];
-extern float mag[3];
 
-extern float INS_quat[4];
-extern float INS_angle[3];
-uint8_t IMU_updata = 0;
-extern uint8_t can_BMI_accel_data[8];
-extern uint8_t can_BMI_gyro_data[8];
-
-unsigned short x = 0;
-unsigned short y = 0;
-uint8_t key_Select_flag = 0;
-uint8_t key_Verify_flag = 0;
-uint8_t key_Enter_flag = 0;
-
-Forms_struct_t forms;
-uint16_t usart_times = 0;
-uint16_t can_times = 0;
-uint16_t times = 0;
-uint16_t twinkles = 0;
 extern uint16_t can_id[6];
-extern unsigned char lcd_buffer[130 * 162 * 2];
+extern moto_measure_t motor_measure[8];
+extern fifo_s_t can_fifo_RM_motor;
 
 /*定时器中断*/
 
@@ -146,15 +134,8 @@ int main(void) {
     HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_SET);
     /* USER CODE END 2 */
 
-    /* Call init function for freertos objects (in freertos.c) */
-//    MX_FREERTOS_Init();
-//
-//    /* Start scheduler */
-//    osKernelStart();
-    /* We should never get here as control is now taken by the scheduler */
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
-    RetargetInit(&huart3);//初始化打印的函数
     HAL_TIM_Base_Start_IT(&htim7);//开启定时器的中断
 
     can_init();//can初始化
@@ -163,18 +144,35 @@ int main(void) {
     /*串口初中断初始化*/
     HAL_UART_Receive_IT(&huart2, usart_data, 8);
     HAL_UART_Receive_IT(&huart3, usart_data, 8);
+    RetargetInit(&huart2);//初始化打印的函数
+    RetargetInit(&huart3);//初始化打印的函数
 
-    gui_config();//lcd屏幕初始化
+    BaseType_t xReturned = xTaskCreate((TaskFunction_t) gui_task,
+                                       (const char *) "GUI",
+                                       (configSTACK_DEPTH_TYPE) 1024,
+                                       (void *) NULL,
+                                       (UBaseType_t) 1,
+                                       (TaskHandle_t *) NULL);
+    xReturned = xTaskCreate((TaskFunction_t) can_show_task,
+                            (const char *) "CanT",
+                            (configSTACK_DEPTH_TYPE) 1024,
+                            (void *) NULL,
+                            (UBaseType_t) 1,
+                            (TaskHandle_t *) NULL);
+    xReturned = xTaskCreate((TaskFunction_t) INS_task,
+                            (const char *) "INS",
+                            (configSTACK_DEPTH_TYPE) 1024,
+                            (void *) NULL,
+                            (UBaseType_t) 1,
+                            (TaskHandle_t *) NULL);
+//    xReturned = xTaskCreate((TaskFunction_t) motor_task,
+//                            (const char *) "MO",
+//                            (configSTACK_DEPTH_TYPE) 1024,
+//                            (void *) NULL,
+//                            (UBaseType_t) 1,
+//                            (TaskHandle_t *) NULL);
 
-    HAL_Delay(5);
-    main_Form_Init();
-    HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
-    HAL_Delay(5);
-
-    uint8_t delay_times = 10;
-    int count = 0;
-
-
+    vTaskStartScheduler();
 
     //HAL_UART_Transmit(&huart3, "test=", 5, HAL_MAX_DELAY);
 
@@ -185,50 +183,6 @@ int main(void) {
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */
-
-        while (1) {
-
-            key_Enter_flag = Enter_Key();
-//            if (xpt2046_readxy(&x, &y) != 0xFF) {
-//
-//                x = (unsigned short) ((float) x * (0.0363f) - 8.2952f);
-//                y = (unsigned short) ((float) y * (0.0492f) - 8.5976f);
-//                printf("%d,%d\n", x, y);
-//                break;
-//            }
-            if (key_Enter_flag == 2) {
-                key_Verify_flag = 1;
-                HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_7);
-                break;
-            }
-            if (key_Enter_flag == 1) {
-                key_Select_flag = (key_Select_flag + 1) % 5;
-                HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_8);
-
-                break;
-            }
-            if (times > 10) {
-                times = 0;
-                break;
-            }
-
-        }
-        // printf("key=%d\n", key_Enter_flag);
-        while (1) {
-
-            Form_UpdateEvent();
-            HAL_Delay(5);
-
-            HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
-            HAL_Delay(10);
-
-            if (times > 10) {
-                times = 0;
-                break;
-            }
-        }
-
-
     }
     /* USER CODE END 3 */
 }
@@ -295,12 +249,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
         HAL_IncTick();
     }
     /* USER CODE BEGIN Callback 1 */
-    can_times++;
-    usart_times++;
-    times++;
-    twinkles++;
-    AHRS_update(INS_quat, 1.0f / 1000.0f, gyro, accel, mag);
-    get_angle(INS_quat, &INS_angle[0], &INS_angle[1], &INS_angle[2]);
     /* USER CODE END Callback 1 */
 }
 

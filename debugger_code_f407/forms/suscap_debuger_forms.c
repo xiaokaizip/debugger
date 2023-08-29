@@ -4,6 +4,7 @@
 
 #include "suscap_debuger_forms.h"
 #include "main.h"
+#include "key.h"
 
 
 button_struct_t button_Normal;
@@ -15,18 +16,14 @@ button_struct_t button_Show;
 
 extern unsigned char lcd_buffer[128 * 160 * 2];
 
-extern unsigned short x;
-extern unsigned short y;
-extern uint8_t key_Select_flag;
-extern uint8_t key_Enter_flag;
-extern uint8_t key_Verify_flag;
+press_key_t suscap_debuger_key;
 extern Forms_struct_t forms;
 
 void Button_TurnBuck_CallBack_Sus(void *object) {
 
     main_Form_Init();
     forms.id = Main_Form;
-    key_Select_flag = 0;
+    suscap_debuger_key.key_select_num = 0;
 
 }
 
@@ -56,15 +53,15 @@ void Suscap_Debuger_Show_Init() {
  * 超级电容调试界面的加载函数
  */
 void Suscap_Debuger_Show_Load() {
-
-    switch (key_Select_flag) {
+    press_key(&suscap_debuger_key, 5);
+    switch (suscap_debuger_key.key_select_num) {
         case 0:
             gui_button_update(&button_Normal, button_click_status);
             gui_button_update(&button_ChargeFirst, button_normal_status);
             gui_button_update(&button_UseFirst, button_normal_status);
             gui_button_update(&button_SuscapTest, button_normal_status);
             gui_button_update(&button_Turnbuck_Sus, button_normal_status);
-            key_Select_flag = 0;
+            suscap_debuger_key.key_select_num = 0;
             break;
         case 1:
             gui_button_update(&button_Normal, button_normal_status);
@@ -72,7 +69,7 @@ void Suscap_Debuger_Show_Load() {
             gui_button_update(&button_UseFirst, button_normal_status);
             gui_button_update(&button_SuscapTest, button_normal_status);
             gui_button_update(&button_Turnbuck_Sus, button_normal_status);
-            key_Select_flag = 1;
+            suscap_debuger_key.key_select_num = 1;
             break;
         case 2:
             gui_button_update(&button_Normal, button_normal_status);
@@ -80,7 +77,7 @@ void Suscap_Debuger_Show_Load() {
             gui_button_update(&button_UseFirst, button_click_status);
             gui_button_update(&button_SuscapTest, button_normal_status);
             gui_button_update(&button_Turnbuck_Sus, button_normal_status);
-            key_Select_flag = 2;
+            suscap_debuger_key.key_select_num = 2;
             break;
         case 3:
             gui_button_update(&button_Normal, button_normal_status);
@@ -88,7 +85,7 @@ void Suscap_Debuger_Show_Load() {
             gui_button_update(&button_UseFirst, button_normal_status);
             gui_button_update(&button_SuscapTest, button_click_status);
             gui_button_update(&button_Turnbuck_Sus, button_normal_status);
-            key_Select_flag = 3;
+            suscap_debuger_key.key_select_num = 3;
             break;
         case 4:
             gui_button_update(&button_Normal, button_normal_status);
@@ -96,18 +93,18 @@ void Suscap_Debuger_Show_Load() {
             gui_button_update(&button_UseFirst, button_normal_status);
             gui_button_update(&button_SuscapTest, button_normal_status);
             gui_button_update(&button_Turnbuck_Sus, button_click_status);
-            key_Select_flag = 4;
+            suscap_debuger_key.key_select_num = 4;
             break;
         default:
-            key_Select_flag = 0;
+            suscap_debuger_key.key_select_num = 0;
             break;
     }
 
-    if (key_Verify_flag == 1) {
-        if (key_Select_flag == 4) {
+    if (suscap_debuger_key.key_verify == 1) {
+        if (suscap_debuger_key.key_select_num == 4) {
             button_Turnbuck_Sus.callback(&button_Turnbuck_Sus);
         }
-        key_Verify_flag = 0;
+        suscap_debuger_key.key_verify = 0;
     }
 
 }

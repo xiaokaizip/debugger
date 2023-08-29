@@ -42,11 +42,13 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"
   "D:/rmbuild/Debugger/debugger_code_f407/support"
   "D:/rmbuild/Debugger/debugger_code_f407/data_processing"
+  "D:/rmbuild/Debugger/debugger_code_f407/task"
+  "D:/rmbuild/Debugger/debugger_code_f407/controller"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088_show.c" "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088_show.c.obj.d"
+  "D:/rmbuild/Debugger/debugger_code_f407/BMI088/BMI1088.c" "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/BMI088/BMI1088.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/BMI088/MahonyAHRS.c" "CMakeFiles/debugger_code_f407.elf.dir/BMI088/MahonyAHRS.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/BMI088/MahonyAHRS.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/Core/Src/can.c" "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/can.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/can.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/Core/Src/dma.c" "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/dma.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/Core/Src/dma.c.obj.d"
@@ -96,16 +98,19 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" "CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/tasks.c" "CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/Middlewares/Third_Party/FreeRTOS/Source/timers.c" "CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj.d"
+  "D:/rmbuild/Debugger/debugger_code_f407/controller/pid.c" "CMakeFiles/debugger_code_f407.elf.dir/controller/pid.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/controller/pid.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/data_processing/can_data.c" "CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/data_processing/can_data.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/data_processing/uart_data.c" "CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/data_processing/uart_data.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/devices/lcd_init.c" "CMakeFiles/debugger_code_f407.elf.dir/devices/lcd_init.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/devices/lcd_init.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/devices/xpt2046.c" "CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/devices/xpt2046.c.obj.d"
+  "D:/rmbuild/Debugger/debugger_code_f407/forms/all_canid_form.c" "CMakeFiles/debugger_code_f407.elf.dir/forms/all_canid_form.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/forms/all_canid_form.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/forms/canid_forms.c" "CMakeFiles/debugger_code_f407.elf.dir/forms/canid_forms.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/forms/canid_forms.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/forms/dail_forms.c" "CMakeFiles/debugger_code_f407.elf.dir/forms/dail_forms.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/forms/dail_forms.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/forms/imu_forms.c" "CMakeFiles/debugger_code_f407.elf.dir/forms/imu_forms.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/forms/imu_forms.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/forms/logic_forms.c" "CMakeFiles/debugger_code_f407.elf.dir/forms/logic_forms.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/forms/logic_forms.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/forms/main_forms.c" "CMakeFiles/debugger_code_f407.elf.dir/forms/main_forms.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/forms/main_forms.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/forms/motor_forms.c" "CMakeFiles/debugger_code_f407.elf.dir/forms/motor_forms.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/forms/motor_forms.c.obj.d"
+  "D:/rmbuild/Debugger/debugger_code_f407/forms/osinfo_forms.c" "CMakeFiles/debugger_code_f407.elf.dir/forms/osinfo_forms.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/forms/osinfo_forms.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/forms/suscap_debuger_forms.c" "CMakeFiles/debugger_code_f407.elf.dir/forms/suscap_debuger_forms.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/forms/suscap_debuger_forms.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/forms/usart_forms.c" "CMakeFiles/debugger_code_f407.elf.dir/forms/usart_forms.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/forms/usart_forms.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/function/can_communication.c" "CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/function/can_communication.c.obj.d"
@@ -113,8 +118,12 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/rmbuild/Debugger/debugger_code_f407/function/key.c" "CMakeFiles/debugger_code_f407.elf.dir/function/key.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/function/key.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/function/led.c" "CMakeFiles/debugger_code_f407.elf.dir/function/led.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/function/led.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/function/motor.c" "CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/function/motor.c.obj.d"
-  "D:/rmbuild/Debugger/debugger_code_f407/function/pid.c" "CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/function/pid.c.obj.d"
   "D:/rmbuild/Debugger/debugger_code_f407/support/fifo.c" "CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/support/fifo.c.obj.d"
+  "D:/rmbuild/Debugger/debugger_code_f407/task/INS_task.c" "CMakeFiles/debugger_code_f407.elf.dir/task/INS_task.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/task/INS_task.c.obj.d"
+  "D:/rmbuild/Debugger/debugger_code_f407/task/can_show_task.c" "CMakeFiles/debugger_code_f407.elf.dir/task/can_show_task.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/task/can_show_task.c.obj.d"
+  "D:/rmbuild/Debugger/debugger_code_f407/task/gui_task.c" "CMakeFiles/debugger_code_f407.elf.dir/task/gui_task.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/task/gui_task.c.obj.d"
+  "D:/rmbuild/Debugger/debugger_code_f407/task/led_task.c" "CMakeFiles/debugger_code_f407.elf.dir/task/led_task.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/task/led_task.c.obj.d"
+  "D:/rmbuild/Debugger/debugger_code_f407/task/motor_task.c" "CMakeFiles/debugger_code_f407.elf.dir/task/motor_task.c.obj" "gcc" "CMakeFiles/debugger_code_f407.elf.dir/task/motor_task.c.obj.d"
   )
 
 # Targets to which this target links.

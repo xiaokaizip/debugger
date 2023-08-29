@@ -4,7 +4,7 @@
 
 #include "main.h"
 
-extern Forms_struct_t forms;
+Forms_struct_t forms;
 
 void Form_UpdateEvent(void) {
 
@@ -29,6 +29,12 @@ void Form_UpdateEvent(void) {
             break;
         case Motor:
             Motor_Form_Load();
+            break;
+        case Osinfo:
+            OSInfo_Form_Load();
+            break;
+        case AllCAN:
+            all_canid_Form_Load();
             break;
         default:
             main_Form_Load();

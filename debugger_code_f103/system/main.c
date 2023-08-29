@@ -147,7 +147,7 @@ int main(void) {
     MX_TIM6_Init();
     MX_TIM4_Init();
     MX_TIM1_Init();
-    MX_IWDG_Init();
+    //  MX_IWDG_Init();
 
     /* USER CODE BEGIN 2 */
     RetargetInit(&huart1);//初始化打印的函数
@@ -159,11 +159,12 @@ int main(void) {
     gui_config();//lcd屏幕初始化
 
     /*串口初中断初始化*/
-    HAL_UART_Receive_IT(&huart1, usart_data, 8);
-    HAL_UART_Receive_IT(&huart4, usart_data, 8);
+    HAL_UART_Receive_IT(&huart1, &usart_data[0], 1);
+    HAL_UART_Receive_IT(&huart4, &usart_data[0], 1);
 
 
-    main_Form_Init();
+    // main_Form_Init();
+    Usart_Form_Init();
     //Imu_Form_Init();
     HAL_SPI_Transmit_DMA(&hspi3, (uint8_t *) lcd_buffer, 128 * 160 * 2);
     forms.id = 0;
@@ -197,7 +198,6 @@ int main(void) {
 
                 x = (unsigned short) ((float) x * (0.0363f) - 8.2952f);
                 y = (unsigned short) ((float) y * (0.0492f) - 8.5976f);
-                printf("%d,%d\n", x, y);
                 break;
             }
             if (key_Enter_flag == 2) {
@@ -212,7 +212,7 @@ int main(void) {
                 times = 0;
                 break;
             }
-            HAL_IWDG_Refresh(&hiwdg);
+            //  HAL_IWDG_Refresh(&hiwdg);
 
         }
         // printf("key=%d\n", key_Enter_flag);
@@ -226,7 +226,7 @@ int main(void) {
                 times = 0;
                 break;
             }
-            HAL_IWDG_Refresh(&hiwdg);
+            // HAL_IWDG_Refresh(&hiwdg);
         }
 
 
