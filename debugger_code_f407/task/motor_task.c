@@ -27,6 +27,8 @@ void motor_task() {
     const float set_speed = 500;
     while (1) {
         set_moto_current(0xFF, 2);
+        set_gpio_state(1, 1);
+        //set_moto_current();
         //get_can_motor(&can_fifo_RM_motor, motor_measure);
 //        if (get_can_motor(&can_fifo_RM_motor, motor_measure)) {
 //            pid_calc(&pid_struct, (float) motor_measure[1].speed_rpm, 800);

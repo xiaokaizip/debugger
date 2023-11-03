@@ -69,5 +69,6 @@ void set_moto_current(int16_t current, uint16_t id);
 
 void CAN_Id_Sort();
 
+void set_gpio_state(uint8_t gpio_num, uint8_t gpio_state);
 
 #endif // MOTOR_TEST_CORE_INC_MOTOR_H_

@@ -165,6 +165,7 @@ int main(void) {
                             (void *) NULL,
                             (UBaseType_t) 1,
                             (TaskHandle_t *) NULL);
+    //控制电机的任务，暂时不需要
 //    xReturned = xTaskCreate((TaskFunction_t) motor_task,
 //                            (const char *) "MO",
 //                            (configSTACK_DEPTH_TYPE) 1024,

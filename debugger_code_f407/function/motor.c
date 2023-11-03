@@ -7,6 +7,7 @@
 
 static CAN_TxHeaderTypeDef can_header;
 static uint8_t can_tx_data[8];
+static uint8_t can_gpio_data[8];
 extern CAN_HandleTypeDef hcan1;
 
 
@@ -43,5 +44,23 @@ void set_moto_current(int16_t current, uint16_t id) {
 
     uint32_t tx_mailbox;
     HAL_CAN_AddTxMessage(&hcan1, &can_header, can_tx_data, &tx_mailbox);
+
+}
+
+uint16_t count_tx = 0;
+
+void set_gpio_state(uint8_t gpio_num, uint8_t gpio_state) {
+    can_header.IDE = CAN_ID_STD;      //当该位为0时，为标准帧；当该位为1时，为拓展帧
+    can_header.RTR = CAN_RTR_DATA;    //远程帧
+    can_header.StdId = 0x300;         //ID
+    can_header.DLC = 8;               //数据位
+
+
+    can_gpio_data[gpio_num - 1] = 0x0f | (gpio_state << 4);
+    uint32_t tx_mailbox;
+    count_tx++;
+    if (HAL_CAN_AddTxMessage(&hcan1, &can_header, can_gpio_data, &tx_mailbox) == HAL_OK) {
+        led_can_tx(&count_tx);
+    }
 
 }
